@@ -72,15 +72,30 @@ export default function StockPage({ stock }) {
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  // Dynamic Header Variables
-  const displayPrice = cursorData ? cursorData.price : stock.price;
-  const displayDate = cursorData ? new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : "Today";
-  const displayDrawdown = cursorData ? cursorData.drawdown : null;
-  
-  const showDefaultHeader = !cursorData;
-  const isPositiveDay = stock.change >= 0;
-  const dayColor = isPositiveDay ? "text-green-600" : "text-red-600";
-  const daySign = isPositiveDay ? "+" : "";
+  // --- DYNAMIC HEADER LOGIC ---
+  let displayPrice = stock.price;
+  let displayChange = stock.change;
+  let displayChangePct = stock.change_percent;
+  let displayLabel = "Today";
+  let displayColor = stock.change >= 0 ? "text-green-600" : "text-red-600";
+  let displaySign = stock.change >= 0 ? "+" : "";
+
+  // If scrubbing (hovering), override values
+  if (cursorData && chartData.length > 0) {
+      displayPrice = cursorData.price;
+      
+      // Calculate change relative to the START of the visible chart
+      const startPrice = chartData[0].price;
+      const diff = cursorData.price - startPrice;
+      const pct = (diff / startPrice) * 100;
+
+      displayChange = diff.toFixed(2);
+      displayChangePct = pct.toFixed(2);
+      displayLabel = new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+      
+      displayColor = diff >= 0 ? "text-green-600" : "text-red-600";
+      displaySign = diff >= 0 ? "+" : "";
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
@@ -96,24 +111,16 @@ export default function StockPage({ stock }) {
             <div>
                 <h1 className="text-4xl font-extrabold tracking-tight">{stock.name}</h1>
                 <div className="flex items-center gap-4 mt-2">
+                    {/* BIG DYNAMIC PRICE */}
                     <span className="text-4xl font-mono tracking-tighter font-bold">
                         ${displayPrice}
                     </span>
                     
-                    {showDefaultHeader ? (
-                        <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
-                            <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
-                            <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">{displayDate}</span>
-                        </div>
-                    ) : (
-                        <div className="flex flex-col text-sm font-bold">
-                            <span className="text-gray-900">{displayDate}</span>
-                            {/* NEW: Show Drawdown % when scrubbing history */}
-                            <span className={`${displayDrawdown < 0 ? 'text-red-500' : 'text-gray-400'} font-normal text-xs uppercase tracking-wide`}>
-                                Drawdown: {displayDrawdown}%
-                            </span>
-                        </div>
-                    )}
+                    {/* Dynamic Change Badge (Updates on Hover) */}
+                    <div className={`flex flex-col text-sm font-bold ${displayColor}`}>
+                        <span>{displaySign}{displayChange} ({displaySign}{displayChangePct}%)</span>
+                        <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">{displayLabel}</span>
+                    </div>
 
                     <span className={`ml-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${verdictColor}`}>
                         {stock.verdict}
@@ -139,6 +146,7 @@ export default function StockPage({ stock }) {
                     <div className="flex justify-between items-end mb-4">
                         <div>
                             <h3 className="text-lg font-bold">Price Performance</h3>
+                            {/* Shows total period return (Static context) */}
                             <p className={`text-sm font-mono font-bold ${periodColor}`}>
                                 {periodSign}{periodChange.dollar} ({periodSign}{periodChange.percent}%)
                                 <span className="text-gray-400 font-sans font-normal text-xs ml-2">past {timeRange}</span>
@@ -203,7 +211,7 @@ export default function StockPage({ stock }) {
                     </div>
                 </div>
 
-                {/* 2. UNDERWATER PLOT (Now Sticky & Synced) */}
+                {/* 2. UNDERWATER PLOT */}
                 <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                     <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-red-600">
                         Details: Drawdown Risk
@@ -213,7 +221,7 @@ export default function StockPage({ stock }) {
                             <AreaChart 
                                 data={chartData} 
                                 margin={{ top: 10, right: 0, left: -20, bottom: 0 }}
-                                onMouseMove={handleMouseMove} // <--- Connected to Sticky Logic
+                                onMouseMove={handleMouseMove}
                             >
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                 <Area type="monotone" dataKey="drawdown" stroke="#ef4444" fill="#fee2e2" />
