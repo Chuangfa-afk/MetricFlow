@@ -26,39 +26,28 @@ export default function StockPage({ stock }) {
   const [chartData, setChartData] = useState([]);
   const [color, setColor] = useState("#22c55e"); 
   const [periodChange, setPeriodChange] = useState({ dollar: 0, percent: 0 });
+  
+  // NEW: Track the "Active" data point (Sticky)
+  const [cursorData, setCursorData] = useState(null);
 
   useEffect(() => {
     if (!stock.full_history) return;
 
+    // Reset cursor when changing time range so it snaps back to "Today"
+    setCursorData(null); 
+
     const today = new Date();
     let cutoffDate = new Date();
 
-    // --- TIME RANGE LOGIC ---
-    // 1M: 1 Month ago
-    if (timeRange === '1M') {
-        cutoffDate.setMonth(today.getMonth() - 1);
-    }
-    // 6M: 6 Months ago
-    else if (timeRange === '6M') {
-        cutoffDate.setMonth(today.getMonth() - 6);
-    }
-    // YTD: January 1st of CURRENT YEAR
-    else if (timeRange === 'YTD') {
-        cutoffDate = new Date(today.getFullYear(), 0, 1); // Month is 0-indexed (0 = Jan)
-    }
-    // 1Y: 1 Year ago
-    else if (timeRange === '1Y') {
-        cutoffDate.setFullYear(today.getFullYear() - 1);
-    }
-    // ALL: Set to way back (e.g. year 1990) to capture everything
-    else if (timeRange === 'ALL') {
-        cutoffDate = new Date('1990-01-01');
-    }
+    if (timeRange === '1M') cutoffDate.setMonth(today.getMonth() - 1);
+    else if (timeRange === '6M') cutoffDate.setMonth(today.getMonth() - 6);
+    else if (timeRange === 'YTD') cutoffDate = new Date(today.getFullYear(), 0, 1);
+    else if (timeRange === '1Y') cutoffDate.setFullYear(today.getFullYear() - 1);
+    else if (timeRange === 'ALL') cutoffDate = new Date('1990-01-01');
 
     const filtered = stock.full_history.filter(point => new Date(point.date) >= cutoffDate);
     setChartData(filtered);
 
-    // LOGIC: Calculate change for the selected period
     if (filtered.length > 0) {
         const startPrice = filtered[0].price;
         const endPrice = filtered[filtered.length - 1].price;
@@ -72,8 +61,17 @@ export default function StockPage({ stock }) {
 
         setColor(endPrice >= startPrice ? "#22c55e" : "#ef4444");
     }
-
   }, [timeRange, stock]);
+
+  // Mouse Move Handler: Updates the sticky cursor
+  const handleMouseMove = (e) => {
+    if (e.activePayload && e.activePayload.length > 0) {
+        setCursorData(e.activePayload[0].payload);
+    }
+  };
+
+  // NOTE: We deliberately do NOT have an onMouseLeave handler that resets the state.
+  // This keeps the data "stuck" to the last hovered point (Left or Right edge).
 
   const isRisky = stock.sharpe_ratio < 0.5;
   const verdictColor = isRisky ? "bg-red-100 text-red-800" : "bg-green-100 text-green-800";
@@ -81,10 +79,14 @@ export default function StockPage({ stock }) {
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  const formatXAxis = (tickItem) => {
-    const date = new Date(tickItem);
-    return date.toLocaleDateString('en-US', { month: 'short', year: '2-digit' });
-  };
+  // Dynamic Header Logic
+  const displayPrice = cursorData ? cursorData.price : stock.price;
+  const displayDate = cursorData ? new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) : "Today";
+  
+  // Show "Change" only when NOT scrubbing (default view), or if we had historical change data (which we don't for every point)
+  // When scrubbing, we hide the change badge to avoid confusion, or we could calculate it relative to chart start.
+  // For simplicity: Show stock.change when default, show Date when scrubbing.
+  const showDefaultHeader = !cursorData;
 
   const isPositiveDay = stock.change >= 0;
   const dayColor = isPositiveDay ? "text-green-600" : "text-red-600";
@@ -100,16 +102,28 @@ export default function StockPage({ stock }) {
         <Link href="/" className="text-sm text-gray-500 hover:text-black mb-6 block">← Back to Dashboard</Link>
 
         {/* Header Section */}
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6 flex justify-between items-center">
+        <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 mb-6 flex justify-between items-center transition-all">
             <div>
                 <h1 className="text-4xl font-extrabold tracking-tight">{stock.name}</h1>
                 <div className="flex items-center gap-4 mt-2">
-                    <span className="text-4xl font-mono tracking-tighter font-bold">${stock.price}</span>
+                    {/* BIG DYNAMIC PRICE */}
+                    <span className="text-4xl font-mono tracking-tighter font-bold">
+                        ${displayPrice}
+                    </span>
                     
-                    <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
-                        <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
-                        <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Today</span>
-                    </div>
+                    {/* Dynamic Badge: Date or Change */}
+                    {showDefaultHeader ? (
+                        <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
+                            <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
+                            <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">{displayDate}</span>
+                        </div>
+                    ) : (
+                        <div className="flex flex-col text-sm font-bold text-gray-500">
+                            {/* When scrubbing, just show the Date prominently */}
+                            <span className="text-gray-900">{displayDate}</span>
+                            <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Historical</span>
+                        </div>
+                    )}
 
                     <span className={`ml-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${verdictColor}`}>
                         {stock.verdict}
@@ -158,7 +172,12 @@ export default function StockPage({ stock }) {
 
                     <div className="h-72 w-full">
                         <ResponsiveContainer width="100%" height="100%">
-                            <AreaChart data={chartData} margin={{ top: 10, right: 0, left: -20, bottom: 0 }}>
+                            <AreaChart 
+                                data={chartData} 
+                                margin={{ top: 10, right: 0, left: -20, bottom: 0 }}
+                                onMouseMove={handleMouseMove} // <--- Track Mouse
+                                // onMouseLeave={handleMouseLeave} <--- REMOVED to create "Sticky" effect
+                            >
                                 <defs>
                                     <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
                                         <stop offset="5%" stopColor={color} stopOpacity={0.3}/>
@@ -168,11 +187,7 @@ export default function StockPage({ stock }) {
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                 <XAxis 
                                     dataKey="date" 
-                                    tickFormatter={formatXAxis}
-                                    tick={{fontSize: 12, fill: '#9ca3af'}}
-                                    axisLine={false}
-                                    tickLine={false}
-                                    minTickGap={30}
+                                    hide // Hide X Axis text to keep it clean, relying on Header
                                 />
                                 <YAxis 
                                     domain={['auto', 'auto']} 
@@ -187,6 +202,7 @@ export default function StockPage({ stock }) {
                                     contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}
                                     itemStyle={{color: '#000', fontWeight: 'bold'}}
                                     labelStyle={{color: '#6b7280', fontSize: '12px'}}
+                                    active={true} // Try to keep active, but mainly rely on Header
                                 />
                                 <Area 
                                     type="monotone" 
