@@ -5,13 +5,21 @@ import fs from 'fs';
 import path from 'path';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-// --- HELPER FOR FINANCIALS (Trillions support) ---
+// --- HELPER FOR FINANCIALS (Smart Formatting T/B/M) ---
 const formatLargeNumber = (num) => {
   if (!num) return "N/A";
+  
   if (num >= 1e12) {
     return (num / 1e12).toFixed(2) + "T";
   }
-  return (num / 1e9).toFixed(1) + "B";
+  if (num >= 1e9) {
+    return (num / 1e9).toFixed(2) + "B";
+  }
+  if (num >= 1e6) {
+    return (num / 1e6).toFixed(2) + "M";
+  }
+  
+  return num.toLocaleString();
 };
 
 // --- CUSTOM TOOLTIP (Standard Logic) ---
@@ -24,7 +32,6 @@ const CustomTooltip = ({ active, payload, label, startPrice }) => {
     let diff = currentPrice - startPrice;
     let pct = (diff / startPrice) * 100;
     
-    // Fix tiny floating point errors at start
     if (Math.abs(pct) < 0.01) pct = 0.00;
 
     const isPositive = diff >= 0;
@@ -70,7 +77,6 @@ export default function StockPage({ stock }) {
   const [color, setColor] = useState("#22c55e"); 
   const [periodChange, setPeriodChange] = useState({ dollar: 0, percent: 0 });
 
-  // Description Toggle State
   const [isDescExpanded, setIsDescExpanded] = useState(false);
 
   useEffect(() => {
@@ -85,7 +91,6 @@ export default function StockPage({ stock }) {
     else if (timeRange === '1Y') cutoffDate.setFullYear(today.getFullYear() - 1);
     else if (timeRange === 'ALL') cutoffDate = new Date('1990-01-01');
 
-    // Filter & Sort Data
     const filtered = stock.full_history
         .filter(point => new Date(point.date) >= cutoffDate)
         .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -115,12 +120,10 @@ export default function StockPage({ stock }) {
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  // Standard Static Header Logic
   const displayPrice = stock.price;
   const dayColor = stock.change >= 0 ? "text-green-600" : "text-red-600";
   const daySign = stock.change >= 0 ? "+" : "";
 
-  // Description Logic
   const shortDescription = stock.description ? stock.description.slice(0, 180) + "..." : "No description.";
 
   return (
@@ -160,7 +163,7 @@ export default function StockPage({ stock }) {
             </div>
         </div>
 
-        {/* --- COMPANY PROFILE (COLLAPSIBLE) --- */}
+        {/* --- COMPANY PROFILE --- */}
         <div className="mb-8">
             <div className="flex gap-2 mb-3">
                 <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
@@ -230,8 +233,7 @@ export default function StockPage({ stock }) {
                                 <XAxis 
                                     dataKey="date" 
                                     hide 
-                                    // UPDATED: Increased padding to keep box visible at edges
-                                    padding={{ left: 25, right: 25 }}
+                                    padding={{ left: 20, right: 20 }}
                                 />
                                 <YAxis 
                                     domain={['auto', 'auto']} 
@@ -277,8 +279,7 @@ export default function StockPage({ stock }) {
                                 <XAxis 
                                     dataKey="date" 
                                     hide 
-                                    // UPDATED: Increased padding here too for consistency
-                                    padding={{ left: 25, right: 25 }} 
+                                    padding={{ left: 20, right: 20 }} 
                                 />
                                 <YAxis 
                                     orientation="right"
@@ -363,7 +364,7 @@ export default function StockPage({ stock }) {
                             <p className="text-[10px] text-gray-400">Efficiency score</p>
                         </div>
 
-                        {/* Wall St Target (ROUNDED TO 2 DECIMALS) */}
+                        {/* Wall St Target */}
                         <div>
                             <p className="text-[10px] uppercase text-gray-400 font-bold">Analyst Target</p>
                             <p className="text-xl font-mono font-bold text-blue-600">
