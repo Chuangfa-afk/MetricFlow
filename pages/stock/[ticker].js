@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-// --- HELPER FOR FINANCIALS (Updated for Trillions) ---
+// --- HELPER FOR FINANCIALS (Trillions support) ---
 const formatLargeNumber = (num) => {
   if (!num) return "N/A";
   if (num >= 1e12) {
@@ -16,11 +16,9 @@ const formatLargeNumber = (num) => {
 
 // --- CUSTOM TOOLTIP (Standard Logic) ---
 const CustomTooltip = ({ active, payload, label, startPrice }) => {
-  // Standard Recharts check: if active and we have data
   if (active && payload && payload.length > 0 && startPrice !== undefined) {
     const dataPoint = payload[0];
     const currentPrice = dataPoint.value;
-    // Recharts provides the original data object in 'payload.payload'
     const dateStr = dataPoint.payload.date; 
 
     let diff = currentPrice - startPrice;
@@ -117,7 +115,7 @@ export default function StockPage({ stock }) {
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  // Standard Static Header Logic (No more sticky overriding)
+  // Standard Static Header Logic
   const displayPrice = stock.price;
   const dayColor = stock.change >= 0 ? "text-green-600" : "text-red-600";
   const daySign = stock.change >= 0 ? "+" : "";
@@ -232,7 +230,8 @@ export default function StockPage({ stock }) {
                                 <XAxis 
                                     dataKey="date" 
                                     hide 
-                                    padding={{ left: 10, right: 10 }}
+                                    // UPDATED: Increased padding to keep box visible at edges
+                                    padding={{ left: 25, right: 25 }}
                                 />
                                 <YAxis 
                                     domain={['auto', 'auto']} 
@@ -278,7 +277,8 @@ export default function StockPage({ stock }) {
                                 <XAxis 
                                     dataKey="date" 
                                     hide 
-                                    padding={{ left: 10, right: 10 }} 
+                                    // UPDATED: Increased padding here too for consistency
+                                    padding={{ left: 25, right: 25 }} 
                                 />
                                 <YAxis 
                                     orientation="right"
