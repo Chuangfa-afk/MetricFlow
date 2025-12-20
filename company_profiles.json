@@ -1,0 +1,274 @@
+{
+    "AAPL": {
+        "name": "Apple Inc.",
+        "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company is best known for its iPhone, Mac, and iPad product lines, alongside a growing high-margin services business including Apple Pay, iCloud, and the App Store. It remains the largest technology company by revenue and market capitalization, distinguished by its integrated hardware-software ecosystem.",
+        "ceo": "Mr. Timothy D. Cook",
+        "hq": "Cupertino, CA, United States",
+        "employees": 166000,
+        "website": "https://www.apple.com",
+        "sector": "Technology",
+        "industry": "Consumer Electronics"
+    },
+    "MSFT": {
+        "name": "Microsoft Corporation",
+        "description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide. Its dominance is anchored by the Microsoft 365 suite and the Windows operating system, while its Intelligent Cloud segment, driven by Azure, positions it as a leader in enterprise cloud computing. The company is also a major player in gaming (Xbox) and artificial intelligence through its partnership with OpenAI.",
+        "ceo": "Mr. Satya  Nadella",
+        "hq": "Redmond, WA, United States",
+        "employees": 228000,
+        "website": "https://www.microsoft.com",
+        "sector": "Technology",
+        "industry": "Software - Infrastructure"
+    },
+    "NVDA": {
+        "name": "NVIDIA Corporation",
+        "description": "NVIDIA Corporation is the global leader in visual computing and artificial intelligence. Originally focused on PC graphics, the company has pivoted to become the dominant supplier of high-performance GPUs for AI data centers, autonomous vehicles, and professional visualization. Its CUDA software platform creates a formidable moat in accelerated computing.",
+        "ceo": "Mr. Jen-Hsun  Huang",
+        "hq": "Santa Clara, CA, United States",
+        "employees": 36000,
+        "website": "https://www.nvidia.com",
+        "sector": "Technology",
+        "industry": "Semiconductors"
+    },
+    "GOOGL": {
+        "name": "Alphabet Inc.",
+        "description": "Alphabet Inc. is the holding company for Google, the world's leading search engine and digital advertising platform. Its vast ecosystem includes YouTube, Android, Chrome, and Google Cloud, which provides enterprise infrastructure services. The company invests heavily in AI research (DeepMind) and 'Other Bets' ventures like Waymo autonomous driving.",
+        "ceo": "Mr. Sundar  Pichai",
+        "hq": "Mountain View, CA, United States",
+        "employees": 190167,
+        "website": "https://abc.xyz",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information"
+    },
+    "AMZN": {
+        "name": "Amazon.com, Inc.",
+        "description": "Amazon.com, Inc. is a global leader in e-commerce, cloud computing, digital streaming, and artificial intelligence. It operates the world's largest online marketplace and logistics network, while its Amazon Web Services (AWS) division is the leading provider of on-demand cloud computing platforms to individuals, companies, and governments.",
+        "ceo": "Mr. Andrew R. Jassy",
+        "hq": "Seattle, WA, United States",
+        "employees": 1578000,
+        "website": "https://www.amazon.com",
+        "sector": "Consumer Cyclical",
+        "industry": "Internet Retail"
+    },
+    "META": {
+        "name": "Meta Platforms, Inc.",
+        "description": "Meta Platforms, Inc. builds technologies that help people connect, find communities, and grow businesses. Its Family of Apps includes Facebook, Instagram, WhatsApp, and Messenger, which generate significant revenue through digital advertising. The company is also investing heavily in Reality Labs to develop augmented and virtual reality hardware for the Metaverse.",
+        "ceo": "Mr. Mark Elliot Zuckerberg",
+        "hq": "Menlo Park, CA, United States",
+        "employees": 78450,
+        "website": "https://investor.atmeta.com",
+        "sector": "Communication Services",
+        "industry": "Internet Content & Information"
+    },
+    "TSLA": {
+        "name": "Tesla, Inc.",
+        "description": "Tesla, Inc. designs, develops, manufactures, and sells electric vehicles and energy generation and storage systems. It is the world's most valuable automaker, known for its Model 3, Model Y, and Cybertruck, as well as its proprietary Supercharger network. The company also focuses on self-driving software and renewable energy solutions through SolarCity.",
+        "ceo": "Mr. Elon R. Musk",
+        "hq": "Austin, TX, United States",
+        "employees": 125665,
+        "website": "https://www.tesla.com",
+        "sector": "Consumer Cyclical",
+        "industry": "Auto Manufacturers"
+    },
+    "JPM": {
+        "name": "JP Morgan Chase & Co.",
+        "description": "JPMorgan Chase & Co. is a leading global financial services firm and the largest bank in the United States. It operates across four major segments: Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management. The firm serves millions of customers and many of the world's most prominent corporate, institutional, and government clients.",
+        "ceo": "Mr. James  Dimon",
+        "hq": "New York, NY, United States",
+        "employees": 318153,
+        "website": "https://www.jpmorganchase.com",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified"
+    },
+    "BAC": {
+        "name": "Bank of America Corporation",
+        "description": "Bank of America Corporation provides a diverse range of banking and financial products and services. It serves individual consumers, small and middle-market businesses, and large corporations with a full suite of banking, investing, asset management, and other financial and risk management products and services.",
+        "ceo": "Mr. Brian Thomas Moynihan",
+        "hq": "Charlotte, NC, United States",
+        "employees": 213000,
+        "website": "https://www.bankofamerica.com",
+        "sector": "Financial Services",
+        "industry": "Banks - Diversified"
+    },
+    "V": {
+        "name": "Visa Inc.",
+        "description": "Visa Inc. operates the world's largest retail electronic payments network. The company facilitates digital payments across more than 200 countries and territories among consumers, merchants, financial institutions, and government entities. Visa does not issue cards or extend credit but processes transactions through its secure global network.",
+        "ceo": "Mr. Ryan M. McInerney",
+        "hq": "San Francisco, CA, United States",
+        "employees": 34100,
+        "website": "https://www.visa.com",
+        "sector": "Financial Services",
+        "industry": "Credit Services"
+    },
+    "MA": {
+        "name": "Mastercard Incorporated",
+        "description": "Mastercard Incorporated is a technology company in the global payments industry. It connects consumers, financial institutions, merchants, governments, and businesses worldwide, enabling them to use electronic forms of payment. The company generates revenue by charging fees for processing transactions on its network.",
+        "ceo": "Mr. Michael  Miebach",
+        "hq": "Purchase, NY, United States",
+        "employees": 35300,
+        "website": "https://www.mastercard.com",
+        "sector": "Financial Services",
+        "industry": "Credit Services"
+    },
+    "JNJ": {
+        "name": "Johnson & Johnson",
+        "description": "Johnson & Johnson is a diversified healthcare giant that researches, develops, manufactures, and sells a broad range of products in the healthcare field. Its business is divided into Innovative Medicine (pharmaceuticals) and MedTech (medical devices), focusing on areas like immunology, oncology, neuroscience, and surgery.",
+        "ceo": "Mr. Joaquin  Duato",
+        "hq": "New Brunswick, NJ, United States",
+        "employees": 138100,
+        "website": "https://www.jnj.com",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General"
+    },
+    "LLY": {
+        "name": "Eli Lilly and Company",
+        "description": "Eli Lilly and Company discovers, develops, and markets human pharmaceuticals worldwide. The company focuses on endocrinology, oncology, neuroscience, and immunology. It has seen significant growth driven by its portfolio of diabetes and obesity treatments, including Mounjaro and Zepbound.",
+        "ceo": "Mr. David A. Ricks",
+        "hq": "Indianapolis, IN, United States",
+        "employees": 47000,
+        "website": "https://www.lilly.com",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General"
+    },
+    "UNH": {
+        "name": "UnitedHealth Group Incorporated",
+        "description": "UnitedHealth Group Incorporated is a diversified health care company. It operates through two distinct platforms: UnitedHealthcare, which provides health care coverage and benefits services, and Optum, which provides information and technology-enabled health services. It is the largest healthcare company in the world by revenue.",
+        "ceo": "Mr. Stephen J. Hemsley",
+        "hq": "Eden Prairie, MN, United States",
+        "employees": 400000,
+        "website": "https://www.unitedhealthgroup.com",
+        "sector": "Healthcare",
+        "industry": "Healthcare Plans"
+    },
+    "XOM": {
+        "name": "Exxon Mobil Corporation",
+        "description": "Exxon Mobil Corporation is one of the world's largest publicly traded international oil and gas companies. It explores for and produces crude oil and natural gas, manufactures petroleum products, and transports and sells crude oil, natural gas, and petroleum products. It is also a major manufacturer of commodity petrochemicals.",
+        "ceo": "Mr. Darren W. Woods",
+        "hq": "Spring, TX, United States",
+        "employees": 61000,
+        "website": "https://corporate.exxonmobil.com",
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated"
+    },
+    "CVX": {
+        "name": "Chevron Corporation",
+        "description": "Chevron Corporation is an integrated energy company with operations worldwide. It is involved in every facet of the energy industry, including exploration, production, and transportation of crude oil and natural gas, as well as refining, marketing, and distributing fuels and petrochemicals.",
+        "ceo": "Mr. Michael K. Wirth",
+        "hq": "Houston, TX, United States",
+        "employees": 45298,
+        "website": "https://www.chevron.com",
+        "sector": "Energy",
+        "industry": "Oil & Gas Integrated"
+    },
+    "KO": {
+        "name": "Coca-Cola Company (The)",
+        "description": "The Coca-Cola Company is a total beverage company, offering over 500 brands in more than 200 countries and territories. Its portfolio includes sparkling soft drinks, water, juice, dairy, and plant-based beverages. The company operates a massive global distribution system and owns five of the world's top six non-alcoholic sparkling soft drink brands.",
+        "ceo": "Mr. James Robert B. Quincey",
+        "hq": "Atlanta, GA, United States",
+        "employees": 69700,
+        "website": "https://www.coca-colacompany.com",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Non-Alcoholic"
+    },
+    "PEP": {
+        "name": "Pepsico, Inc.",
+        "description": "PepsiCo, Inc. is a leading global food and beverage company. Its portfolio includes Frito-Lay, Gatorade, Pepsi-Cola, Quaker, and Tropicana. The company distinguishes itself with a balanced revenue mix between convenient foods (snacks) and beverages, giving it resilience across different market cycles.",
+        "ceo": "Mr. Ramon Luis Laguarta",
+        "hq": "Purchase, NY, United States",
+        "employees": 319000,
+        "website": "https://www.pepsico.com",
+        "sector": "Consumer Defensive",
+        "industry": "Beverages - Non-Alcoholic"
+    },
+    "MCD": {
+        "name": "McDonald's Corporation",
+        "description": "McDonald's Corporation operates and franchises the world's largest restaurant chain by revenue. With over 40,000 locations in over 100 countries, it serves millions of customers daily. The company primarily generates revenue through rent, royalties, and fees paid by franchisees, as well as sales in company-operated restaurants.",
+        "ceo": "Mr. Christopher J. Kempczinski",
+        "hq": "Chicago, IL, United States",
+        "employees": 150000,
+        "website": "https://www.mcdonalds.com",
+        "sector": "Consumer Cyclical",
+        "industry": "Restaurants"
+    },
+    "WMT": {
+        "name": "Walmart Inc.",
+        "description": "Walmart Inc. engages in the operation of retail, wholesale, and other units worldwide. It is the world's largest retailer and private employer, operating a vast network of hypermarkets, discount department stores, and grocery stores. The company focuses on everyday low prices and has a rapidly growing e-commerce business.",
+        "ceo": "Mr. C. Douglas McMillon",
+        "hq": "Bentonville, AR, United States",
+        "employees": 2100000,
+        "website": "https://corporate.walmart.com",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores"
+    },
+    "COST": {
+        "name": "Costco Wholesale Corporation",
+        "description": "Costco Wholesale Corporation operates an international chain of membership warehouses. The company carries quality brand-name merchandise at substantially lower prices than are typically found at conventional wholesale or retail sources. Its business model relies heavily on membership fees, which drive the majority of its operating income.",
+        "ceo": "Mr. Ron M. Vachris",
+        "hq": "Issaquah, WA, United States",
+        "employees": 341000,
+        "website": "https://www.costco.com",
+        "sector": "Consumer Defensive",
+        "industry": "Discount Stores"
+    },
+    "BA": {
+        "name": "Boeing Company (The)",
+        "description": "The Boeing Company designs, manufactures, and sells airplanes, rotorcraft, rockets, satellites, and telecommunications equipment worldwide. It is one of the largest global aircraft manufacturers and a top defense contractor, operating through Commercial Airplanes, Defense, Space & Security, and Global Services segments.",
+        "ceo": "Mr. Robert K. Ortberg",
+        "hq": "Arlington, VA, United States",
+        "employees": 172000,
+        "website": "https://www.boeing.com",
+        "sector": "Industrials",
+        "industry": "Aerospace & Defense"
+    },
+    "CAT": {
+        "name": "Caterpillar, Inc.",
+        "description": "Caterpillar Inc. is the world's leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives. The company serves the construction, resource, and energy & transportation industries through a global dealer network.",
+        "ceo": "Mr. Joseph E. Creed CPA",
+        "hq": "Irving, TX, United States",
+        "employees": 112900,
+        "website": "https://www.caterpillar.com",
+        "sector": "Industrials",
+        "industry": "Farm & Heavy Construction Machinery"
+    },
+    "MMM": {
+        "name": "3M Company",
+        "description": "3M Company is a diversified technology company with a global presence. It operates through segments including Safety and Industrial, Transportation and Electronics, and Consumer. Known for innovation, 3M produces over 60,000 products, ranging from adhesives and abrasives to medical products and electronic materials.",
+        "ceo": "Mr. William M. Brown",
+        "hq": "Saint Paul, MN, United States",
+        "employees": 61500,
+        "website": "https://www.3m.com",
+        "sector": "Industrials",
+        "industry": "Conglomerates"
+    },
+    "NFLX": {
+        "name": "Netflix, Inc.",
+        "description": "Netflix, Inc. provides entertainment services. It offers TV series, documentaries, feature films, and mobile games across a wide variety of genres and languages. The company pioneered the subscription video-on-demand model and invests heavily in producing original content to retain its massive global subscriber base.",
+        "ceo": "Mr. Theodore A. Sarandos",
+        "hq": "Los Gatos, CA, United States",
+        "employees": 14000,
+        "website": "https://www.netflix.com",
+        "sector": "Communication Services",
+        "industry": "Entertainment"
+    },
+    "NKE": {
+        "description": "NIKE, Inc. is the world's leading designer, marketer, and distributor of authentic athletic footwear, apparel, equipment, and accessories. The company sells its products through Nike-owned retail stores, digital platforms, and independent distributors. It owns the Converse brand and dominates the global sportswear market."
+    },
+    "DIS": {
+        "description": "The Walt Disney Company is a diversified international family entertainment and media enterprise. Its assets include film studios (Marvel, Lucasfilm, Pixar), media networks (ESPN, ABC), theme parks and resorts, and direct-to-consumer streaming services (Disney+, Hulu). It is a powerhouse of intellectual property."
+    },
+    "AMD": {
+        "description": "Advanced Micro Devices, Inc. (AMD) operates as a semiconductor company worldwide. It develops computer processors and related technologies for business and consumer markets. The company competes directly with Intel in the CPU market and NVIDIA in the GPU market, providing chips for PCs, gaming consoles, and data centers."
+    },
+    "INTC": {
+        "description": "Intel Corporation designs, manufactures, and sells essential technologies for the cloud, smart, and connected devices. It is one of the world's largest semiconductor chip manufacturers by revenue. The company is currently undergoing a major transformation to expand its foundry business and reclaim leadership in process technology."
+    },
+    "PFE": {
+        "name": "Pfizer, Inc.",
+        "description": "Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular and migraine under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands; infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands; and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands. It also provides medicines and vaccines in various therapeutic areas, such as biosimilars for chronic immune and inflammatory diseases under the Xeljanz, Enbrel, Inflectra, Litfulo, Velsipity, and Cibinqo brands; amyloidosis, hemophilia, endocrine diseases, and sickle cell disease under the Vyndaqel family, Oxbryta, BeneFIX, Somavert, Ngenla, and Genotropin brands; sterile injectable and anti-infective medicines under the Sulperazon, Medrol, Zavicefta, Zithromax, Octagam, and Panzyga brands; and biologics, small molecules, immunotherapies, and biosimilars under the Ibrance, Xtandi, Padcev, Adcetris, Inlyta, Lorbrena, Bosulif, Tukysa, Braftovi, Mektovi, Orgovyx, Elrexfio, Tivdak, and Talzenna brands. In addition, the company involved in the contract manufacturing business. It serves wholesalers, retailers, hospitals, clinics, government agencies, pharmacies, individual provider offices, retail pharmacies, and integrated delivery systems. The company has collaboration agreements with Bristol-Myers Squibb Company; Astellas Pharma US, Inc.; Merck KGaA; and BioNTech SE. Pfizer Inc. was founded in 1849 and is headquartered in New York, New York.",
+        "ceo": "Dr. Albert  Bourla D.V.M., Ph.D.",
+        "hq": "New York, NY, United States",
+        "employees": 81000,
+        "website": "https://www.pfizer.com",
+        "sector": "Healthcare",
+        "industry": "Drug Manufacturers - General"
+    }
+}

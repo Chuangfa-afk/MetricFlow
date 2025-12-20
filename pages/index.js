@@ -22,7 +22,7 @@ export default function Home({ stocks }) {
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
       <Head>
-        <title>Sentinel Equity Research | Institutional Intelligence</title>
+        <title>Ronka Equity Research | Institutional Intelligence</title>
         <meta name="description" content="Institutional-grade risk modeling and fundamental analysis. Precision intelligence for capital allocation." />
       </Head>
 
@@ -30,7 +30,7 @@ export default function Home({ stocks }) {
       <div className="bg-black text-white py-24 px-6 text-center border-b-4 border-blue-900">
         {/* UPDATED PROFESSIONAL TITLE */}
         <h1 className="text-5xl md:text-6xl font-serif font-bold mb-4 tracking-wide text-gray-100">
-          Sentinel Equity Research
+          Ronka Equity Research
         </h1>
         
         {/* UPDATED PROFESSIONAL DESCRIPTION */}
