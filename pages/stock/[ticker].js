@@ -5,9 +5,12 @@ import fs from 'fs';
 import path from 'path';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
-// --- HELPER FOR FINANCIALS ---
-const formatBillion = (num) => {
+// --- HELPER FOR FINANCIALS (Updated for Trillions) ---
+const formatLargeNumber = (num) => {
   if (!num) return "N/A";
+  if (num >= 1e12) {
+    return (num / 1e12).toFixed(2) + "T";
+  }
   return (num / 1e9).toFixed(1) + "B";
 };
 
@@ -154,7 +157,7 @@ export default function StockPage({ stock }) {
             <div className="text-right hidden md:block">
                 <p className="text-sm text-gray-500 uppercase tracking-widest font-semibold">Market Cap</p>
                 <p className="font-bold text-xl">
-                    {stock.market_cap !== "N/A" ? (stock.market_cap / 1e9).toFixed(1) + "B" : "N/A"}
+                    {formatLargeNumber(stock.market_cap)}
                 </p>
             </div>
         </div>
@@ -241,7 +244,6 @@ export default function StockPage({ stock }) {
                                     width={60}
                                 />
                                 
-                                {/* STANDARD RECHARTS TOOLTIP (No manual overrides) */}
                                 <Tooltip 
                                     cursor={{ stroke: '#6b7280', strokeWidth: 1, strokeDasharray: '4 4' }}
                                     content={<CustomTooltip startPrice={chartStartPrice} />}
@@ -393,7 +395,7 @@ export default function StockPage({ stock }) {
                             {/* REVENUE */}
                             <div className="w-full bg-blue-500 rounded p-2 relative mb-8">
                                 <span className="block opacity-80 text-[10px] uppercase">Total Revenue</span>
-                                <span className="text-sm">${formatBillion(stock.financials.revenue)}</span>
+                                <span className="text-sm">${formatLargeNumber(stock.financials.revenue)}</span>
                                 <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
                                 <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
                             </div>
@@ -402,12 +404,12 @@ export default function StockPage({ stock }) {
                             <div className="flex justify-between gap-2 relative mb-8">
                                 <div className="bg-gray-400 rounded p-2 flex-1">
                                     <span className="block opacity-80 text-[10px] uppercase">Cost of Sales</span>
-                                    <span>${formatBillion(stock.financials.cost_of_revenue)}</span>
+                                    <span>${formatLargeNumber(stock.financials.cost_of_revenue)}</span>
                                 </div>
 
                                 <div className="bg-emerald-500 rounded p-2 flex-1 relative">
                                     <span className="block opacity-80 text-[10px] uppercase">Gross Profit</span>
-                                    <span className="text-sm">${formatBillion(stock.financials.gross_profit)}</span>
+                                    <span className="text-sm">${formatLargeNumber(stock.financials.gross_profit)}</span>
                                     <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
                                     <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
                                 </div>
@@ -419,12 +421,12 @@ export default function StockPage({ stock }) {
                                 <div className="flex-1 flex justify-between gap-2">
                                     <div className="bg-amber-400 rounded p-2 flex-1">
                                         <span className="block opacity-80 text-[10px] uppercase text-amber-900">Expenses</span>
-                                        <span className="text-amber-900">${formatBillion(stock.financials.op_expenses)}</span>
+                                        <span className="text-amber-900">${formatLargeNumber(stock.financials.op_expenses)}</span>
                                     </div>
 
                                     <div className="bg-green-600 rounded p-2 flex-1 shadow-lg ring-2 ring-green-100">
                                         <span className="block opacity-80 text-[10px] uppercase">Net Earnings</span>
-                                        <span className="text-sm">${formatBillion(stock.financials.net_income)}</span>
+                                        <span className="text-sm">${formatLargeNumber(stock.financials.net_income)}</span>
                                     </div>
                                 </div>
                             </div>

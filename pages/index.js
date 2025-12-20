@@ -39,7 +39,7 @@ export default function Home({ stocks }) {
             {/* The Input Field */}
             <input 
                 type="text" 
-                placeholder="Search ticker (e.g. AAPL, Tesla)..." 
+                placeholder="Search Ticket" 
                 className="w-full py-5 px-8 rounded-full bg-white text-gray-900 font-bold text-xl shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500 placeholder-gray-400 transition-all"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
