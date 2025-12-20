@@ -5,6 +5,43 @@ import fs from 'fs';
 import path from 'path';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
+// --- HELPER FOR FINANCIALS ---
+const formatBillion = (num) => {
+  if (!num) return "N/A";
+  return (num / 1e9).toFixed(1) + "B";
+};
+
+// --- CUSTOM TOOLTIP ---
+const CustomTooltip = ({ active, payload, label, startPrice }) => {
+  if (active && payload && payload.length > 0 && startPrice) {
+    const currentPrice = payload[0].value;
+    
+    let diff = currentPrice - startPrice;
+    let pct = (diff / startPrice) * 100;
+    
+    if (Math.abs(pct) < 0.01) pct = 0.00;
+
+    const isPositive = diff >= 0;
+    const sign = isPositive ? "+" : "";
+    const colorClass = isPositive ? "text-green-600" : "text-red-600";
+    
+    return (
+      <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-lg min-w-[150px]">
+        <p className="text-gray-500 text-xs uppercase font-bold mb-1">
+          {new Date(label).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+        </p>
+        <p className="text-xl font-mono font-bold text-gray-900 mb-1">
+          ${currentPrice}
+        </p>
+        <p className={`text-sm font-bold ${colorClass}`}>
+           {sign}{pct.toFixed(2)}% <span className="text-xs text-gray-400 font-normal ml-1">since start</span>
+        </p>
+      </div>
+    );
+  }
+  return null;
+};
+
 export async function getStaticPaths() {
   const filePath = path.join(process.cwd(), 'stock_data.json');
   const fileContents = fs.readFileSync(filePath, 'utf8');
@@ -27,11 +64,13 @@ export default function StockPage({ stock }) {
   const [color, setColor] = useState("#22c55e"); 
   const [periodChange, setPeriodChange] = useState({ dollar: 0, percent: 0 });
   const [cursorData, setCursorData] = useState(null);
+  const [cursorCoordinate, setCursorCoordinate] = useState(null);
 
   useEffect(() => {
     if (!stock.full_history) return;
 
-    setCursorData(null); 
+    setCursorData(null);
+    setCursorCoordinate(null);
 
     const today = new Date();
     let cutoffDate = new Date();
@@ -42,7 +81,10 @@ export default function StockPage({ stock }) {
     else if (timeRange === '1Y') cutoffDate.setFullYear(today.getFullYear() - 1);
     else if (timeRange === 'ALL') cutoffDate = new Date('1990-01-01');
 
-    const filtered = stock.full_history.filter(point => new Date(point.date) >= cutoffDate);
+    const filtered = stock.full_history
+        .filter(point => new Date(point.date) >= cutoffDate)
+        .sort((a, b) => new Date(a.date) - new Date(b.date));
+
     setChartData(filtered);
 
     if (filtered.length > 0) {
@@ -63,39 +105,26 @@ export default function StockPage({ stock }) {
   const handleMouseMove = (e) => {
     if (e.activePayload && e.activePayload.length > 0) {
         setCursorData(e.activePayload[0].payload);
+        setCursorCoordinate(e.activeCoordinate);
     }
   };
 
+  const chartStartPrice = chartData.length > 0 ? chartData[0].price : 0;
+  
   const isRisky = stock.sharpe_ratio < 0.5;
   const verdictColor = isRisky ? "bg-red-100 text-red-800" : "bg-green-100 text-green-800";
   const isPositivePeriod = periodChange.dollar >= 0;
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  // --- DYNAMIC HEADER LOGIC ---
-  let displayPrice = stock.price;
-  let displayChange = stock.change;
-  let displayChangePct = stock.change_percent;
-  let displayLabel = "Today";
-  let displayColor = stock.change >= 0 ? "text-green-600" : "text-red-600";
-  let displaySign = stock.change >= 0 ? "+" : "";
-
-  // If scrubbing (hovering), override values
-  if (cursorData && chartData.length > 0) {
-      displayPrice = cursorData.price;
-      
-      // Calculate change relative to the START of the visible chart
-      const startPrice = chartData[0].price;
-      const diff = cursorData.price - startPrice;
-      const pct = (diff / startPrice) * 100;
-
-      displayChange = diff.toFixed(2);
-      displayChangePct = pct.toFixed(2);
-      displayLabel = new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-      
-      displayColor = diff >= 0 ? "text-green-600" : "text-red-600";
-      displaySign = diff >= 0 ? "+" : "";
-  }
+  const displayPrice = cursorData ? cursorData.price : stock.price;
+  const showDefaultHeader = !cursorData;
+  const isPositiveDay = stock.change >= 0;
+  const dayColor = isPositiveDay ? "text-green-600" : "text-red-600";
+  const daySign = isPositiveDay ? "+" : "";
+  const headerDate = cursorData 
+    ? new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) 
+    : "Today";
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
@@ -111,16 +140,21 @@ export default function StockPage({ stock }) {
             <div>
                 <h1 className="text-4xl font-extrabold tracking-tight">{stock.name}</h1>
                 <div className="flex items-center gap-4 mt-2">
-                    {/* BIG DYNAMIC PRICE */}
                     <span className="text-4xl font-mono tracking-tighter font-bold">
                         ${displayPrice}
                     </span>
                     
-                    {/* Dynamic Change Badge (Updates on Hover) */}
-                    <div className={`flex flex-col text-sm font-bold ${displayColor}`}>
-                        <span>{displaySign}{displayChange} ({displaySign}{displayChangePct}%)</span>
-                        <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">{displayLabel}</span>
-                    </div>
+                    {showDefaultHeader ? (
+                        <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
+                            <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
+                            <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Today</span>
+                        </div>
+                    ) : (
+                        <div className="flex flex-col text-sm font-bold text-gray-500">
+                             <span className="text-gray-900">{headerDate}</span>
+                             <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Historical Price</span>
+                        </div>
+                    )}
 
                     <span className={`ml-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${verdictColor}`}>
                         {stock.verdict}
@@ -146,7 +180,6 @@ export default function StockPage({ stock }) {
                     <div className="flex justify-between items-end mb-4">
                         <div>
                             <h3 className="text-lg font-bold">Price Performance</h3>
-                            {/* Shows total period return (Static context) */}
                             <p className={`text-sm font-mono font-bold ${periodColor}`}>
                                 {periodSign}{periodChange.dollar} ({periodSign}{periodChange.percent}%)
                                 <span className="text-gray-400 font-sans font-normal text-xs ml-2">past {timeRange}</span>
@@ -192,12 +225,15 @@ export default function StockPage({ stock }) {
                                     tickLine={false}
                                     width={60}
                                 />
-                                <Tooltip 
-                                    contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'}}
-                                    itemStyle={{color: '#000', fontWeight: 'bold'}}
-                                    labelStyle={{color: '#6b7280', fontSize: '12px'}}
-                                    active={true}
-                                />
+                                {cursorCoordinate && (
+                                    <Tooltip 
+                                        active={true}
+                                        position={cursorCoordinate}
+                                        content={<CustomTooltip startPrice={chartStartPrice} />}
+                                    />
+                                )}
+                                {!cursorCoordinate && <Tooltip content={<></>} />}
+
                                 <Area 
                                     type="monotone" 
                                     dataKey="price" 
@@ -234,49 +270,121 @@ export default function StockPage({ stock }) {
                                     tickLine={false}
                                     width={40}
                                 />
-                                <Tooltip 
-                                    contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb'}}
-                                    itemStyle={{color: '#ef4444', fontWeight: 'bold'}}
-                                    labelStyle={{color: '#6b7280', fontSize: '12px'}}
-                                    active={true}
-                                />
+                                {cursorCoordinate && (
+                                    <Tooltip 
+                                        active={true}
+                                        position={cursorCoordinate}
+                                        contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb'}}
+                                        itemStyle={{color: '#ef4444', fontWeight: 'bold'}}
+                                        labelStyle={{color: '#6b7280', fontSize: '12px'}}
+                                    />
+                                )}
+                                {!cursorCoordinate && <Tooltip content={<></>} />}
                             </AreaChart>
                         </ResponsiveContainer>
                     </div>
                 </div>
             </div>
 
-            {/* Right Column: Risk Gauge */}
-            <div className="bg-black text-white rounded-xl p-6 shadow-lg h-fit">
-                <h3 className="text-sm uppercase text-gray-400 font-bold mb-8">Risk Intelligence</h3>
-                <div className="space-y-8">
-                    <div>
-                        <div className="flex justify-between mb-2">
-                            <span className="text-sm font-medium">Sharpe Ratio</span>
-                            <span className="font-mono text-yellow-400 text-xl">{stock.sharpe_ratio}</span>
+            {/* Right Column: Risk Gauge & Financials */}
+            <div className="space-y-6">
+                
+                {/* RISK GAUGE */}
+                <div className="bg-black text-white rounded-xl p-6 shadow-lg h-fit">
+                    <h3 className="text-sm uppercase text-gray-400 font-bold mb-8">Risk Intelligence</h3>
+                    <div className="space-y-8">
+                        <div>
+                            <div className="flex justify-between mb-2">
+                                <span className="text-sm font-medium">Sharpe Ratio</span>
+                                <span className="font-mono text-yellow-400 text-xl">{stock.sharpe_ratio}</span>
+                            </div>
+                            <div className="w-full bg-gray-800 rounded-full h-2">
+                                <div className="bg-yellow-400 h-2 rounded-full" style={{ width: `${Math.min(stock.sharpe_ratio * 30, 100)}%` }}></div>
+                            </div>
+                            <p className="text-xs text-gray-500 mt-2">Score &gt; 1.0 is Excellent</p>
                         </div>
-                        <div className="w-full bg-gray-800 rounded-full h-2">
-                            <div className="bg-yellow-400 h-2 rounded-full" style={{ width: `${Math.min(stock.sharpe_ratio * 30, 100)}%` }}></div>
-                        </div>
-                        <p className="text-xs text-gray-500 mt-2">Score &gt; 1.0 is Excellent</p>
-                    </div>
 
-                    <div>
-                        <div className="flex justify-between mb-2">
-                            <span className="text-sm font-medium">Sortino Ratio</span>
-                            <span className="font-mono text-blue-400 text-xl">{stock.sortino_ratio}</span>
+                        <div>
+                            <div className="flex justify-between mb-2">
+                                <span className="text-sm font-medium">Sortino Ratio</span>
+                                <span className="font-mono text-blue-400 text-xl">{stock.sortino_ratio}</span>
+                            </div>
+                            <p className="text-xs text-gray-500">Return vs. Downside Volatility</p>
                         </div>
-                        <p className="text-xs text-gray-500">Return vs. Downside Volatility</p>
-                    </div>
 
-                     <div>
-                        <div className="flex justify-between mb-2">
-                            <span className="text-sm font-medium">Beta (Volatility)</span>
-                            <span className="font-mono text-green-400 text-xl">{stock.beta}</span>
+                         <div>
+                            <div className="flex justify-between mb-2">
+                                <span className="text-sm font-medium">Beta (Volatility)</span>
+                                <span className="font-mono text-green-400 text-xl">{stock.beta}</span>
+                            </div>
+                            <p className="text-xs text-gray-500">1.0 = Moves with S&P 500</p>
                         </div>
-                        <p className="text-xs text-gray-500">1.0 = Moves with S&P 500</p>
                     </div>
                 </div>
+
+                {/* --- NEW: Financial Flow (Sankey Style) --- */}
+                {stock.financials && (
+                    <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                        <h3 className="text-sm uppercase text-gray-500 font-bold mb-6">
+                            Financial Flow ({stock.financials.year})
+                        </h3>
+
+                        <div className="space-y-6 font-sans text-xs font-bold text-white text-center relative">
+                            
+                            {/* 1. REVENUE (Top Bar) */}
+                            <div className="w-full bg-blue-500 rounded p-2 relative mb-8">
+                                <span className="block opacity-80 text-[10px] uppercase">Total Revenue</span>
+                                <span className="text-sm">${formatBillion(stock.financials.revenue)}</span>
+                                {/* Flow Lines Down */}
+                                <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
+                                <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
+                            </div>
+
+                            {/* 2. SPLIT: Costs vs Gross Profit */}
+                            <div className="flex justify-between gap-2 relative mb-8">
+                                {/* Cost of Revenue */}
+                                <div className="bg-gray-400 rounded p-2 flex-1">
+                                    <span className="block opacity-80 text-[10px] uppercase">Cost of Sales</span>
+                                    <span>${formatBillion(stock.financials.cost_of_revenue)}</span>
+                                </div>
+
+                                {/* Gross Profit */}
+                                <div className="bg-emerald-500 rounded p-2 flex-1 relative">
+                                    <span className="block opacity-80 text-[10px] uppercase">Gross Profit</span>
+                                    <span className="text-sm">${formatBillion(stock.financials.gross_profit)}</span>
+                                    {/* Flow Lines Down from Profit */}
+                                    <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
+                                    <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
+                                </div>
+                            </div>
+
+                            {/* 3. SPLIT: Expenses vs Net Income */}
+                            <div className="flex justify-end gap-2">
+                                {/* Spacer to align with Profit */}
+                                <div className="flex-1"></div>
+                                
+                                <div className="flex-1 flex justify-between gap-2">
+                                    {/* Operating Expenses */}
+                                    <div className="bg-amber-400 rounded p-2 flex-1">
+                                        <span className="block opacity-80 text-[10px] uppercase text-amber-900">Expenses</span>
+                                        <span className="text-amber-900">${formatBillion(stock.financials.op_expenses)}</span>
+                                    </div>
+
+                                    {/* NET INCOME (The Gold) */}
+                                    <div className="bg-green-600 rounded p-2 flex-1 shadow-lg ring-2 ring-green-100">
+                                        <span className="block opacity-80 text-[10px] uppercase">Net Earnings</span>
+                                        <span className="text-sm">${formatBillion(stock.financials.net_income)}</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                        <p className="text-xs text-gray-400 mt-6 text-center">
+                            *Simplified flow based on {stock.financials.year} report.
+                        </p>
+                    </div>
+                )}
             </div>
 
         </div>
