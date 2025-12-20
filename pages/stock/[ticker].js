@@ -11,14 +11,19 @@ const formatBillion = (num) => {
   return (num / 1e9).toFixed(1) + "B";
 };
 
-// --- CUSTOM TOOLTIP ---
+// --- CUSTOM TOOLTIP (Standard Logic) ---
 const CustomTooltip = ({ active, payload, label, startPrice }) => {
-  if (active && payload && payload.length > 0 && startPrice) {
-    const currentPrice = payload[0].value;
-    
+  // Standard Recharts check: if active and we have data
+  if (active && payload && payload.length > 0 && startPrice !== undefined) {
+    const dataPoint = payload[0];
+    const currentPrice = dataPoint.value;
+    // Recharts provides the original data object in 'payload.payload'
+    const dateStr = dataPoint.payload.date; 
+
     let diff = currentPrice - startPrice;
     let pct = (diff / startPrice) * 100;
     
+    // Fix tiny floating point errors at start
     if (Math.abs(pct) < 0.01) pct = 0.00;
 
     const isPositive = diff >= 0;
@@ -26,9 +31,9 @@ const CustomTooltip = ({ active, payload, label, startPrice }) => {
     const colorClass = isPositive ? "text-green-600" : "text-red-600";
     
     return (
-      <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-lg min-w-[150px]">
+      <div className="bg-white p-4 border border-gray-200 rounded-lg shadow-lg min-w-[150px] z-50">
         <p className="text-gray-500 text-xs uppercase font-bold mb-1">
-          {new Date(label).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+          {new Date(dateStr).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
         </p>
         <p className="text-xl font-mono font-bold text-gray-900 mb-1">
           ${currentPrice}
@@ -63,14 +68,12 @@ export default function StockPage({ stock }) {
   const [chartData, setChartData] = useState([]);
   const [color, setColor] = useState("#22c55e"); 
   const [periodChange, setPeriodChange] = useState({ dollar: 0, percent: 0 });
-  const [cursorData, setCursorData] = useState(null);
-  const [cursorCoordinate, setCursorCoordinate] = useState(null);
+
+  // Description Toggle State
+  const [isDescExpanded, setIsDescExpanded] = useState(false);
 
   useEffect(() => {
     if (!stock.full_history) return;
-
-    setCursorData(null);
-    setCursorCoordinate(null);
 
     const today = new Date();
     let cutoffDate = new Date();
@@ -81,6 +84,7 @@ export default function StockPage({ stock }) {
     else if (timeRange === '1Y') cutoffDate.setFullYear(today.getFullYear() - 1);
     else if (timeRange === 'ALL') cutoffDate = new Date('1990-01-01');
 
+    // Filter & Sort Data
     const filtered = stock.full_history
         .filter(point => new Date(point.date) >= cutoffDate)
         .sort((a, b) => new Date(a.date) - new Date(b.date));
@@ -102,13 +106,6 @@ export default function StockPage({ stock }) {
     }
   }, [timeRange, stock]);
 
-  const handleMouseMove = (e) => {
-    if (e.activePayload && e.activePayload.length > 0) {
-        setCursorData(e.activePayload[0].payload);
-        setCursorCoordinate(e.activeCoordinate);
-    }
-  };
-
   const chartStartPrice = chartData.length > 0 ? chartData[0].price : 0;
   
   const isRisky = stock.sharpe_ratio < 0.5;
@@ -117,14 +114,13 @@ export default function StockPage({ stock }) {
   const periodColor = isPositivePeriod ? "text-green-600" : "text-red-600";
   const periodSign = isPositivePeriod ? "+" : "";
 
-  const displayPrice = cursorData ? cursorData.price : stock.price;
-  const showDefaultHeader = !cursorData;
-  const isPositiveDay = stock.change >= 0;
-  const dayColor = isPositiveDay ? "text-green-600" : "text-red-600";
-  const daySign = isPositiveDay ? "+" : "";
-  const headerDate = cursorData 
-    ? new Date(cursorData.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }) 
-    : "Today";
+  // Standard Static Header Logic (No more sticky overriding)
+  const displayPrice = stock.price;
+  const dayColor = stock.change >= 0 ? "text-green-600" : "text-red-600";
+  const daySign = stock.change >= 0 ? "+" : "";
+
+  // Description Logic
+  const shortDescription = stock.description ? stock.description.slice(0, 180) + "..." : "No description.";
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans text-gray-900">
@@ -144,17 +140,10 @@ export default function StockPage({ stock }) {
                         ${displayPrice}
                     </span>
                     
-                    {showDefaultHeader ? (
-                        <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
-                            <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
-                            <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Today</span>
-                        </div>
-                    ) : (
-                        <div className="flex flex-col text-sm font-bold text-gray-500">
-                             <span className="text-gray-900">{headerDate}</span>
-                             <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Historical Price</span>
-                        </div>
-                    )}
+                    <div className={`flex flex-col text-sm font-bold ${dayColor}`}>
+                        <span>{daySign}{stock.change} ({daySign}{stock.change_percent}%)</span>
+                        <span className="text-gray-400 font-normal text-xs uppercase tracking-wide">Today</span>
+                    </div>
 
                     <span className={`ml-4 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${verdictColor}`}>
                         {stock.verdict}
@@ -170,13 +159,36 @@ export default function StockPage({ stock }) {
             </div>
         </div>
 
+        {/* --- COMPANY PROFILE (COLLAPSIBLE) --- */}
+        <div className="mb-8">
+            <div className="flex gap-2 mb-3">
+                <span className="bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                    {stock.sector}
+                </span>
+                <span className="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                    {stock.industry}
+                </span>
+            </div>
+            <div className="text-gray-600 text-sm leading-relaxed max-w-4xl transition-all">
+                <p>
+                    {isDescExpanded ? stock.description : shortDescription}
+                    <button 
+                        onClick={() => setIsDescExpanded(!isDescExpanded)} 
+                        className="text-blue-600 font-bold ml-2 hover:underline focus:outline-none"
+                    >
+                        {isDescExpanded ? "Show Less" : "Read More"}
+                    </button>
+                </p>
+            </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             
             {/* Left Column: Charts */}
             <div className="lg:col-span-2 space-y-6">
                 
                 {/* 1. PRICE CHART */}
-                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 relative">
                     <div className="flex justify-between items-end mb-4">
                         <div>
                             <h3 className="text-lg font-bold">Price Performance</h3>
@@ -205,8 +217,7 @@ export default function StockPage({ stock }) {
                         <ResponsiveContainer width="100%" height="100%">
                             <AreaChart 
                                 data={chartData} 
-                                margin={{ top: 10, right: 0, left: -20, bottom: 0 }}
-                                onMouseMove={handleMouseMove}
+                                margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
                             >
                                 <defs>
                                     <linearGradient id="colorPrice" x1="0" y1="0" x2="0" y2="1">
@@ -215,7 +226,11 @@ export default function StockPage({ stock }) {
                                     </linearGradient>
                                 </defs>
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
-                                <XAxis dataKey="date" hide />
+                                <XAxis 
+                                    dataKey="date" 
+                                    hide 
+                                    padding={{ left: 10, right: 10 }}
+                                />
                                 <YAxis 
                                     domain={['auto', 'auto']} 
                                     orientation="right"
@@ -225,14 +240,12 @@ export default function StockPage({ stock }) {
                                     tickLine={false}
                                     width={60}
                                 />
-                                {cursorCoordinate && (
-                                    <Tooltip 
-                                        active={true}
-                                        position={cursorCoordinate}
-                                        content={<CustomTooltip startPrice={chartStartPrice} />}
-                                    />
-                                )}
-                                {!cursorCoordinate && <Tooltip content={<></>} />}
+                                
+                                {/* STANDARD RECHARTS TOOLTIP (No manual overrides) */}
+                                <Tooltip 
+                                    cursor={{ stroke: '#6b7280', strokeWidth: 1, strokeDasharray: '4 4' }}
+                                    content={<CustomTooltip startPrice={chartStartPrice} />}
+                                />
 
                                 <Area 
                                     type="monotone" 
@@ -248,7 +261,7 @@ export default function StockPage({ stock }) {
                 </div>
 
                 {/* 2. UNDERWATER PLOT */}
-                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 relative">
                     <h3 className="text-lg font-bold mb-4 flex items-center gap-2 text-red-600">
                         Details: Drawdown Risk
                     </h3>
@@ -256,12 +269,15 @@ export default function StockPage({ stock }) {
                         <ResponsiveContainer width="100%" height="100%">
                             <AreaChart 
                                 data={chartData} 
-                                margin={{ top: 10, right: 0, left: -20, bottom: 0 }}
-                                onMouseMove={handleMouseMove}
+                                margin={{ top: 10, right: 0, left: 0, bottom: 0 }}
                             >
                                 <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#e5e7eb" />
                                 <Area type="monotone" dataKey="drawdown" stroke="#ef4444" fill="#fee2e2" />
-                                <XAxis dataKey="date" hide />
+                                <XAxis 
+                                    dataKey="date" 
+                                    hide 
+                                    padding={{ left: 10, right: 10 }} 
+                                />
                                 <YAxis 
                                     orientation="right"
                                     tickFormatter={(val) => `${val}%`}
@@ -270,26 +286,24 @@ export default function StockPage({ stock }) {
                                     tickLine={false}
                                     width={40}
                                 />
-                                {cursorCoordinate && (
-                                    <Tooltip 
-                                        active={true}
-                                        position={cursorCoordinate}
-                                        contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb'}}
-                                        itemStyle={{color: '#ef4444', fontWeight: 'bold'}}
-                                        labelStyle={{color: '#6b7280', fontSize: '12px'}}
-                                    />
-                                )}
-                                {!cursorCoordinate && <Tooltip content={<></>} />}
+                                
+                                <Tooltip 
+                                    cursor={{ stroke: '#ef4444', strokeWidth: 1 }}
+                                    contentStyle={{backgroundColor: '#fff', borderRadius: '8px', border: '1px solid #e5e7eb'}}
+                                    itemStyle={{color: '#ef4444', fontWeight: 'bold'}}
+                                    labelStyle={{color: '#6b7280', fontSize: '12px'}}
+                                />
+                                
                             </AreaChart>
                         </ResponsiveContainer>
                     </div>
                 </div>
             </div>
 
-            {/* Right Column: Risk Gauge & Financials */}
+            {/* Right Column: Cards */}
             <div className="space-y-6">
                 
-                {/* RISK GAUGE */}
+                {/* 1. RISK GAUGE */}
                 <div className="bg-black text-white rounded-xl p-6 shadow-lg h-fit">
                     <h3 className="text-sm uppercase text-gray-400 font-bold mb-8">Risk Intelligence</h3>
                     <div className="space-y-8">
@@ -322,7 +336,52 @@ export default function StockPage({ stock }) {
                     </div>
                 </div>
 
-                {/* --- NEW: Financial Flow (Sankey Style) --- */}
+                {/* 2. VITAL SIGNS (Investor Stats) */}
+                <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
+                    <h3 className="text-sm uppercase text-gray-500 font-bold mb-6">
+                        Investor Vital Signs
+                    </h3>
+                    <div className="grid grid-cols-2 gap-y-6 gap-x-4">
+                        
+                        {/* Profit Margin */}
+                        <div>
+                            <p className="text-[10px] uppercase text-gray-400 font-bold">Profit Margin</p>
+                            <p className={`text-xl font-mono font-bold ${stock.profit_margin > 15 ? 'text-green-600' : 'text-gray-900'}`}>
+                                {stock.profit_margin}%
+                            </p>
+                            <p className="text-[10px] text-gray-400">Keep per $1 rev</p>
+                        </div>
+
+                        {/* ROE */}
+                        <div>
+                            <p className="text-[10px] uppercase text-gray-400 font-bold">Return on Equity</p>
+                            <p className={`text-xl font-mono font-bold ${stock.roe > 15 ? 'text-green-600' : 'text-gray-900'}`}>
+                                {stock.roe}%
+                            </p>
+                            <p className="text-[10px] text-gray-400">Efficiency score</p>
+                        </div>
+
+                        {/* Wall St Target (ROUNDED TO 2 DECIMALS) */}
+                        <div>
+                            <p className="text-[10px] uppercase text-gray-400 font-bold">Analyst Target</p>
+                            <p className="text-xl font-mono font-bold text-blue-600">
+                                ${stock.target_price ? Number(stock.target_price).toFixed(2) : "N/A"}
+                            </p>
+                            <p className="text-[10px] text-gray-400">Consensus Fair Value</p>
+                        </div>
+
+                        {/* 52 Week High */}
+                        <div>
+                            <p className="text-[10px] uppercase text-gray-400 font-bold">52-Week High</p>
+                            <p className="text-xl font-mono font-bold text-gray-900">
+                                ${stock.high_52}
+                            </p>
+                            <p className="text-[10px] text-gray-400">Yearly Ceiling</p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 3. FINANCIAL FLOW (Sankey Style) */}
                 {stock.financials && (
                     <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
                         <h3 className="text-sm uppercase text-gray-500 font-bold mb-6">
@@ -331,46 +390,38 @@ export default function StockPage({ stock }) {
 
                         <div className="space-y-6 font-sans text-xs font-bold text-white text-center relative">
                             
-                            {/* 1. REVENUE (Top Bar) */}
+                            {/* REVENUE */}
                             <div className="w-full bg-blue-500 rounded p-2 relative mb-8">
                                 <span className="block opacity-80 text-[10px] uppercase">Total Revenue</span>
                                 <span className="text-sm">${formatBillion(stock.financials.revenue)}</span>
-                                {/* Flow Lines Down */}
                                 <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
                                 <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
                             </div>
 
-                            {/* 2. SPLIT: Costs vs Gross Profit */}
+                            {/* COSTS vs PROFIT */}
                             <div className="flex justify-between gap-2 relative mb-8">
-                                {/* Cost of Revenue */}
                                 <div className="bg-gray-400 rounded p-2 flex-1">
                                     <span className="block opacity-80 text-[10px] uppercase">Cost of Sales</span>
                                     <span>${formatBillion(stock.financials.cost_of_revenue)}</span>
                                 </div>
 
-                                {/* Gross Profit */}
                                 <div className="bg-emerald-500 rounded p-2 flex-1 relative">
                                     <span className="block opacity-80 text-[10px] uppercase">Gross Profit</span>
                                     <span className="text-sm">${formatBillion(stock.financials.gross_profit)}</span>
-                                    {/* Flow Lines Down from Profit */}
                                     <div className="absolute -bottom-6 left-0 w-1/2 h-6 border-r border-gray-300"></div>
                                     <div className="absolute -bottom-6 right-0 w-1/2 h-6 border-l border-gray-300"></div>
                                 </div>
                             </div>
 
-                            {/* 3. SPLIT: Expenses vs Net Income */}
+                            {/* EXPENSES vs INCOME */}
                             <div className="flex justify-end gap-2">
-                                {/* Spacer to align with Profit */}
                                 <div className="flex-1"></div>
-                                
                                 <div className="flex-1 flex justify-between gap-2">
-                                    {/* Operating Expenses */}
                                     <div className="bg-amber-400 rounded p-2 flex-1">
                                         <span className="block opacity-80 text-[10px] uppercase text-amber-900">Expenses</span>
                                         <span className="text-amber-900">${formatBillion(stock.financials.op_expenses)}</span>
                                     </div>
 
-                                    {/* NET INCOME (The Gold) */}
                                     <div className="bg-green-600 rounded p-2 flex-1 shadow-lg ring-2 ring-green-100">
                                         <span className="block opacity-80 text-[10px] uppercase">Net Earnings</span>
                                         <span className="text-sm">${formatBillion(stock.financials.net_income)}</span>
