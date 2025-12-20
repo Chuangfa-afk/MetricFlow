@@ -124,7 +124,7 @@ export default function StockPage({ stock }) {
 
   // Read More Logic
   const fullDesc = stock.description ? String(stock.description) : "No description available.";
-  const CHAR_LIMIT = 100;
+  const CHAR_LIMIT = 350; 
   const shortDesc = fullDesc.length > CHAR_LIMIT ? fullDesc.slice(0, CHAR_LIMIT) + "..." : fullDesc;
   const shouldShowButton = fullDesc.length > CHAR_LIMIT;
 
@@ -142,7 +142,7 @@ export default function StockPage({ stock }) {
             Dashboard
         </Link>
 
-        {/* --- HEADER: COMPACT & CLEAN --- */}
+        {/* --- HEADER --- */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b border-slate-200 pb-6">
             <div>
                 <div className="flex items-center gap-3 mb-1">
@@ -169,18 +169,22 @@ export default function StockPage({ stock }) {
         {/* --- TOP ROW: PROFILE & KEY STATS --- */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 mb-6">
             
-            {/* 1. DESCRIPTION (Spans 8 cols) */}
-            <div className="lg:col-span-8 bg-white rounded-lg shadow-sm p-6 border-l-4 border-blue-500">
+            {/* 1. DESCRIPTION */}
+            <div className="lg:col-span-8 bg-white rounded-lg shadow-sm p-6 border-l-4 border-blue-500 h-full">
                 <div className="flex gap-2 mb-4">
-                    <span className="bg-slate-100 text-slate-600 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">{stock.sector}</span>
-                    <span className="bg-slate-100 text-slate-600 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">{stock.industry}</span>
+                    <span className="bg-slate-100 text-slate-600 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">
+                        {stock.sector}
+                    </span>
+                    <span className="bg-slate-100 text-slate-600 text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">
+                        {stock.industry}
+                    </span>
                 </div>
                 <p className="text-slate-600 text-sm leading-relaxed">
                     {isDescExpanded ? fullDesc : shortDesc}
                     {shouldShowButton && (
                         <button 
                             onClick={() => setIsDescExpanded(!isDescExpanded)} 
-                            className="text-blue-600 font-bold ml-1 hover:underline text-xs uppercase"
+                            className="text-blue-600 font-bold ml-2 hover:underline text-xs uppercase"
                         >
                             {isDescExpanded ? "Show Less" : "Read More"}
                         </button>
@@ -188,24 +192,35 @@ export default function StockPage({ stock }) {
                 </p>
             </div>
 
-            {/* 2. CORPORATE INFO (Spans 4 cols) */}
-            <div className="lg:col-span-4 bg-white rounded-lg shadow-sm p-6 border-l-4 border-slate-400 flex flex-col justify-center">
-                <div className="space-y-3">
-                    <div className="flex justify-between">
-                        <span className="text-[10px] uppercase text-slate-400 font-bold">CEO</span>
-                        <span className="text-sm font-bold text-slate-900 text-right">{stock.ceo || "N/A"}</span>
+            {/* 2. CORPORATE INFO (COMPACTED) */}
+            <div className="lg:col-span-4 bg-white rounded-lg shadow-sm p-6 border-l-4 border-slate-400 flex flex-col justify-center h-full">
+                <div className="space-y-2"> 
+                    <div className="flex justify-between items-start border-b border-slate-100 pb-1">
+                        <span className="text-[10px] uppercase text-slate-400 font-bold mt-1">CEO</span>
+                        <span className="text-sm font-bold text-slate-900 text-right flex-1 pl-4">
+                            {stock.ceo || "N/A"}
+                        </span>
                     </div>
-                    <div className="flex justify-between">
-                        <span className="text-[10px] uppercase text-slate-400 font-bold">HQ</span>
-                        <span className="text-sm font-bold text-slate-900 text-right truncate w-40">{stock.hq || "N/A"}</span>
+                    <div className="flex justify-between items-start border-b border-slate-100 pb-1">
+                        <span className="text-[10px] uppercase text-slate-400 font-bold mt-1">HQ</span>
+                        <span className="text-sm font-bold text-slate-900 text-right flex-1 pl-4">
+                            {stock.hq || "N/A"}
+                        </span>
                     </div>
-                    <div className="flex justify-between">
-                        <span className="text-[10px] uppercase text-slate-400 font-bold">Employees</span>
-                        <span className="text-sm font-bold text-slate-900 text-right">{stock.employees ? stock.employees.toLocaleString() : "N/A"}</span>
+                    <div className="flex justify-between items-start border-b border-slate-100 pb-1">
+                        <span className="text-[10px] uppercase text-slate-400 font-bold mt-1">Employees</span>
+                        <span className="text-sm font-bold text-slate-900 text-right flex-1 pl-4">
+                            {stock.employees ? stock.employees.toLocaleString() : "N/A"}
+                        </span>
                     </div>
-                    <div className="flex justify-between">
-                         <span className="text-[10px] uppercase text-slate-400 font-bold">Web</span>
-                         <a href={stock.website} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-blue-600 hover:underline truncate w-40 text-right">
+                    <div className="flex justify-between items-start pt-1">
+                         <span className="text-[10px] uppercase text-slate-400 font-bold mt-1">Web</span>
+                         <a 
+                            href={stock.website} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="text-sm font-bold text-blue-600 hover:underline text-right flex-1 pl-4 break-all"
+                         >
                              {stock.website ? stock.website.replace(/^https?:\/\//, '') : "N/A"}
                          </a>
                     </div>
@@ -213,7 +228,7 @@ export default function StockPage({ stock }) {
             </div>
         </div>
 
-        {/* --- MIDDLE ROW: VITAL SIGNS STRIP (Balances the layout) --- */}
+        {/* --- MIDDLE ROW: VITAL SIGNS STRIP --- */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             <StatCard 
                 label="Profit Margin" 
@@ -243,8 +258,7 @@ export default function StockPage({ stock }) {
 
         {/* --- BOTTOM GRID: ANALYSIS --- */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            
-            {/* LEFT COLUMN (Charts - Takes 2/3 width) */}
+            {/* LEFT COLUMN (Charts) */}
             <div className="lg:col-span-2 space-y-6">
                 
                 {/* 1. PRICE CHART CARD */}
@@ -297,9 +311,17 @@ export default function StockPage({ stock }) {
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-slate-300 hover:text-slate-500 cursor-help transition-colors">
                                   <path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm8.706-1.442c1.146-.573 2.437.463 2.126 1.706l-.709 2.836.042-.02a.75.75 0 01.67 1.34l-.04.022c-1.147.573-2.438-.463-2.127-1.706l.71-2.836-.042.02a.75.75 0 11-.671-1.34l.041-.022zM12 9a.75.75 0 100-1.5.75.75 0 000 1.5z" clipRule="evenodd" />
                                 </svg>
-                                <div className="absolute left-6 top-0 w-64 p-3 bg-slate-900 text-white text-xs rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 pointer-events-none border border-slate-700">
-                                    <p className="font-bold mb-1 border-b border-slate-700 pb-1 text-slate-200">MAX PAIN INDEX</p>
-                                    <p className="leading-relaxed mt-1 text-slate-300">Tracks the % loss an investor would face if they bought at the absolute peak.</p>
+                                
+                                {/* --- UPDATED TOOLTIP: SIMPLE & EDUCATIONAL --- */}
+                                <div className="absolute left-6 top-0 w-64 p-4 bg-slate-900 text-white text-xs rounded shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 pointer-events-none border border-slate-700">
+                                    <p className="font-bold mb-2 border-b border-slate-700 pb-1 text-slate-200">How to read this chart:</p>
+                                    <p className="leading-relaxed text-slate-300">
+                                        Shows the percentage drop from the highest price in the selected period.
+                                    </p>
+                                    <ul className="mt-2 space-y-1">
+                                        <li>• <strong className="text-white">0%</strong> = Stock is at a peak.</li>
+                                        <li>• <strong className="text-red-400">-20%</strong> = Fallen 20% from the top.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -318,10 +340,10 @@ export default function StockPage({ stock }) {
                 </div>
             </div>
 
-            {/* RIGHT COLUMN (Details - Takes 1/3 width) */}
+            {/* RIGHT COLUMN (Details) */}
             <div className="space-y-6">
                 
-                {/* 1. RISK GAUGE (Dark Card) */}
+                {/* 1. RISK GAUGE */}
                 <div className="bg-slate-900 text-white rounded-lg p-6 shadow-lg h-fit border-t-4 border-slate-600">
                     <h3 className="text-xs uppercase text-slate-400 font-bold mb-6 tracking-widest">Risk Intelligence</h3>
                     <div className="space-y-8">
@@ -351,7 +373,7 @@ export default function StockPage({ stock }) {
                     </div>
                 </div>
 
-                {/* 2. FINANCIAL FLOW (Styled as a lighter card) */}
+                {/* 2. FINANCIAL FLOW */}
                 {stock.financials && (
                     <div className="bg-white rounded-lg shadow-sm border border-slate-200 p-6 border-t-4 border-indigo-500">
                         <h3 className="text-xs uppercase text-slate-400 font-bold mb-6 tracking-widest">Financial Flow</h3>
