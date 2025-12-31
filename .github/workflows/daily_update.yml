@@ -3,7 +3,7 @@ name: Daily Stock Update
 on:
   schedule:
     # Runs at 21:00 UTC (4:00 PM EST) every Mon-Fri
-    - cron: '0 21 * * 1-5'
+    - cron: '30 21 * * 1-5'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
