@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "update-data": "python3 get_daily_data.py"
   },
   "dependencies": {
     "next": "16.0.10",

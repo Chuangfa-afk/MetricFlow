@@ -1,0 +1,40 @@
+name: Daily Stock Update
+
+on:
+  schedule:
+    # Runs at 21:00 UTC (4:00 PM EST) every Mon-Fri
+    - cron: '0 21 * * 1-5'
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-python-script:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      # This sets up Python because your script is .py
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      # Install libraries if your script needs them (e.g., requests, yfinance)
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests  # Add other libraries here if you use them (like yfinance)
+
+      # Run your specific Python file
+      - name: Run Data Script
+        run: python get_daily_data.py
+
+      # Save the new stock_data.json back to your repo
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add stock_data.json
+          # Only commit if data actually changed
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update stock data" && git push)
