@@ -1,8 +1,22 @@
 import yfinance as yf
 import json
+import math
 import pandas as pd
 import numpy as np
 import os
+
+
+def sanitize_for_json(obj):
+    """Replace NaN/Inf with None so output is valid JSON (browser JSON.parse rejects NaN)."""
+    if isinstance(obj, dict):
+        return {k: sanitize_for_json(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize_for_json(v) for v in obj]
+    if isinstance(obj, (float, np.floating)):
+        x = float(obj)
+        if math.isnan(x) or math.isinf(x):
+            return None
+    return obj
 
 # --- CONFIGURATION ---
 TICKERS = [
@@ -167,7 +181,7 @@ def get_daily_update():
             print(f"❌ Failed {symbol}: {e}")
 
     with open(OUTPUT_FILE, "w") as f:
-        json.dump(stock_data, f, indent=4)
+        json.dump(sanitize_for_json(stock_data), f, indent=4, allow_nan=False)
     
     print(f"✅ Success! Data saved to {OUTPUT_FILE}")
 
