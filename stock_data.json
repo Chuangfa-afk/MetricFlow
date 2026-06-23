@@ -2,10 +2,10 @@
     {
         "symbol": "AAPL",
         "name": "Apple Inc.",
-        "price": 297.01,
-        "change": -0.19,
-        "change_percent": -0.06,
-        "market_cap": 4362291748991.211,
+        "price": 294.3,
+        "change": -1.35,
+        "change_percent": -0.46,
+        "market_cap": 4322488691510.9863,
         "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company is best known for its iPhone, Mac, and iPad product lines, alongside a growing high-margin services business including Apple Pay, iCloud, and the App Store. It remains the largest technology company by revenue and market capitalization, distinguished by its integrated hardware-software ecosystem.",
         "ceo": "Mr. Timothy D. Cook",
         "hq": "Cupertino, CA, United States",
@@ -17,26 +17,21 @@
         "roe": 141.47,
         "target_price": 314.4238,
         "high_52": 317.4,
-        "low_52": 198.96,
+        "low_52": 199.26,
         "beta": 1.09,
         "sharpe_ratio": 0.59,
-        "sortino_ratio": 0.87,
+        "sortino_ratio": 0.86,
         "max_drawdown_pct": -33.36,
         "full_history": [
             {
-                "date": "2021-06-23",
-                "price": 130.32,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-06-24",
                 "price": 130.04,
-                "drawdown": -0.21
+                "drawdown": 0.0
             },
             {
                 "date": "2021-06-25",
                 "price": 129.75,
-                "drawdown": -0.44
+                "drawdown": -0.22
             },
             {
                 "date": "2021-06-28",
@@ -815,8 +810,8 @@
             },
             {
                 "date": "2022-02-07",
-                "price": 168.04,
-                "drawdown": -5.56
+                "price": 168.03,
+                "drawdown": -5.57
             },
             {
                 "date": "2022-02-08",
@@ -965,7 +960,7 @@
             },
             {
                 "date": "2022-03-22",
-                "price": 165.25,
+                "price": 165.26,
                 "drawdown": -7.13
             },
             {
@@ -1150,8 +1145,8 @@
             },
             {
                 "date": "2022-05-13",
-                "price": 144.22,
-                "drawdown": -18.95
+                "price": 144.21,
+                "drawdown": -18.96
             },
             {
                 "date": "2022-05-16",
@@ -1860,8 +1855,8 @@
             },
             {
                 "date": "2022-12-06",
-                "price": 140.52,
-                "drawdown": -21.03
+                "price": 140.53,
+                "drawdown": -21.02
             },
             {
                 "date": "2022-12-07",
@@ -3535,8 +3530,8 @@
             },
             {
                 "date": "2024-04-09",
-                "price": 167.98,
-                "drawdown": -14.25
+                "price": 167.99,
+                "drawdown": -14.24
             },
             {
                 "date": "2024-04-10",
@@ -6292,6 +6287,11 @@
                 "date": "2026-06-22",
                 "price": 297.01,
                 "drawdown": -5.77
+            },
+            {
+                "date": "2026-06-23",
+                "price": 294.3,
+                "drawdown": -6.63
             }
         ],
         "financials": {
@@ -6307,10 +6307,10 @@
     {
         "symbol": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 367.34,
-        "change": -11.8,
-        "change_percent": -3.11,
-        "market_cap": 2728761176963.6196,
+        "price": 373.94,
+        "change": 5.6,
+        "change_percent": 1.52,
+        "market_cap": 2777788891349.587,
         "description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide. Its dominance is anchored by the Microsoft 365 suite and the Windows operating system, while its Intelligent Cloud segment, driven by Azure, positions it as a leader in enterprise cloud computing. The company is also a major player in gaming (Xbox) and artificial intelligence through its partnership with OpenAI.",
         "ceo": "Mr. Satya  Nadella",
         "hq": "Redmond, WA, United States",
@@ -6324,15 +6324,10 @@
         "high_52": 555.45,
         "low_52": 356.28,
         "beta": 1.1,
-        "sharpe_ratio": 0.26,
-        "sortino_ratio": 0.37,
+        "sharpe_ratio": 0.27,
+        "sortino_ratio": 0.39,
         "max_drawdown_pct": -37.15,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 254.58,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 255.94,
@@ -7435,7 +7430,7 @@
             },
             {
                 "date": "2022-05-09",
-                "price": 255.39,
+                "price": 255.4,
                 "drawdown": -22.73
             },
             {
@@ -7785,7 +7780,7 @@
             },
             {
                 "date": "2022-08-18",
-                "price": 281.34,
+                "price": 281.35,
                 "drawdown": -14.88
             },
             {
@@ -10880,7 +10875,7 @@
             },
             {
                 "date": "2025-02-06",
-                "price": 410.94,
+                "price": 410.95,
                 "drawdown": -10.73
             },
             {
@@ -12597,6 +12592,11 @@
                 "date": "2026-06-22",
                 "price": 367.34,
                 "drawdown": -31.8
+            },
+            {
+                "date": "2026-06-23",
+                "price": 373.94,
+                "drawdown": -30.58
             }
         ],
         "financials": {
@@ -12612,10 +12612,10 @@
     {
         "symbol": "GOOGL",
         "name": "Alphabet Inc.",
-        "price": 349.68,
-        "change": -16.52,
-        "change_percent": -4.51,
-        "market_cap": 4266995682374.4053,
+        "price": 346.13,
+        "change": -0.17,
+        "change_percent": -0.05,
+        "market_cap": 4223676696723.6465,
         "description": "Alphabet Inc. is the holding company for Google, the world's leading search engine and digital advertising platform. Its vast ecosystem includes YouTube, Android, Chrome, and Google Cloud, which provides enterprise infrastructure services. The company invests heavily in AI research (DeepMind) and 'Other Bets' ventures like Waymo autonomous driving.",
         "ceo": "Mr. Sundar  Pichai",
         "hq": "Mountain View, CA, United States",
@@ -12627,17 +12627,12 @@
         "roe": 38.88,
         "target_price": 432.83453,
         "high_52": 408.61,
-        "low_52": 162.0,
+        "low_52": 166.13,
         "beta": 1.24,
-        "sharpe_ratio": 0.71,
-        "sortino_ratio": 1.06,
+        "sharpe_ratio": 0.7,
+        "sortino_ratio": 1.05,
         "max_drawdown_pct": -44.32,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 121.05,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 121.42,
@@ -13935,8 +13930,8 @@
             },
             {
                 "date": "2022-07-06",
-                "price": 113.56,
-                "drawdown": -23.54
+                "price": 113.57,
+                "drawdown": -23.53
             },
             {
                 "date": "2022-07-07",
@@ -16795,7 +16790,7 @@
             },
             {
                 "date": "2024-10-14",
-                "price": 163.91,
+                "price": 163.92,
                 "drawdown": -13.6
             },
             {
@@ -18902,6 +18897,11 @@
                 "date": "2026-06-22",
                 "price": 349.68,
                 "drawdown": -13.1
+            },
+            {
+                "date": "2026-06-23",
+                "price": 346.13,
+                "drawdown": -13.98
             }
         ],
         "financials": {
@@ -18917,10 +18917,10 @@
     {
         "symbol": "AMZN",
         "name": "Amazon.com, Inc.",
-        "price": 232.79,
-        "change": -10.26,
-        "change_percent": -4.22,
-        "market_cap": 2504147433384.6357,
+        "price": 234.11,
+        "change": 1.08,
+        "change_percent": 0.46,
+        "market_cap": 2518346896627.5786,
         "description": "Amazon.com, Inc. is a global leader in e-commerce, cloud computing, digital streaming, and artificial intelligence. It operates the world's largest online marketplace and logistics network, while its Amazon Web Services (AWS) division is the leading provider of on-demand cloud computing platforms to individuals, companies, and governments.",
         "ceo": "Mr. Andrew R. Jassy",
         "hq": "Seattle, WA, United States",
@@ -18934,44 +18934,39 @@
         "high_52": 278.56,
         "low_52": 196.0,
         "beta": 1.44,
-        "sharpe_ratio": 0.23,
-        "sortino_ratio": 0.33,
+        "sharpe_ratio": 0.24,
+        "sortino_ratio": 0.35,
         "max_drawdown_pct": -56.15,
         "full_history": [
             {
-                "date": "2021-06-23",
-                "price": 175.19,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-06-24",
                 "price": 172.45,
-                "drawdown": -1.56
+                "drawdown": 0.0
             },
             {
                 "date": "2021-06-25",
                 "price": 170.07,
-                "drawdown": -2.92
+                "drawdown": -1.38
             },
             {
                 "date": "2021-06-28",
                 "price": 172.19,
-                "drawdown": -1.71
+                "drawdown": -0.15
             },
             {
                 "date": "2021-06-29",
                 "price": 172.41,
-                "drawdown": -1.59
+                "drawdown": -0.02
             },
             {
                 "date": "2021-06-30",
                 "price": 172.01,
-                "drawdown": -1.82
+                "drawdown": -0.26
             },
             {
                 "date": "2021-07-01",
                 "price": 171.65,
-                "drawdown": -2.02
+                "drawdown": -0.46
             },
             {
                 "date": "2021-07-02",
@@ -25207,6 +25202,11 @@
                 "date": "2026-06-22",
                 "price": 232.79,
                 "drawdown": -15.35
+            },
+            {
+                "date": "2026-06-23",
+                "price": 234.11,
+                "drawdown": -14.87
             }
         ],
         "financials": {
@@ -25222,10 +25222,10 @@
     {
         "symbol": "TSLA",
         "name": "Tesla, Inc.",
-        "price": 405.05,
-        "change": 6.32,
-        "change_percent": 1.59,
-        "market_cap": 1521255908102.3113,
+        "price": 381.61,
+        "change": -22.05,
+        "change_percent": -5.46,
+        "market_cap": 1433221731396.8237,
         "description": "Tesla, Inc. designs, develops, manufactures, and sells electric vehicles and energy generation and storage systems. It is the world's most valuable automaker, known for its Model 3, Model Y, and Cybertruck, as well as its proprietary Supercharger network. The company also focuses on self-driving software and renewable energy solutions through SolarCity.",
         "ceo": "Mr. Elon R. Musk",
         "hq": "Austin, TX, United States",
@@ -25235,19 +25235,14 @@
         "industry": "Auto Manufacturers",
         "profit_margin": 3.95,
         "roe": 4.9,
-        "target_price": 420.54633,
+        "target_price": 421.1561,
         "high_52": 498.83,
         "low_52": 288.77,
         "beta": 1.8,
-        "sharpe_ratio": 0.44,
-        "sortino_ratio": 0.67,
+        "sharpe_ratio": 0.4,
+        "sortino_ratio": 0.62,
         "max_drawdown_pct": -73.63,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 218.86,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 226.61,
@@ -31512,6 +31507,11 @@
                 "date": "2026-06-22",
                 "price": 405.05,
                 "drawdown": -17.32
+            },
+            {
+                "date": "2026-06-23",
+                "price": 381.61,
+                "drawdown": -22.1
             }
         ],
         "financials": {
@@ -31527,10 +31527,10 @@
     {
         "symbol": "NVDA",
         "name": "NVIDIA Corporation",
-        "price": 208.65,
-        "change": -1.68,
-        "change_percent": -0.8,
-        "market_cap": 5053711502166.748,
+        "price": 200.04,
+        "change": -7.79,
+        "change_percent": -3.75,
+        "market_cap": 4845168677383.423,
         "description": "NVIDIA Corporation is the global leader in visual computing and artificial intelligence. Originally focused on PC graphics, the company has pivoted to become the dominant supplier of high-performance GPUs for AI data centers, autonomous vehicles, and professional visualization. Its CUDA software platform creates a formidable moat in accelerated computing.",
         "ceo": "Mr. Jen-Hsun  Huang",
         "hq": "Santa Clara, CA, United States",
@@ -31542,17 +31542,12 @@
         "roe": 114.29,
         "target_price": 298.9322,
         "high_52": 236.54,
-        "low_52": 142.03,
+        "low_52": 145.5,
         "beta": 2.2,
-        "sharpe_ratio": 1.11,
-        "sortino_ratio": 1.79,
+        "sharpe_ratio": 1.09,
+        "sortino_ratio": 1.76,
         "max_drawdown_pct": -66.34,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 18.99,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 19.14,
@@ -35510,8 +35505,8 @@
             },
             {
                 "date": "2024-08-16",
-                "price": 124.37,
-                "drawdown": -8.12
+                "price": 124.38,
+                "drawdown": -8.11
             },
             {
                 "date": "2024-08-19",
@@ -37817,6 +37812,11 @@
                 "date": "2026-06-22",
                 "price": 208.65,
                 "drawdown": -11.39
+            },
+            {
+                "date": "2026-06-23",
+                "price": 200.04,
+                "drawdown": -15.05
             }
         ],
         "financials": {
@@ -37832,10 +37832,10 @@
     {
         "symbol": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 563.85,
-        "change": -10.95,
-        "change_percent": -1.91,
-        "market_cap": 1431289917987.1748,
+        "price": 562.2,
+        "change": -0.4,
+        "change_percent": -0.07,
+        "market_cap": 1427101612495.4126,
         "description": "Meta Platforms, Inc. builds technologies that help people connect, find communities, and grow businesses. Its Family of Apps includes Facebook, Instagram, WhatsApp, and Messenger, which generate significant revenue through digital advertising. The company is also investing heavily in Reality Labs to develop augmented and virtual reality hardware for the Metaverse.",
         "ceo": "Mr. Mark Elliot Zuckerberg",
         "hq": "Menlo Park, CA, United States",
@@ -37849,15 +37849,10 @@
         "high_52": 796.25,
         "low_52": 520.26,
         "beta": 1.23,
-        "sharpe_ratio": 0.37,
-        "sortino_ratio": 0.48,
+        "sharpe_ratio": 0.36,
+        "sortino_ratio": 0.47,
         "max_drawdown_pct": -76.73,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 337.63,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 340.19,
@@ -37885,7 +37880,7 @@
             },
             {
                 "date": "2021-07-01",
-                "price": 351.31,
+                "price": 351.3,
                 "drawdown": -0.35
             },
             {
@@ -39530,8 +39525,8 @@
             },
             {
                 "date": "2022-10-20",
-                "price": 130.39,
-                "drawdown": -65.58
+                "price": 130.38,
+                "drawdown": -65.59
             },
             {
                 "date": "2022-10-21",
@@ -42150,8 +42145,8 @@
             },
             {
                 "date": "2024-11-20",
-                "price": 562.28,
-                "drawdown": -5.11
+                "price": 562.29,
+                "drawdown": -5.1
             },
             {
                 "date": "2024-11-21",
@@ -44122,6 +44117,11 @@
                 "date": "2026-06-22",
                 "price": 563.85,
                 "drawdown": -28.39
+            },
+            {
+                "date": "2026-06-23",
+                "price": 562.2,
+                "drawdown": -28.6
             }
         ],
         "financials": {
@@ -44137,10 +44137,10 @@
     {
         "symbol": "NFLX",
         "name": "Netflix, Inc.",
-        "price": 72.88,
-        "change": -4.43,
-        "change_percent": -5.73,
-        "market_cap": 306882985155.3364,
+        "price": 72.82,
+        "change": -0.18,
+        "change_percent": -0.24,
+        "market_cap": 306630347523.9263,
         "description": "Netflix, Inc. provides entertainment services. It offers TV series, documentaries, feature films, and mobile games across a wide variety of genres and languages. The company pioneered the subscription video-on-demand model and invests heavily in producing original content to retain its massive global subscriber base.",
         "ceo": "Mr. Theodore A. Sarandos",
         "hq": "Los Gatos, CA, United States",
@@ -44152,17 +44152,12 @@
         "roe": 48.49,
         "target_price": 114.14591,
         "high_52": 134.12,
-        "low_52": 75.01,
+        "low_52": 71.81,
         "beta": 1.49,
-        "sharpe_ratio": 0.3,
+        "sharpe_ratio": 0.29,
         "sortino_ratio": 0.36,
         "max_drawdown_pct": -75.94,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 51.27,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 51.81,
@@ -50427,6 +50422,11 @@
                 "date": "2026-06-22",
                 "price": 72.88,
                 "drawdown": -45.58
+            },
+            {
+                "date": "2026-06-23",
+                "price": 72.82,
+                "drawdown": -45.62
             }
         ],
         "financials": {
@@ -50442,10 +50442,10 @@
     {
         "symbol": "JPM",
         "name": "JP Morgan Chase & Co.",
-        "price": 331.48,
-        "change": 5.58,
-        "change_percent": 1.71,
-        "market_cap": 888204474276.6316,
+        "price": 334.14,
+        "change": 2.33,
+        "change_percent": 0.7,
+        "market_cap": 895331984461.1755,
         "description": "JPMorgan Chase & Co. is a leading global financial services firm and the largest bank in the United States. It operates across four major segments: Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management. The firm serves millions of customers and many of the world's most prominent corporate, institutional, and government clients.",
         "ceo": "Mr. James  Dimon",
         "hq": "New York, NY, United States",
@@ -50457,17 +50457,12 @@
         "roe": 16.47,
         "target_price": 342.0,
         "high_52": 338.09,
-        "low_52": 272.11,
+        "low_52": 279.1,
         "beta": 1.0,
         "sharpe_ratio": 0.71,
         "sortino_ratio": 0.99,
         "max_drawdown_pct": -38.77,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 133.18,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 134.41,
@@ -50595,8 +50590,8 @@
             },
             {
                 "date": "2021-07-30",
-                "price": 134.53,
-                "drawdown": -3.94
+                "price": 134.54,
+                "drawdown": -3.93
             },
             {
                 "date": "2021-08-02",
@@ -56732,6 +56727,11 @@
                 "date": "2026-06-22",
                 "price": 331.48,
                 "drawdown": -0.59
+            },
+            {
+                "date": "2026-06-23",
+                "price": 334.14,
+                "drawdown": 0.0
             }
         ],
         "financials": {
@@ -56747,10 +56747,10 @@
     {
         "symbol": "BAC",
         "name": "Bank of America Corporation",
-        "price": 57.37,
-        "change": 1.17,
-        "change_percent": 2.08,
-        "market_cap": 407131398067.89343,
+        "price": 57.91,
+        "change": 0.44,
+        "change_percent": 0.76,
+        "market_cap": 410963563516.5562,
         "description": "Bank of America Corporation provides a diverse range of banking and financial products and services. It serves individual consumers, small and middle-market businesses, and large corporations with a full suite of banking, investing, asset management, and other financial and risk management products and services.",
         "ceo": "Mr. Brian Thomas Moynihan",
         "hq": "Charlotte, NC, United States",
@@ -56760,19 +56760,14 @@
         "industry": "Banks - Diversified",
         "profit_margin": 28.96,
         "roe": 10.64,
-        "target_price": 63.15909,
+        "target_price": 63.34091,
         "high_52": 57.98,
         "low_52": 44.75,
         "beta": 1.2,
         "sharpe_ratio": 0.34,
-        "sortino_ratio": 0.51,
+        "sortino_ratio": 0.5,
         "max_drawdown_pct": -46.65,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 35.57,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 36.12,
@@ -63037,6 +63032,11 @@
                 "date": "2026-06-22",
                 "price": 57.37,
                 "drawdown": 0.0
+            },
+            {
+                "date": "2026-06-23",
+                "price": 57.91,
+                "drawdown": 0.0
             }
         ],
         "financials": {
@@ -63052,10 +63052,10 @@
     {
         "symbol": "V",
         "name": "Visa Inc.",
-        "price": 326.6,
-        "change": -1.9,
-        "change_percent": -0.58,
-        "market_cap": 621109536687.323,
+        "price": 328.48,
+        "change": 1.23,
+        "change_percent": 0.38,
+        "market_cap": 624684824317.1814,
         "description": "Visa Inc. operates the world's largest retail electronic payments network. The company facilitates digital payments across more than 200 countries and territories among consumers, merchants, financial institutions, and government entities. Visa does not issue cards or extend credit but processes transactions through its secure global network.",
         "ceo": "Mr. Ryan M. McInerney",
         "hq": "San Francisco, CA, United States",
@@ -63073,11 +63073,6 @@
         "sortino_ratio": 0.37,
         "max_drawdown_pct": -28.6,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 226.07,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 227.57,
@@ -65605,7 +65600,7 @@
             },
             {
                 "date": "2023-06-28",
-                "price": 222.82,
+                "price": 222.81,
                 "drawdown": -7.82
             },
             {
@@ -66640,7 +66635,7 @@
             },
             {
                 "date": "2024-04-24",
-                "price": 270.39,
+                "price": 270.4,
                 "drawdown": -5.29
             },
             {
@@ -68355,8 +68350,8 @@
             },
             {
                 "date": "2025-09-08",
-                "price": 340.21,
-                "drawdown": -8.15
+                "price": 340.22,
+                "drawdown": -8.14
             },
             {
                 "date": "2025-09-09",
@@ -69342,6 +69337,11 @@
                 "date": "2026-06-22",
                 "price": 326.6,
                 "drawdown": -11.82
+            },
+            {
+                "date": "2026-06-23",
+                "price": 328.48,
+                "drawdown": -11.31
             }
         ],
         "financials": {
@@ -69357,10 +69357,10 @@
     {
         "symbol": "MA",
         "name": "Mastercard Incorporated",
-        "price": 484.09,
-        "change": -6.88,
-        "change_percent": -1.4,
-        "market_cap": 427734105131.1693,
+        "price": 488.07,
+        "change": 3.17,
+        "change_percent": 0.65,
+        "market_cap": 431250778581.41144,
         "description": "Mastercard Incorporated is a technology company in the global payments industry. It connects consumers, financial institutions, merchants, governments, and businesses worldwide, enabling them to use electronic forms of payment. The company generates revenue by charging fees for processing transactions on its network.",
         "ceo": "Mr. Michael  Miebach",
         "hq": "Purchase, NY, United States",
@@ -69374,19 +69374,14 @@
         "high_52": 601.77,
         "low_52": 464.52,
         "beta": 0.74,
-        "sharpe_ratio": 0.19,
-        "sortino_ratio": 0.26,
+        "sharpe_ratio": 0.2,
+        "sortino_ratio": 0.27,
         "max_drawdown_pct": -28.25,
         "full_history": [
             {
-                "date": "2021-06-23",
-                "price": 364.39,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-06-24",
                 "price": 364.01,
-                "drawdown": -0.1
+                "drawdown": 0.0
             },
             {
                 "date": "2021-06-25",
@@ -70405,7 +70400,7 @@
             },
             {
                 "date": "2022-04-14",
-                "price": 349.36,
+                "price": 349.35,
                 "drawdown": -9.69
             },
             {
@@ -70575,7 +70570,7 @@
             },
             {
                 "date": "2022-06-03",
-                "price": 349.36,
+                "price": 349.35,
                 "drawdown": -9.69
             },
             {
@@ -70980,7 +70975,7 @@
             },
             {
                 "date": "2022-09-29",
-                "price": 280.42,
+                "price": 280.41,
                 "drawdown": -27.51
             },
             {
@@ -71285,8 +71280,8 @@
             },
             {
                 "date": "2022-12-27",
-                "price": 339.03,
-                "drawdown": -12.36
+                "price": 339.04,
+                "drawdown": -12.35
             },
             {
                 "date": "2022-12-28",
@@ -73945,8 +73940,8 @@
             },
             {
                 "date": "2025-02-11",
-                "price": 560.5,
-                "drawdown": -0.43
+                "price": 560.49,
+                "drawdown": -0.44
             },
             {
                 "date": "2025-02-12",
@@ -75647,6 +75642,11 @@
                 "date": "2026-06-22",
                 "price": 484.09,
                 "drawdown": -18.81
+            },
+            {
+                "date": "2026-06-23",
+                "price": 488.07,
+                "drawdown": -18.14
             }
         ],
         "financials": {
@@ -75662,10 +75662,10 @@
     {
         "symbol": "JNJ",
         "name": "Johnson & Johnson",
-        "price": 231.29,
-        "change": 2.65,
-        "change_percent": 1.16,
-        "market_cap": 556765197060.855,
+        "price": 239.08,
+        "change": 7.94,
+        "change_percent": 3.44,
+        "market_cap": 575517437834.4259,
         "description": "Johnson & Johnson is a diversified healthcare giant that researches, develops, manufactures, and sells a broad range of products in the healthcare field. Its business is divided into Innovative Medicine (pharmaceuticals) and MedTech (medical devices), focusing on areas like immunology, oncology, neuroscience, and surgery.",
         "ceo": "Mr. Joaquin  Duato",
         "hq": "New Brunswick, NJ, United States",
@@ -75675,19 +75675,14 @@
         "industry": "Drug Manufacturers - General",
         "profit_margin": 21.83,
         "roe": 26.42,
-        "target_price": 252.86957,
+        "target_price": 257.31818,
         "high_52": 251.71,
-        "low_52": 149.74,
+        "low_52": 150.73,
         "beta": 0.26,
-        "sharpe_ratio": 0.43,
-        "sortino_ratio": 0.65,
+        "sharpe_ratio": 0.47,
+        "sortino_ratio": 0.7,
         "max_drawdown_pct": -18.41,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 141.29,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 141.94,
@@ -81952,6 +81947,11 @@
                 "date": "2026-06-22",
                 "price": 231.29,
                 "drawdown": -6.41
+            },
+            {
+                "date": "2026-06-23",
+                "price": 239.08,
+                "drawdown": -3.26
             }
         ],
         "financials": {
@@ -81967,10 +81967,10 @@
     {
         "symbol": "PFE",
         "name": "Pfizer, Inc.",
-        "price": 25.08,
-        "change": -0.17,
-        "change_percent": -0.67,
-        "market_cap": 142942059323.68692,
+        "price": 24.72,
+        "change": 0.04,
+        "change_percent": 0.16,
+        "market_cap": 140890255944.18225,
         "description": "Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular and migraine under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands; infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands; and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands. It also provides medicines and vaccines in various therapeutic areas, such as biosimilars for chronic immune and inflammatory diseases under the Xeljanz, Enbrel, Inflectra, Litfulo, Velsipity, and Cibinqo brands; amyloidosis, hemophilia, endocrine diseases, and sickle cell disease under the Vyndaqel family, Oxbryta, BeneFIX, Somavert, Ngenla, and Genotropin brands; sterile injectable and anti-infective medicines under the Sulperazon, Medrol, Zavicefta, Zithromax, Octagam, and Panzyga brands; and biologics, small molecules, immunotherapies, and biosimilars under the Ibrance, Xtandi, Padcev, Adcetris, Inlyta, Lorbrena, Bosulif, Tukysa, Braftovi, Mektovi, Orgovyx, Elrexfio, Tivdak, and Talzenna brands. In addition, the company involved in the contract manufacturing business. It serves wholesalers, retailers, hospitals, clinics, government agencies, pharmacies, individual provider offices, retail pharmacies, and integrated delivery systems. The company has collaboration agreements with Bristol-Myers Squibb Company; Astellas Pharma US, Inc.; Merck KGaA; and BioNTech SE. Pfizer Inc. was founded in 1849 and is headquartered in New York, New York.",
         "ceo": "Dr. Albert  Bourla D.V.M., Ph.D.",
         "hq": "New York, NY, United States",
@@ -81980,19 +81980,14 @@
         "industry": "Drug Manufacturers - General",
         "profit_margin": 11.83,
         "roe": 8.31,
-        "target_price": 29.18778,
+        "target_price": 29.15074,
         "high_52": 28.75,
         "low_52": 23.11,
         "beta": 0.29,
-        "sharpe_ratio": -0.18,
-        "sortino_ratio": -0.29,
+        "sharpe_ratio": -0.19,
+        "sortino_ratio": -0.31,
         "max_drawdown_pct": -58.96,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 30.22,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 30.33,
@@ -88257,6 +88252,11 @@
                 "date": "2026-06-22",
                 "price": 25.08,
                 "drawdown": -48.02
+            },
+            {
+                "date": "2026-06-23",
+                "price": 24.72,
+                "drawdown": -48.77
             }
         ],
         "financials": {
@@ -88272,10 +88272,10 @@
     {
         "symbol": "UNH",
         "name": "UnitedHealth Group Incorporated",
-        "price": 406.68,
-        "change": 6.68,
-        "change_percent": 1.67,
-        "market_cap": 369324159567.2717,
+        "price": 409.25,
+        "change": 2.9,
+        "change_percent": 0.71,
+        "market_cap": 371658097337.0,
         "description": "UnitedHealth Group Incorporated is a diversified health care company. It operates through two distinct platforms: UnitedHealthcare, which provides health care coverage and benefits services, and Optum, which provides information and technology-enabled health services. It is the largest healthcare company in the world by revenue.",
         "ceo": "Mr. Stephen J. Hemsley",
         "hq": "Eden Prairie, MN, United States",
@@ -88293,11 +88293,6 @@
         "sortino_ratio": 0.12,
         "max_drawdown_pct": -61.39,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 362.34,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 365.37,
@@ -88755,7 +88750,7 @@
             },
             {
                 "date": "2021-11-02",
-                "price": 415.53,
+                "price": 415.52,
                 "drawdown": -1.83
             },
             {
@@ -89330,7 +89325,7 @@
             },
             {
                 "date": "2022-04-19",
-                "price": 497.34,
+                "price": 497.35,
                 "drawdown": -1.51
             },
             {
@@ -89430,8 +89425,8 @@
             },
             {
                 "date": "2022-05-17",
-                "price": 455.57,
-                "drawdown": -9.79
+                "price": 455.56,
+                "drawdown": -9.8
             },
             {
                 "date": "2022-05-18",
@@ -90895,7 +90890,7 @@
             },
             {
                 "date": "2023-07-19",
-                "price": 474.08,
+                "price": 474.09,
                 "drawdown": -8.29
             },
             {
@@ -90925,7 +90920,7 @@
             },
             {
                 "date": "2023-07-27",
-                "price": 475.53,
+                "price": 475.52,
                 "drawdown": -8.01
             },
             {
@@ -91950,7 +91945,7 @@
             },
             {
                 "date": "2024-05-20",
-                "price": 492.31,
+                "price": 492.32,
                 "drawdown": -5.77
             },
             {
@@ -92035,8 +92030,8 @@
             },
             {
                 "date": "2024-06-13",
-                "price": 473.34,
-                "drawdown": -9.41
+                "price": 473.35,
+                "drawdown": -9.4
             },
             {
                 "date": "2024-06-14",
@@ -92530,7 +92525,7 @@
             },
             {
                 "date": "2024-11-04",
-                "price": 535.05,
+                "price": 535.04,
                 "drawdown": -7.87
             },
             {
@@ -92710,8 +92705,8 @@
             },
             {
                 "date": "2024-12-26",
-                "price": 492.21,
-                "drawdown": -17.93
+                "price": 492.2,
+                "drawdown": -17.94
             },
             {
                 "date": "2024-12-27",
@@ -94562,6 +94557,11 @@
                 "date": "2026-06-22",
                 "price": 406.68,
                 "drawdown": -32.2
+            },
+            {
+                "date": "2026-06-23",
+                "price": 409.25,
+                "drawdown": -31.77
             }
         ],
         "financials": {
@@ -94577,10 +94577,10 @@
     {
         "symbol": "LLY",
         "name": "Eli Lilly and Company",
-        "price": 1102.08,
-        "change": 1.89,
-        "change_percent": 0.17,
-        "market_cap": 982770329536.6252,
+        "price": 1107.08,
+        "change": 2.59,
+        "change_percent": 0.23,
+        "market_cap": 987229036566.6252,
         "description": "Eli Lilly and Company discovers, develops, and markets human pharmaceuticals worldwide. The company focuses on endocrinology, oncology, neuroscience, and immunology. It has seen significant growth driven by its portfolio of diabetes and obesity treatments, including Mounjaro and Zepbound.",
         "ceo": "Mr. David A. Ricks",
         "hq": "Indianapolis, IN, United States",
@@ -94594,15 +94594,10 @@
         "high_52": 1182.73,
         "low_52": 623.78,
         "beta": 0.52,
-        "sharpe_ratio": 1.07,
-        "sortino_ratio": 1.59,
+        "sharpe_ratio": 1.04,
+        "sortino_ratio": 1.52,
         "max_drawdown_pct": -34.47,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 207.1,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 222.23,
@@ -96010,7 +96005,7 @@
             },
             {
                 "date": "2022-08-05",
-                "price": 291.49,
+                "price": 291.48,
                 "drawdown": -9.13
             },
             {
@@ -97170,7 +97165,7 @@
             },
             {
                 "date": "2023-07-11",
-                "price": 430.13,
+                "price": 430.12,
                 "drawdown": -6.31
             },
             {
@@ -97350,7 +97345,7 @@
             },
             {
                 "date": "2023-08-30",
-                "price": 537.58,
+                "price": 537.59,
                 "drawdown": -1.07
             },
             {
@@ -98025,7 +98020,7 @@
             },
             {
                 "date": "2024-03-14",
-                "price": 748.98,
+                "price": 748.97,
                 "drawdown": -3.98
             },
             {
@@ -100867,6 +100862,11 @@
                 "date": "2026-06-22",
                 "price": 1102.08,
                 "drawdown": -5.07
+            },
+            {
+                "date": "2026-06-23",
+                "price": 1107.08,
+                "drawdown": -4.64
             }
         ],
         "financials": {
@@ -100882,10 +100882,10 @@
     {
         "symbol": "XOM",
         "name": "Exxon Mobil Corporation",
-        "price": 138.47,
-        "change": 0.47,
-        "change_percent": 0.34,
-        "market_cap": 573950838581.8899,
+        "price": 139.73,
+        "change": 1.18,
+        "change_percent": 0.85,
+        "market_cap": 579173449237.1351,
         "description": "Exxon Mobil Corporation is one of the world's largest publicly traded international oil and gas companies. It explores for and produces crude oil and natural gas, manufactures petroleum products, and transports and sells crude oil, natural gas, and petroleum products. It is also a major manufacturer of commodity petrochemicals.",
         "ceo": "Mr. Darren W. Woods",
         "hq": "Spring, TX, United States",
@@ -100895,7 +100895,7 @@
         "industry": "Oil & Gas Integrated",
         "profit_margin": 7.76,
         "roe": 9.87,
-        "target_price": 169.90909,
+        "target_price": 170.2381,
         "high_52": 176.41,
         "low_52": 105.53,
         "beta": 0.15,
@@ -100903,11 +100903,6 @@
         "sortino_ratio": 1.03,
         "max_drawdown_pct": -20.51,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 53.47,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 53.68,
@@ -102175,8 +102170,8 @@
             },
             {
                 "date": "2022-06-27",
-                "price": 77.84,
-                "drawdown": -14.88
+                "price": 77.85,
+                "drawdown": -14.87
             },
             {
                 "date": "2022-06-28",
@@ -107172,6 +107167,11 @@
                 "date": "2026-06-22",
                 "price": 138.47,
                 "drawdown": -18.7
+            },
+            {
+                "date": "2026-06-23",
+                "price": 139.73,
+                "drawdown": -17.96
             }
         ],
         "financials": {
@@ -107187,10 +107187,10 @@
     {
         "symbol": "CVX",
         "name": "Chevron Corporation",
-        "price": 175.06,
-        "change": 1.26,
-        "change_percent": 0.72,
-        "market_cap": 348649094101.62085,
+        "price": 175.98,
+        "change": 0.68,
+        "change_percent": 0.39,
+        "market_cap": 350481360368.3365,
         "description": "Chevron Corporation is an integrated energy company with operations worldwide. It is involved in every facet of the energy industry, including exploration, production, and transportation of crude oil and natural gas, as well as refining, marketing, and distributing fuels and petrochemicals.",
         "ceo": "Mr. Michael K. Wirth",
         "hq": "Houston, TX, United States",
@@ -107200,7 +107200,7 @@
         "industry": "Oil & Gas Integrated",
         "profit_margin": 5.93,
         "roe": 6.64,
-        "target_price": 216.04349,
+        "target_price": 217.36365,
         "high_52": 214.71,
         "low_52": 142.4,
         "beta": 0.47,
@@ -107208,11 +107208,6 @@
         "sortino_ratio": 0.72,
         "max_drawdown_pct": -24.95,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 86.56,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 87.27,
@@ -113477,6 +113472,11 @@
                 "date": "2026-06-22",
                 "price": 175.06,
                 "drawdown": -16.33
+            },
+            {
+                "date": "2026-06-23",
+                "price": 175.98,
+                "drawdown": -15.89
             }
         ],
         "financials": {
@@ -113492,10 +113492,10 @@
     {
         "symbol": "KO",
         "name": "Coca-Cola Company (The)",
-        "price": 79.53,
-        "change": 0.11,
-        "change_percent": 0.13,
-        "market_cap": 342176421451.48627,
+        "price": 80.31,
+        "change": 0.72,
+        "change_percent": 0.9,
+        "market_cap": 345532352485.47253,
         "description": "The Coca-Cola Company is a total beverage company, offering over 500 brands in more than 200 countries and territories. Its portfolio includes sparkling soft drinks, water, juice, dairy, and plant-based beverages. The company operates a massive global distribution system and owns five of the world's top six non-alcoholic sparkling soft drink brands.",
         "ceo": "Mr. James Robert B. Quincey",
         "hq": "Atlanta, GA, United States",
@@ -113510,14 +113510,9 @@
         "low_52": 65.35,
         "beta": 0.35,
         "sharpe_ratio": 0.5,
-        "sortino_ratio": 0.73,
+        "sortino_ratio": 0.74,
         "max_drawdown_pct": -17.29,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 46.68,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 46.91,
@@ -119782,6 +119777,11 @@
                 "date": "2026-06-22",
                 "price": 79.53,
                 "drawdown": -4.24
+            },
+            {
+                "date": "2026-06-23",
+                "price": 80.31,
+                "drawdown": -3.3
             }
         ],
         "financials": {
@@ -119797,10 +119797,10 @@
     {
         "symbol": "PEP",
         "name": "Pepsico, Inc.",
-        "price": 140.71,
-        "change": -1.11,
-        "change_percent": -0.78,
-        "market_cap": 192342272503.3201,
+        "price": 142.05,
+        "change": 1.41,
+        "change_percent": 1.0,
+        "market_cap": 194173968391.87277,
         "description": "PepsiCo, Inc. is a leading global food and beverage company. Its portfolio includes Frito-Lay, Gatorade, Pepsi-Cola, Quaker, and Tropicana. The company distinguishes itself with a balanced revenue mix between convenient foods (snacks) and beverages, giving it resilience across different market cycles.",
         "ceo": "Mr. Ramon Luis Laguarta",
         "hq": "Purchase, NY, United States",
@@ -119815,14 +119815,9 @@
         "low_52": 127.6,
         "beta": 0.36,
         "sharpe_ratio": 0.02,
-        "sortino_ratio": 0.02,
+        "sortino_ratio": 0.03,
         "max_drawdown_pct": -30.32,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 123.64,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 124.34,
@@ -126087,6 +126082,11 @@
                 "date": "2026-06-22",
                 "price": 140.71,
                 "drawdown": -19.78
+            },
+            {
+                "date": "2026-06-23",
+                "price": 142.05,
+                "drawdown": -19.01
             }
         ],
         "financials": {
@@ -126102,10 +126102,10 @@
     {
         "symbol": "MCD",
         "name": "McDonald's Corporation",
-        "price": 270.1,
-        "change": -9.24,
-        "change_percent": -3.31,
-        "market_cap": 191907636852.4836,
+        "price": 271.66,
+        "change": 0.56,
+        "change_percent": 0.21,
+        "market_cap": 193016024257.89017,
         "description": "McDonald's Corporation operates and franchises the world's largest restaurant chain by revenue. With over 40,000 locations in over 100 countries, it serves millions of customers daily. The company primarily generates revenue through rent, royalties, and fees paid by franchisees, as well as sales in company-operated restaurants.",
         "ceo": "Mr. Christopher J. Kempczinski",
         "hq": "Chicago, IL, United States",
@@ -126117,17 +126117,12 @@
         "roe": 0,
         "target_price": 331.2903,
         "high_52": 341.75,
-        "low_52": 271.85,
+        "low_52": 270.08,
         "beta": 0.41,
-        "sharpe_ratio": 0.16,
-        "sortino_ratio": 0.24,
+        "sharpe_ratio": 0.17,
+        "sortino_ratio": 0.25,
         "max_drawdown_pct": -19.82,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 207.93,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 208.01,
@@ -132392,6 +132387,11 @@
                 "date": "2026-06-22",
                 "price": 270.1,
                 "drawdown": -19.82
+            },
+            {
+                "date": "2026-06-23",
+                "price": 271.66,
+                "drawdown": -19.36
             }
         ],
         "financials": {
@@ -132407,10 +132407,10 @@
     {
         "symbol": "WMT",
         "name": "Walmart Inc.",
-        "price": 117.18,
-        "change": 0.08,
-        "change_percent": 0.07,
-        "market_cap": 932527717811.5131,
+        "price": 119.42,
+        "change": 2.33,
+        "change_percent": 1.99,
+        "market_cap": 950353798118.4219,
         "description": "Walmart Inc. engages in the operation of retail, wholesale, and other units worldwide. It is the world's largest retailer and private employer, operating a vast network of hypermarkets, discount department stores, and grocery stores. The company focuses on everyday low prices and has a rapidly growing e-commerce business.",
         "ceo": "Mr. C. Douglas McMillon",
         "hq": "Bentonville, AR, United States",
@@ -132424,15 +132424,10 @@
         "high_52": 135.16,
         "low_52": 94.23,
         "beta": 0.6,
-        "sharpe_ratio": 0.86,
-        "sortino_ratio": 1.11,
+        "sharpe_ratio": 0.88,
+        "sortino_ratio": 1.12,
         "max_drawdown_pct": -25.74,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 42.52,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 42.81,
@@ -136635,8 +136630,8 @@
             },
             {
                 "date": "2024-10-25",
-                "price": 81.22,
-                "drawdown": -0.91
+                "price": 81.23,
+                "drawdown": -0.9
             },
             {
                 "date": "2024-10-28",
@@ -138697,6 +138692,11 @@
                 "date": "2026-06-22",
                 "price": 117.18,
                 "drawdown": -12.68
+            },
+            {
+                "date": "2026-06-23",
+                "price": 119.42,
+                "drawdown": -11.01
             }
         ],
         "financials": {
@@ -138712,10 +138712,10 @@
     {
         "symbol": "COST",
         "name": "Costco Wholesale Corporation",
-        "price": 951.35,
-        "change": -0.63,
-        "change_percent": -0.07,
-        "market_cap": 421903549358.28076,
+        "price": 957.68,
+        "change": 6.69,
+        "change_percent": 0.7,
+        "market_cap": 424710777766.5842,
         "description": "Costco Wholesale Corporation operates an international chain of membership warehouses. The company carries quality brand-name merchandise at substantially lower prices than are typically found at conventional wholesale or retail sources. Its business model relies heavily on membership fees, which drive the majority of its operating income.",
         "ceo": "Mr. Ron M. Vachris",
         "hq": "Issaquah, WA, United States",
@@ -138729,15 +138729,10 @@
         "high_52": 1096.5,
         "low_52": 844.06,
         "beta": 0.87,
-        "sharpe_ratio": 0.77,
-        "sortino_ratio": 1.01,
+        "sharpe_ratio": 0.78,
+        "sortino_ratio": 1.02,
         "max_drawdown_pct": -31.4,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 371.35,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 371.45,
@@ -139630,8 +139625,8 @@
             },
             {
                 "date": "2022-03-09",
-                "price": 502.41,
-                "drawdown": -6.92
+                "price": 502.4,
+                "drawdown": -6.93
             },
             {
                 "date": "2022-03-10",
@@ -140150,7 +140145,7 @@
             },
             {
                 "date": "2022-08-08",
-                "price": 517.71,
+                "price": 517.7,
                 "drawdown": -10.58
             },
             {
@@ -140305,7 +140300,7 @@
             },
             {
                 "date": "2022-09-21",
-                "price": 471.05,
+                "price": 471.06,
                 "drawdown": -18.64
             },
             {
@@ -141370,7 +141365,7 @@
             },
             {
                 "date": "2023-07-28",
-                "price": 541.21,
+                "price": 541.2,
                 "drawdown": -6.52
             },
             {
@@ -141650,7 +141645,7 @@
             },
             {
                 "date": "2023-10-17",
-                "price": 552.84,
+                "price": 552.83,
                 "drawdown": -4.51
             },
             {
@@ -142020,7 +142015,7 @@
             },
             {
                 "date": "2024-02-02",
-                "price": 700.76,
+                "price": 700.75,
                 "drawdown": 0.0
             },
             {
@@ -142390,7 +142385,7 @@
             },
             {
                 "date": "2024-05-20",
-                "price": 784.5,
+                "price": 784.51,
                 "drawdown": -0.35
             },
             {
@@ -143105,7 +143100,7 @@
             },
             {
                 "date": "2024-12-12",
-                "price": 980.49,
+                "price": 980.5,
                 "drawdown": -0.63
             },
             {
@@ -143345,7 +143340,7 @@
             },
             {
                 "date": "2025-02-25",
-                "price": 1048.38,
+                "price": 1048.39,
                 "drawdown": -1.97
             },
             {
@@ -143575,7 +143570,7 @@
             },
             {
                 "date": "2025-05-01",
-                "price": 992.15,
+                "price": 992.16,
                 "drawdown": -7.23
             },
             {
@@ -145002,6 +144997,11 @@
                 "date": "2026-06-22",
                 "price": 951.35,
                 "drawdown": -13.06
+            },
+            {
+                "date": "2026-06-23",
+                "price": 957.68,
+                "drawdown": -12.49
             }
         ],
         "financials": {
@@ -145017,10 +145017,10 @@
     {
         "symbol": "BA",
         "name": "Boeing Company (The)",
-        "price": 220.83,
-        "change": -2.14,
-        "change_percent": -0.96,
-        "market_cap": 174080805198.15466,
+        "price": 216.71,
+        "change": -4.04,
+        "change_percent": -1.83,
+        "market_cap": 170833003443.56714,
         "description": "The Boeing Company designs, manufactures, and sells airplanes, rotorcraft, rockets, satellites, and telecommunications equipment worldwide. It is one of the largest global aircraft manufacturers and a top defense contractor, operating through Commercial Airplanes, Defense, Space & Security, and Global Services segments.",
         "ceo": "Mr. Robert K. Ortberg",
         "hq": "Arlington, VA, United States",
@@ -145034,15 +145034,10 @@
         "high_52": 254.35,
         "low_52": 176.77,
         "beta": 1.2,
-        "sharpe_ratio": 0.02,
-        "sortino_ratio": 0.03,
+        "sharpe_ratio": -0.01,
+        "sortino_ratio": -0.01,
         "max_drawdown_pct": -53.76,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 243.57,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 250.57,
@@ -151307,6 +151302,11 @@
                 "date": "2026-06-22",
                 "price": 220.83,
                 "drawdown": -16.44
+            },
+            {
+                "date": "2026-06-23",
+                "price": 216.71,
+                "drawdown": -18.0
             }
         ],
         "financials": {
@@ -151322,10 +151322,10 @@
     {
         "symbol": "CAT",
         "name": "Caterpillar, Inc.",
-        "price": 1022.28,
-        "change": 34.28,
-        "change_percent": 3.47,
-        "market_cap": 470853985875.14575,
+        "price": 984.24,
+        "change": -43.71,
+        "change_percent": -4.25,
+        "market_cap": 453333048849.9514,
         "description": "Caterpillar Inc. is the world's leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives. The company serves the construction, resource, and energy & transportation industries through a global dealer network.",
         "ceo": "Mr. Joseph E. Creed CPA",
         "hq": "Irving, TX, United States",
@@ -151335,19 +151335,14 @@
         "industry": "Farm & Heavy Construction Machinery",
         "profit_margin": 13.33,
         "roe": 51.33,
-        "target_price": 945.6404,
-        "high_52": 994.49,
-        "low_52": 357.73,
+        "target_price": 949.67883,
+        "high_52": 1023.29,
+        "low_52": 367.92,
         "beta": 1.6,
-        "sharpe_ratio": 1.1,
-        "sortino_ratio": 1.72,
+        "sharpe_ratio": 1.06,
+        "sortino_ratio": 1.65,
         "max_drawdown_pct": -34.05,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 195.49,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 200.56,
@@ -155085,8 +155080,8 @@
             },
             {
                 "date": "2024-06-13",
-                "price": 317.7,
-                "drawdown": -13.65
+                "price": 317.71,
+                "drawdown": -13.64
             },
             {
                 "date": "2024-06-14",
@@ -157612,6 +157607,11 @@
                 "date": "2026-06-22",
                 "price": 1022.28,
                 "drawdown": 0.0
+            },
+            {
+                "date": "2026-06-23",
+                "price": 984.24,
+                "drawdown": -3.72
             }
         ],
         "financials": {
@@ -157627,10 +157627,10 @@
     {
         "symbol": "MMM",
         "name": "3M Company",
-        "price": 163.22,
-        "change": 2.16,
-        "change_percent": 1.34,
-        "market_cap": 85130208977.09879,
+        "price": 161.84,
+        "change": -0.43,
+        "change_percent": -0.26,
+        "market_cap": 84410443610.20364,
         "description": "3M Company is a diversified technology company with a global presence. It operates through segments including Safety and Industrial, Transportation and Electronics, and Consumer. Known for innovation, 3M produces over 60,000 products, ranging from adhesives and abrasives to medical products and electronic materials.",
         "ceo": "Mr. William M. Brown",
         "hq": "Saint Paul, MN, United States",
@@ -157644,15 +157644,10 @@
         "high_52": 177.41,
         "low_52": 139.34,
         "beta": 1.09,
-        "sharpe_ratio": 0.14,
-        "sortino_ratio": 0.21,
+        "sharpe_ratio": 0.13,
+        "sortino_ratio": 0.19,
         "max_drawdown_pct": -53.34,
         "full_history": [
-            {
-                "date": "2021-06-23",
-                "price": 134.56,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-06-24",
                 "price": 135.19,
@@ -160190,7 +160185,7 @@
             },
             {
                 "date": "2023-06-30",
-                "price": 76.26,
+                "price": 76.27,
                 "drawdown": -46.25
             },
             {
@@ -162575,8 +162570,8 @@
             },
             {
                 "date": "2025-05-27",
-                "price": 146.74,
-                "drawdown": -3.16
+                "price": 146.75,
+                "drawdown": -3.15
             },
             {
                 "date": "2025-05-28",
@@ -163917,6 +163912,11 @@
                 "date": "2026-06-22",
                 "price": 163.22,
                 "drawdown": -5.62
+            },
+            {
+                "date": "2026-06-23",
+                "price": 161.84,
+                "drawdown": -6.42
             }
         ],
         "financials": {
