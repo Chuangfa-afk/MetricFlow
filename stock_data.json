@@ -2,10 +2,10 @@
     {
         "symbol": "AAPL",
         "name": "Apple Inc.",
-        "price": 338.32,
-        "change": -6.78,
-        "change_percent": -1.96,
-        "market_cap": 4937503084490.967,
+        "price": 331.9,
+        "change": 2.82,
+        "change_percent": 0.86,
+        "market_cap": 4843808342000.0,
         "description": "Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. The company is best known for its iPhone, Mac, and iPad product lines, alongside a growing high-margin services business including Apple Pay, iCloud, and the App Store. It remains the largest technology company by revenue and market capitalization, distinguished by its integrated hardware-software ecosystem.",
         "ceo": "Mr. Timothy D. Cook",
         "hq": "Cupertino, CA, United States",
@@ -15,23 +15,18 @@
         "industry": "Consumer Electronics",
         "profit_margin": 27.62,
         "roe": 148.75,
-        "target_price": 332.3858,
+        "target_price": 333.43842,
         "high_52": 351.73,
         "low_52": 243.42,
         "beta": 1.09,
         "sharpe_ratio": 0.59,
-        "sortino_ratio": 0.85,
+        "sortino_ratio": 0.86,
         "max_drawdown_pct": -33.36,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 147.76,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 147.24,
-                "drawdown": -0.35
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
@@ -2585,8 +2580,8 @@
             },
             {
                 "date": "2023-11-16",
-                "price": 187.43,
-                "drawdown": -3.17
+                "price": 187.42,
+                "drawdown": -3.18
             },
             {
                 "date": "2023-11-17",
@@ -6292,6 +6287,11 @@
                 "date": "2026-11-02",
                 "price": 338.32,
                 "drawdown": -3.04
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -6307,10 +6307,10 @@
     {
         "symbol": "MSFT",
         "name": "Microsoft Corporation",
-        "price": 507.12,
-        "change": -15.87,
-        "change_percent": -3.03,
-        "market_cap": 3765971744949.5244,
+        "price": 520.99,
+        "change": 11.94,
+        "change_percent": 2.35,
+        "market_cap": 3868973099646.48,
         "description": "Microsoft Corporation develops and supports software, services, devices, and solutions worldwide. Its dominance is anchored by the Microsoft 365 suite and the Windows operating system, while its Intelligent Cloud segment, driven by Azure, positions it as a leader in enterprise cloud computing. The company is also a major player in gaming (Xbox) and artificial intelligence through its partnership with OpenAI.",
         "ceo": "Mr. Satya  Nadella",
         "hq": "Redmond, WA, United States",
@@ -6324,15 +6324,10 @@
         "high_52": 551.15,
         "low_52": 349.2,
         "beta": 1.04,
-        "sharpe_ratio": 0.33,
-        "sortino_ratio": 0.49,
+        "sharpe_ratio": 0.32,
+        "sortino_ratio": 0.48,
         "max_drawdown_pct": -37.15,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 320.55,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 322.89,
@@ -6835,8 +6830,8 @@
             },
             {
                 "date": "2022-03-30",
-                "price": 302.39,
-                "drawdown": -8.34
+                "price": 302.4,
+                "drawdown": -8.33
             },
             {
                 "date": "2022-03-31",
@@ -9475,8 +9470,8 @@
             },
             {
                 "date": "2024-05-07",
-                "price": 401.53,
-                "drawdown": -4.66
+                "price": 401.52,
+                "drawdown": -4.67
             },
             {
                 "date": "2024-05-08",
@@ -9780,7 +9775,7 @@
             },
             {
                 "date": "2024-08-05",
-                "price": 388.31,
+                "price": 388.3,
                 "drawdown": -15.49
             },
             {
@@ -12597,6 +12592,11 @@
                 "date": "2026-11-02",
                 "price": 507.12,
                 "drawdown": -6.69
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -12612,10 +12612,10 @@
     {
         "symbol": "GOOGL",
         "name": "Alphabet Inc.",
-        "price": 278.99,
-        "change": -2.49,
-        "change_percent": -0.88,
-        "market_cap": 3429902939941.4062,
+        "price": 280.03,
+        "change": -0.17,
+        "change_percent": -0.06,
+        "market_cap": 3442688819999.9995,
         "description": "Alphabet Inc. is the holding company for Google, the world's leading search engine and digital advertising platform. Its vast ecosystem includes YouTube, Android, Chrome, and Google Cloud, which provides enterprise infrastructure services. The company invests heavily in AI research (DeepMind) and 'Other Bets' ventures like Waymo autonomous driving.",
         "ceo": "Mr. Sundar  Pichai",
         "hq": "Mountain View, CA, United States",
@@ -12625,19 +12625,14 @@
         "industry": "Internet Content & Information",
         "profit_margin": 50.03,
         "roe": 44.29,
-        "target_price": 402.7264,
+        "target_price": 400.36792,
         "high_52": 408.61,
         "low_52": 270.7,
         "beta": 1.23,
         "sharpe_ratio": 0.44,
-        "sortino_ratio": 0.64,
+        "sortino_ratio": 0.63,
         "max_drawdown_pct": -44.32,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 145.22,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 146.87,
@@ -18902,6 +18897,11 @@
                 "date": "2026-11-02",
                 "price": 278.99,
                 "drawdown": -30.62
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -18917,10 +18917,10 @@
     {
         "symbol": "AMZN",
         "name": "Amazon.com, Inc.",
-        "price": 245.63,
-        "change": 4.83,
-        "change_percent": 2.01,
-        "market_cap": 2656031214901.3066,
+        "price": 250.69,
+        "change": 3.86,
+        "change_percent": 1.56,
+        "market_cap": 2710745641931.14,
         "description": "Amazon.com, Inc. is a global leader in e-commerce, cloud computing, digital streaming, and artificial intelligence. It operates the world's largest online marketplace and logistics network, while its Amazon Web Services (AWS) division is the leading provider of on-demand cloud computing platforms to individuals, companies, and governments.",
         "ceo": "Mr. Andrew R. Jassy",
         "hq": "Seattle, WA, United States",
@@ -18930,19 +18930,14 @@
         "industry": "Internet Retail",
         "profit_margin": 16.9,
         "roe": 27.42,
-        "target_price": 327.0762,
+        "target_price": 326.7442,
         "high_52": 287.2,
         "low_52": 196.0,
         "beta": 1.5,
-        "sharpe_ratio": 0.28,
-        "sortino_ratio": 0.42,
+        "sharpe_ratio": 0.26,
+        "sortino_ratio": 0.4,
         "max_drawdown_pct": -55.73,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 169.2,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 173.85,
@@ -25207,6 +25202,11 @@
                 "date": "2026-11-02",
                 "price": 245.63,
                 "drawdown": -13.52
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -25222,10 +25222,10 @@
     {
         "symbol": "TSLA",
         "name": "Tesla, Inc.",
-        "price": 403.82,
-        "change": 3.6,
-        "change_percent": 0.9,
-        "market_cap": 1596191519335.1204,
+        "price": 398.5,
+        "change": -5.9,
+        "change_percent": -1.46,
+        "market_cap": 1575162965970.5,
         "description": "Tesla, Inc. designs, develops, manufactures, and sells electric vehicles and energy generation and storage systems. It is the world's most valuable automaker, known for its Model 3, Model Y, and Cybertruck, as well as its proprietary Supercharger network. The company also focuses on self-driving software and renewable energy solutions through SolarCity.",
         "ceo": "Mr. Elon R. Musk",
         "hq": "Austin, TX, United States",
@@ -25239,15 +25239,10 @@
         "high_52": 498.83,
         "low_52": 297.38,
         "beta": 1.74,
-        "sharpe_ratio": 0.23,
+        "sharpe_ratio": 0.22,
         "sortino_ratio": 0.35,
         "max_drawdown_pct": -73.63,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 404.62,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 409.97,
@@ -31512,6 +31507,11 @@
                 "date": "2026-11-02",
                 "price": 403.82,
                 "drawdown": -17.57
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -31527,10 +31527,10 @@
     {
         "symbol": "NVDA",
         "name": "NVIDIA Corporation",
-        "price": 202.06,
-        "change": -3.19,
-        "change_percent": -1.55,
-        "market_cap": 4879142761047.363,
+        "price": 206.69,
+        "change": 3.02,
+        "change_percent": 1.48,
+        "market_cap": 4990943430000.0,
         "description": "NVIDIA Corporation is the global leader in visual computing and artificial intelligence. Originally focused on PC graphics, the company has pivoted to become the dominant supplier of high-performance GPUs for AI data centers, autonomous vehicles, and professional visualization. Its CUDA software platform creates a formidable moat in accelerated computing.",
         "ceo": "Mr. Jen-Hsun  Huang",
         "hq": "Santa Clara, CA, United States",
@@ -31540,19 +31540,14 @@
         "industry": "Semiconductors",
         "profit_margin": 63.66,
         "roe": 117.21,
-        "target_price": 328.95346,
+        "target_price": 327.1431,
         "high_52": 243.37,
         "low_52": 164.27,
         "beta": 2.25,
-        "sharpe_ratio": 0.97,
-        "sortino_ratio": 1.57,
+        "sharpe_ratio": 0.93,
+        "sortino_ratio": 1.5,
         "max_drawdown_pct": -66.33,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 26.48,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 29.67,
@@ -36210,13 +36205,13 @@
             },
             {
                 "date": "2025-07-24",
-                "price": 173.32,
+                "price": 173.31,
                 "drawdown": 0.0
             },
             {
                 "date": "2025-07-25",
                 "price": 173.08,
-                "drawdown": -0.14
+                "drawdown": -0.13
             },
             {
                 "date": "2025-07-28",
@@ -37817,6 +37812,11 @@
                 "date": "2026-11-02",
                 "price": 202.06,
                 "drawdown": -15.54
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -37832,10 +37832,10 @@
     {
         "symbol": "META",
         "name": "Meta Platforms, Inc.",
-        "price": 606.73,
-        "change": -7.27,
-        "change_percent": -1.18,
-        "market_cap": 1551307256780.6748,
+        "price": 621.03,
+        "change": 11.39,
+        "change_percent": 1.87,
+        "market_cap": 1587870019105.02,
         "description": "Meta Platforms, Inc. builds technologies that help people connect, find communities, and grow businesses. Its Family of Apps includes Facebook, Instagram, WhatsApp, and Messenger, which generate significant revenue through digital advertising. The company is also investing heavily in Reality Labs to develop augmented and virtual reality hardware for the Metaverse.",
         "ceo": "Mr. Mark Elliot Zuckerberg",
         "hq": "Menlo Park, CA, United States",
@@ -37850,14 +37850,9 @@
         "low_52": 520.26,
         "beta": 1.28,
         "sharpe_ratio": 0.41,
-        "sortino_ratio": 0.55,
+        "sortino_ratio": 0.54,
         "max_drawdown_pct": -74.42,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 328.47,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 332.66,
@@ -40345,8 +40340,8 @@
             },
             {
                 "date": "2023-10-27",
-                "price": 293.91,
-                "drawdown": -14.63
+                "price": 293.92,
+                "drawdown": -14.62
             },
             {
                 "date": "2023-10-30",
@@ -40870,7 +40865,7 @@
             },
             {
                 "date": "2024-04-01",
-                "price": 487.21,
+                "price": 487.2,
                 "drawdown": -4.07
             },
             {
@@ -40980,8 +40975,8 @@
             },
             {
                 "date": "2024-05-01",
-                "price": 435.49,
-                "drawdown": -16.71
+                "price": 435.48,
+                "drawdown": -16.72
             },
             {
                 "date": "2024-05-02",
@@ -41765,7 +41760,7 @@
             },
             {
                 "date": "2024-12-13",
-                "price": 616.31,
+                "price": 616.32,
                 "drawdown": -1.95
             },
             {
@@ -44122,6 +44117,11 @@
                 "date": "2026-11-02",
                 "price": 606.73,
                 "drawdown": -22.89
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -44137,10 +44137,10 @@
     {
         "symbol": "NFLX",
         "name": "Netflix, Inc.",
-        "price": 62.34,
-        "change": 0.26,
-        "change_percent": 0.42,
-        "market_cap": 259580000037.2068,
+        "price": 63.42,
+        "change": 0.94,
+        "change_percent": 1.51,
+        "market_cap": 264077054251.92,
         "description": "Netflix, Inc. provides entertainment services. It offers TV series, documentaries, feature films, and mobile games across a wide variety of genres and languages. The company pioneered the subscription video-on-demand model and invests heavily in producing original content to retain its massive global subscriber base.",
         "ceo": "Mr. Theodore A. Sarandos",
         "hq": "Los Gatos, CA, United States",
@@ -44154,59 +44154,54 @@
         "high_52": 116.73,
         "low_52": 61.39,
         "beta": 1.61,
-        "sharpe_ratio": 0.09,
-        "sortino_ratio": 0.11,
+        "sharpe_ratio": 0.1,
+        "sortino_ratio": 0.13,
         "max_drawdown_pct": -75.94,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 68.83,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 66.84,
-                "drawdown": -2.89
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 64.57,
-                "drawdown": -6.19
+                "drawdown": -3.4
             },
             {
                 "date": "2021-11-08",
                 "price": 65.14,
-                "drawdown": -5.36
+                "drawdown": -2.54
             },
             {
                 "date": "2021-11-09",
                 "price": 65.6,
-                "drawdown": -4.69
+                "drawdown": -1.86
             },
             {
                 "date": "2021-11-10",
                 "price": 64.69,
-                "drawdown": -6.01
+                "drawdown": -3.22
             },
             {
                 "date": "2021-11-11",
                 "price": 65.76,
-                "drawdown": -4.46
+                "drawdown": -1.62
             },
             {
                 "date": "2021-11-12",
                 "price": 68.26,
-                "drawdown": -0.83
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-15",
                 "price": 67.93,
-                "drawdown": -1.31
+                "drawdown": -0.48
             },
             {
                 "date": "2021-11-16",
                 "price": 68.74,
-                "drawdown": -0.13
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-17",
@@ -50427,6 +50422,11 @@
                 "date": "2026-11-02",
                 "price": 62.34,
                 "drawdown": -53.45
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -50442,10 +50442,10 @@
     {
         "symbol": "JPM",
         "name": "JP Morgan Chase & Co.",
-        "price": 340.58,
-        "change": 3.23,
-        "change_percent": 0.96,
-        "market_cap": 904444212341.3086,
+        "price": 337.98,
+        "change": -3.47,
+        "change_percent": -1.02,
+        "market_cap": 897539688000.0,
         "description": "JPMorgan Chase & Co. is a leading global financial services firm and the largest bank in the United States. It operates across four major segments: Consumer & Community Banking, Corporate & Investment Bank, Commercial Banking, and Asset & Wealth Management. The firm serves millions of customers and many of the world's most prominent corporate, institutional, and government clients.",
         "ceo": "Mr. James  Dimon",
         "hq": "New York, NY, United States",
@@ -50459,2654 +50459,2649 @@
         "high_52": 366.5,
         "low_52": 279.1,
         "beta": 1.02,
-        "sharpe_ratio": 0.63,
-        "sortino_ratio": 0.88,
-        "max_drawdown_pct": -38.32,
+        "sharpe_ratio": 0.64,
+        "sortino_ratio": 0.89,
+        "max_drawdown_pct": -37.93,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 150.63,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 148.65,
-                "drawdown": -1.31
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 148.44,
-                "drawdown": -1.45
+                "drawdown": -0.14
             },
             {
                 "date": "2021-11-08",
                 "price": 149.33,
-                "drawdown": -0.86
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-09",
                 "price": 148.2,
-                "drawdown": -1.61
+                "drawdown": -0.76
             },
             {
                 "date": "2021-11-10",
                 "price": 148.06,
-                "drawdown": -1.71
+                "drawdown": -0.85
             },
             {
                 "date": "2021-11-11",
                 "price": 148.05,
-                "drawdown": -1.71
+                "drawdown": -0.86
             },
             {
                 "date": "2021-11-12",
                 "price": 147.39,
-                "drawdown": -2.15
+                "drawdown": -1.3
             },
             {
                 "date": "2021-11-15",
                 "price": 147.13,
-                "drawdown": -2.32
+                "drawdown": -1.47
             },
             {
                 "date": "2021-11-16",
                 "price": 146.07,
-                "drawdown": -3.03
+                "drawdown": -2.18
             },
             {
                 "date": "2021-11-17",
                 "price": 145.28,
-                "drawdown": -3.55
+                "drawdown": -2.71
             },
             {
                 "date": "2021-11-18",
                 "price": 144.02,
-                "drawdown": -4.39
+                "drawdown": -3.56
             },
             {
                 "date": "2021-11-19",
                 "price": 142.14,
-                "drawdown": -5.64
+                "drawdown": -4.81
             },
             {
                 "date": "2021-11-22",
                 "price": 145.17,
-                "drawdown": -3.62
+                "drawdown": -2.79
             },
             {
                 "date": "2021-11-23",
                 "price": 148.64,
-                "drawdown": -1.32
+                "drawdown": -0.46
             },
             {
                 "date": "2021-11-24",
                 "price": 147.48,
-                "drawdown": -2.09
+                "drawdown": -1.24
             },
             {
                 "date": "2021-11-26",
                 "price": 143.04,
-                "drawdown": -5.04
+                "drawdown": -4.21
             },
             {
                 "date": "2021-11-29",
                 "price": 142.42,
-                "drawdown": -5.45
+                "drawdown": -4.63
             },
             {
                 "date": "2021-11-30",
                 "price": 140.3,
-                "drawdown": -6.86
+                "drawdown": -6.05
             },
             {
                 "date": "2021-12-01",
                 "price": 139.47,
-                "drawdown": -7.41
+                "drawdown": -6.6
             },
             {
                 "date": "2021-12-02",
                 "price": 142.4,
-                "drawdown": -5.46
+                "drawdown": -4.64
             },
             {
                 "date": "2021-12-03",
                 "price": 139.82,
-                "drawdown": -7.18
+                "drawdown": -6.37
             },
             {
                 "date": "2021-12-06",
                 "price": 141.47,
-                "drawdown": -6.08
+                "drawdown": -5.26
             },
             {
                 "date": "2021-12-07",
                 "price": 143.6,
-                "drawdown": -4.67
+                "drawdown": -3.84
             },
             {
                 "date": "2021-12-08",
                 "price": 141.96,
-                "drawdown": -5.76
+                "drawdown": -4.94
             },
             {
                 "date": "2021-12-09",
                 "price": 141.74,
-                "drawdown": -5.9
+                "drawdown": -5.08
             },
             {
                 "date": "2021-12-10",
                 "price": 141.17,
-                "drawdown": -6.28
+                "drawdown": -5.46
             },
             {
                 "date": "2021-12-13",
                 "price": 139.49,
-                "drawdown": -7.4
+                "drawdown": -6.59
             },
             {
                 "date": "2021-12-14",
                 "price": 140.56,
-                "drawdown": -6.69
+                "drawdown": -5.87
             },
             {
                 "date": "2021-12-15",
                 "price": 139.51,
-                "drawdown": -7.38
+                "drawdown": -6.58
             },
             {
                 "date": "2021-12-16",
                 "price": 141.69,
-                "drawdown": -5.94
+                "drawdown": -5.12
             },
             {
                 "date": "2021-12-17",
                 "price": 138.47,
-                "drawdown": -8.07
+                "drawdown": -7.27
             },
             {
                 "date": "2021-12-20",
                 "price": 135.98,
-                "drawdown": -9.73
+                "drawdown": -8.94
             },
             {
                 "date": "2021-12-21",
                 "price": 137.88,
-                "drawdown": -8.46
+                "drawdown": -7.67
             },
             {
                 "date": "2021-12-22",
                 "price": 138.42,
-                "drawdown": -8.11
+                "drawdown": -7.31
             },
             {
                 "date": "2021-12-23",
                 "price": 138.91,
-                "drawdown": -7.78
+                "drawdown": -6.98
             },
             {
                 "date": "2021-12-27",
                 "price": 139.71,
-                "drawdown": -7.25
+                "drawdown": -6.44
             },
             {
                 "date": "2021-12-28",
                 "price": 140.13,
-                "drawdown": -6.97
+                "drawdown": -6.16
             },
             {
                 "date": "2021-12-29",
                 "price": 140.06,
-                "drawdown": -7.02
+                "drawdown": -6.21
             },
             {
                 "date": "2021-12-30",
                 "price": 139.99,
-                "drawdown": -7.06
+                "drawdown": -6.25
             },
             {
                 "date": "2021-12-31",
                 "price": 139.87,
-                "drawdown": -7.14
+                "drawdown": -6.33
             },
             {
                 "date": "2022-01-03",
                 "price": 142.83,
-                "drawdown": -5.18
+                "drawdown": -4.35
             },
             {
                 "date": "2022-01-04",
                 "price": 148.25,
-                "drawdown": -1.58
+                "drawdown": -0.72
             },
             {
                 "date": "2022-01-05",
                 "price": 145.54,
-                "drawdown": -3.38
+                "drawdown": -2.54
             },
             {
                 "date": "2022-01-06",
                 "price": 147.08,
-                "drawdown": -2.36
+                "drawdown": -1.51
             },
             {
                 "date": "2022-01-07",
                 "price": 148.54,
-                "drawdown": -1.39
+                "drawdown": -0.53
             },
             {
                 "date": "2022-01-10",
                 "price": 148.68,
-                "drawdown": -1.29
+                "drawdown": -0.44
             },
             {
                 "date": "2022-01-11",
                 "price": 148.83,
-                "drawdown": -1.19
+                "drawdown": -0.33
             },
             {
                 "date": "2022-01-12",
                 "price": 149.68,
-                "drawdown": -0.63
+                "drawdown": 0.0
             },
             {
                 "date": "2022-01-13",
                 "price": 149.49,
-                "drawdown": -0.76
+                "drawdown": -0.13
             },
             {
                 "date": "2022-01-14",
                 "price": 140.3,
-                "drawdown": -6.86
+                "drawdown": -6.27
             },
             {
                 "date": "2022-01-18",
                 "price": 134.42,
-                "drawdown": -10.76
+                "drawdown": -10.2
             },
             {
                 "date": "2022-01-19",
                 "price": 132.34,
-                "drawdown": -12.14
+                "drawdown": -11.58
             },
             {
                 "date": "2022-01-20",
                 "price": 131.21,
-                "drawdown": -12.89
+                "drawdown": -12.34
             },
             {
                 "date": "2022-01-21",
                 "price": 128.92,
-                "drawdown": -14.41
+                "drawdown": -13.87
             },
             {
                 "date": "2022-01-24",
                 "price": 128.8,
-                "drawdown": -14.49
+                "drawdown": -13.95
             },
             {
                 "date": "2022-01-25",
                 "price": 130.21,
-                "drawdown": -13.56
+                "drawdown": -13.01
             },
             {
                 "date": "2022-01-26",
                 "price": 131.44,
-                "drawdown": -12.74
+                "drawdown": -12.19
             },
             {
                 "date": "2022-01-27",
                 "price": 129.12,
-                "drawdown": -14.28
+                "drawdown": -13.74
             },
             {
                 "date": "2022-01-28",
                 "price": 130.28,
-                "drawdown": -13.51
+                "drawdown": -12.96
             },
             {
                 "date": "2022-01-31",
                 "price": 132.05,
-                "drawdown": -12.33
+                "drawdown": -11.78
             },
             {
                 "date": "2022-02-01",
                 "price": 134.31,
-                "drawdown": -10.83
+                "drawdown": -10.27
             },
             {
                 "date": "2022-02-02",
                 "price": 133.24,
-                "drawdown": -11.54
+                "drawdown": -10.98
             },
             {
                 "date": "2022-02-03",
                 "price": 132.14,
-                "drawdown": -12.28
+                "drawdown": -11.72
             },
             {
                 "date": "2022-02-04",
                 "price": 135.57,
-                "drawdown": -10.0
+                "drawdown": -9.43
             },
             {
                 "date": "2022-02-07",
                 "price": 136.02,
-                "drawdown": -9.7
+                "drawdown": -9.13
             },
             {
                 "date": "2022-02-08",
                 "price": 138.58,
-                "drawdown": -8.0
+                "drawdown": -7.42
             },
             {
                 "date": "2022-02-09",
                 "price": 139.16,
-                "drawdown": -7.61
+                "drawdown": -7.03
             },
             {
                 "date": "2022-02-10",
                 "price": 138.58,
-                "drawdown": -8.0
+                "drawdown": -7.42
             },
             {
                 "date": "2022-02-11",
                 "price": 136.78,
-                "drawdown": -9.19
+                "drawdown": -8.62
             },
             {
                 "date": "2022-02-14",
                 "price": 135.5,
-                "drawdown": -10.04
+                "drawdown": -9.47
             },
             {
                 "date": "2022-02-15",
                 "price": 137.49,
-                "drawdown": -8.72
+                "drawdown": -8.14
             },
             {
                 "date": "2022-02-16",
                 "price": 137.73,
-                "drawdown": -8.56
+                "drawdown": -7.98
             },
             {
                 "date": "2022-02-17",
                 "price": 134.56,
-                "drawdown": -10.67
+                "drawdown": -10.1
             },
             {
                 "date": "2022-02-18",
                 "price": 135.19,
-                "drawdown": -10.25
+                "drawdown": -9.68
             },
             {
                 "date": "2022-02-22",
                 "price": 134.95,
-                "drawdown": -10.41
+                "drawdown": -9.84
             },
             {
                 "date": "2022-02-23",
                 "price": 132.13,
-                "drawdown": -12.28
+                "drawdown": -11.73
             },
             {
                 "date": "2022-02-24",
                 "price": 128.45,
-                "drawdown": -14.72
+                "drawdown": -14.18
             },
             {
                 "date": "2022-02-25",
                 "price": 131.49,
-                "drawdown": -12.71
+                "drawdown": -12.15
             },
             {
                 "date": "2022-02-28",
                 "price": 126.01,
-                "drawdown": -16.34
+                "drawdown": -15.81
             },
             {
                 "date": "2022-03-01",
                 "price": 121.25,
-                "drawdown": -19.5
+                "drawdown": -18.99
             },
             {
                 "date": "2022-03-02",
                 "price": 123.77,
-                "drawdown": -17.83
+                "drawdown": -17.31
             },
             {
                 "date": "2022-03-03",
                 "price": 122.89,
-                "drawdown": -18.42
+                "drawdown": -17.9
             },
             {
                 "date": "2022-03-04",
                 "price": 119.43,
-                "drawdown": -20.71
+                "drawdown": -20.21
             },
             {
                 "date": "2022-03-07",
                 "price": 114.82,
-                "drawdown": -23.77
+                "drawdown": -23.29
             },
             {
                 "date": "2022-03-08",
                 "price": 114.01,
-                "drawdown": -24.31
+                "drawdown": -23.83
             },
             {
                 "date": "2022-03-09",
                 "price": 118.58,
-                "drawdown": -21.28
+                "drawdown": -20.78
             },
             {
                 "date": "2022-03-10",
                 "price": 117.17,
-                "drawdown": -22.21
+                "drawdown": -21.72
             },
             {
                 "date": "2022-03-11",
                 "price": 114.53,
-                "drawdown": -23.97
+                "drawdown": -23.48
             },
             {
                 "date": "2022-03-14",
                 "price": 115.67,
-                "drawdown": -23.21
+                "drawdown": -22.72
             },
             {
                 "date": "2022-03-15",
                 "price": 117.72,
-                "drawdown": -21.85
+                "drawdown": -21.35
             },
             {
                 "date": "2022-03-16",
                 "price": 122.98,
-                "drawdown": -18.36
+                "drawdown": -17.84
             },
             {
                 "date": "2022-03-17",
                 "price": 124.54,
-                "drawdown": -17.32
+                "drawdown": -16.8
             },
             {
                 "date": "2022-03-18",
                 "price": 124.49,
-                "drawdown": -17.35
+                "drawdown": -16.83
             },
             {
                 "date": "2022-03-21",
                 "price": 124.09,
-                "drawdown": -17.62
+                "drawdown": -17.1
             },
             {
                 "date": "2022-03-22",
                 "price": 126.73,
-                "drawdown": -15.87
+                "drawdown": -15.33
             },
             {
                 "date": "2022-03-23",
                 "price": 124.21,
-                "drawdown": -17.54
+                "drawdown": -17.02
             },
             {
                 "date": "2022-03-24",
                 "price": 125.02,
-                "drawdown": -17.0
+                "drawdown": -16.48
             },
             {
                 "date": "2022-03-25",
                 "price": 126.11,
-                "drawdown": -16.28
+                "drawdown": -15.75
             },
             {
                 "date": "2022-03-28",
                 "price": 125.18,
-                "drawdown": -16.9
+                "drawdown": -16.37
             },
             {
                 "date": "2022-03-29",
                 "price": 125.45,
-                "drawdown": -16.72
+                "drawdown": -16.19
             },
             {
                 "date": "2022-03-30",
                 "price": 124.89,
-                "drawdown": -17.09
+                "drawdown": -16.56
             },
             {
                 "date": "2022-03-31",
                 "price": 121.14,
-                "drawdown": -19.58
+                "drawdown": -19.07
             },
             {
                 "date": "2022-04-01",
                 "price": 120.24,
-                "drawdown": -20.18
+                "drawdown": -19.67
             },
             {
                 "date": "2022-04-04",
                 "price": 120.77,
-                "drawdown": -19.82
+                "drawdown": -19.31
             },
             {
                 "date": "2022-04-05",
                 "price": 119.37,
-                "drawdown": -20.75
+                "drawdown": -20.25
             },
             {
                 "date": "2022-04-06",
                 "price": 117.71,
-                "drawdown": -21.85
+                "drawdown": -21.36
             },
             {
                 "date": "2022-04-07",
                 "price": 117.35,
-                "drawdown": -22.09
+                "drawdown": -21.6
             },
             {
                 "date": "2022-04-08",
                 "price": 119.5,
-                "drawdown": -20.67
+                "drawdown": -20.16
             },
             {
                 "date": "2022-04-11",
                 "price": 119.06,
-                "drawdown": -20.96
+                "drawdown": -20.46
             },
             {
                 "date": "2022-04-12",
                 "price": 117.75,
-                "drawdown": -21.83
+                "drawdown": -21.33
             },
             {
                 "date": "2022-04-13",
                 "price": 113.96,
-                "drawdown": -24.34
+                "drawdown": -23.86
             },
             {
                 "date": "2022-04-14",
                 "price": 112.9,
-                "drawdown": -25.05
+                "drawdown": -24.57
             },
             {
                 "date": "2022-04-18",
                 "price": 115.0,
-                "drawdown": -23.65
+                "drawdown": -23.17
             },
             {
                 "date": "2022-04-19",
                 "price": 117.38,
-                "drawdown": -22.07
+                "drawdown": -21.58
             },
             {
                 "date": "2022-04-20",
                 "price": 117.79,
-                "drawdown": -21.8
+                "drawdown": -21.31
             },
             {
                 "date": "2022-04-21",
                 "price": 116.88,
-                "drawdown": -22.41
+                "drawdown": -21.91
             },
             {
                 "date": "2022-04-22",
                 "price": 113.52,
-                "drawdown": -24.64
+                "drawdown": -24.16
             },
             {
                 "date": "2022-04-25",
                 "price": 113.48,
-                "drawdown": -24.66
+                "drawdown": -24.18
             },
             {
                 "date": "2022-04-26",
                 "price": 110.13,
-                "drawdown": -26.89
+                "drawdown": -26.42
             },
             {
                 "date": "2022-04-27",
                 "price": 108.69,
-                "drawdown": -27.84
+                "drawdown": -27.39
             },
             {
                 "date": "2022-04-28",
                 "price": 110.41,
-                "drawdown": -26.7
+                "drawdown": -26.24
             },
             {
                 "date": "2022-04-29",
                 "price": 106.85,
-                "drawdown": -29.06
+                "drawdown": -28.61
             },
             {
                 "date": "2022-05-02",
                 "price": 107.83,
-                "drawdown": -28.41
+                "drawdown": -27.96
             },
             {
                 "date": "2022-05-03",
                 "price": 110.14,
-                "drawdown": -26.88
+                "drawdown": -26.42
             },
             {
                 "date": "2022-05-04",
                 "price": 113.78,
-                "drawdown": -24.46
+                "drawdown": -23.98
             },
             {
                 "date": "2022-05-05",
                 "price": 110.93,
-                "drawdown": -26.36
+                "drawdown": -25.89
             },
             {
                 "date": "2022-05-06",
                 "price": 110.75,
-                "drawdown": -26.48
+                "drawdown": -26.01
             },
             {
                 "date": "2022-05-09",
                 "price": 109.09,
-                "drawdown": -27.58
+                "drawdown": -27.12
             },
             {
                 "date": "2022-05-10",
                 "price": 106.43,
-                "drawdown": -29.34
+                "drawdown": -28.89
             },
             {
                 "date": "2022-05-11",
                 "price": 105.76,
-                "drawdown": -29.79
+                "drawdown": -29.34
             },
             {
                 "date": "2022-05-12",
                 "price": 105.67,
-                "drawdown": -29.85
+                "drawdown": -29.4
             },
             {
                 "date": "2022-05-13",
                 "price": 106.61,
-                "drawdown": -29.22
+                "drawdown": -28.77
             },
             {
                 "date": "2022-05-16",
                 "price": 105.87,
-                "drawdown": -29.72
+                "drawdown": -29.27
             },
             {
                 "date": "2022-05-17",
                 "price": 109.38,
-                "drawdown": -27.38
+                "drawdown": -26.92
             },
             {
                 "date": "2022-05-18",
                 "price": 107.5,
-                "drawdown": -28.63
+                "drawdown": -28.18
             },
             {
                 "date": "2022-05-19",
                 "price": 105.91,
-                "drawdown": -29.69
+                "drawdown": -29.24
             },
             {
                 "date": "2022-05-20",
                 "price": 105.04,
-                "drawdown": -30.27
+                "drawdown": -29.82
             },
             {
                 "date": "2022-05-23",
                 "price": 111.54,
-                "drawdown": -25.95
+                "drawdown": -25.48
             },
             {
                 "date": "2022-05-24",
                 "price": 113.12,
-                "drawdown": -24.9
+                "drawdown": -24.43
             },
             {
                 "date": "2022-05-25",
                 "price": 113.91,
-                "drawdown": -24.38
+                "drawdown": -23.9
             },
             {
                 "date": "2022-05-26",
                 "price": 115.87,
-                "drawdown": -23.08
+                "drawdown": -22.59
             },
             {
                 "date": "2022-05-27",
                 "price": 117.51,
-                "drawdown": -21.99
+                "drawdown": -21.49
             },
             {
                 "date": "2022-05-31",
                 "price": 118.37,
-                "drawdown": -21.42
+                "drawdown": -20.92
             },
             {
                 "date": "2022-06-01",
                 "price": 116.3,
-                "drawdown": -22.79
+                "drawdown": -22.3
             },
             {
                 "date": "2022-06-02",
                 "price": 118.17,
-                "drawdown": -21.55
+                "drawdown": -21.05
             },
             {
                 "date": "2022-06-03",
                 "price": 116.52,
-                "drawdown": -22.64
+                "drawdown": -22.15
             },
             {
                 "date": "2022-06-06",
                 "price": 116.13,
-                "drawdown": -22.9
+                "drawdown": -22.41
             },
             {
                 "date": "2022-06-07",
                 "price": 116.44,
-                "drawdown": -22.7
+                "drawdown": -22.21
             },
             {
                 "date": "2022-06-08",
                 "price": 114.59,
-                "drawdown": -23.93
+                "drawdown": -23.44
             },
             {
                 "date": "2022-06-09",
                 "price": 112.18,
-                "drawdown": -25.53
+                "drawdown": -25.05
             },
             {
                 "date": "2022-06-10",
                 "price": 107.02,
-                "drawdown": -28.95
+                "drawdown": -28.5
             },
             {
                 "date": "2022-06-13",
                 "price": 103.83,
-                "drawdown": -31.07
+                "drawdown": -30.63
             },
             {
                 "date": "2022-06-14",
                 "price": 102.11,
-                "drawdown": -32.21
+                "drawdown": -31.78
             },
             {
                 "date": "2022-06-15",
                 "price": 103.31,
-                "drawdown": -31.41
+                "drawdown": -30.98
             },
             {
                 "date": "2022-06-16",
                 "price": 101.54,
-                "drawdown": -32.59
+                "drawdown": -32.16
             },
             {
                 "date": "2022-06-17",
                 "price": 101.18,
-                "drawdown": -32.83
+                "drawdown": -32.4
             },
             {
                 "date": "2022-06-21",
                 "price": 103.69,
-                "drawdown": -31.16
+                "drawdown": -30.73
             },
             {
                 "date": "2022-06-22",
                 "price": 103.11,
-                "drawdown": -31.55
+                "drawdown": -31.11
             },
             {
                 "date": "2022-06-23",
                 "price": 101.98,
-                "drawdown": -32.3
+                "drawdown": -31.87
             },
             {
                 "date": "2022-06-24",
                 "price": 105.02,
-                "drawdown": -30.28
+                "drawdown": -29.84
             },
             {
                 "date": "2022-06-27",
                 "price": 104.18,
-                "drawdown": -30.84
+                "drawdown": -30.4
             },
             {
                 "date": "2022-06-28",
                 "price": 103.68,
-                "drawdown": -31.17
+                "drawdown": -30.73
             },
             {
                 "date": "2022-06-29",
                 "price": 103.22,
-                "drawdown": -31.47
+                "drawdown": -31.04
             },
             {
                 "date": "2022-06-30",
                 "price": 100.81,
-                "drawdown": -33.07
+                "drawdown": -32.65
             },
             {
                 "date": "2022-07-01",
                 "price": 102.1,
-                "drawdown": -32.22
+                "drawdown": -31.79
             },
             {
                 "date": "2022-07-05",
                 "price": 101.71,
-                "drawdown": -32.48
+                "drawdown": -32.05
             },
             {
                 "date": "2022-07-06",
                 "price": 101.05,
-                "drawdown": -32.92
+                "drawdown": -32.49
             },
             {
                 "date": "2022-07-07",
                 "price": 103.61,
-                "drawdown": -31.22
+                "drawdown": -30.78
             },
             {
                 "date": "2022-07-08",
                 "price": 103.28,
-                "drawdown": -31.43
+                "drawdown": -31.0
             },
             {
                 "date": "2022-07-11",
                 "price": 101.93,
-                "drawdown": -32.33
+                "drawdown": -31.9
             },
             {
                 "date": "2022-07-12",
                 "price": 102.03,
-                "drawdown": -32.26
+                "drawdown": -31.83
             },
             {
                 "date": "2022-07-13",
                 "price": 101.07,
-                "drawdown": -32.9
+                "drawdown": -32.48
             },
             {
                 "date": "2022-07-14",
                 "price": 97.54,
-                "drawdown": -35.25
+                "drawdown": -34.83
             },
             {
                 "date": "2022-07-15",
                 "price": 102.01,
-                "drawdown": -32.28
+                "drawdown": -31.85
             },
             {
                 "date": "2022-07-18",
                 "price": 100.96,
-                "drawdown": -32.97
+                "drawdown": -32.55
             },
             {
                 "date": "2022-07-19",
                 "price": 103.46,
-                "drawdown": -31.32
+                "drawdown": -30.88
             },
             {
                 "date": "2022-07-20",
                 "price": 103.44,
-                "drawdown": -31.33
+                "drawdown": -30.89
             },
             {
                 "date": "2022-07-21",
                 "price": 104.15,
-                "drawdown": -30.86
+                "drawdown": -30.42
             },
             {
                 "date": "2022-07-22",
                 "price": 103.64,
-                "drawdown": -31.2
+                "drawdown": -30.76
             },
             {
                 "date": "2022-07-25",
                 "price": 104.06,
-                "drawdown": -30.92
+                "drawdown": -30.48
             },
             {
                 "date": "2022-07-26",
                 "price": 102.43,
-                "drawdown": -32.0
+                "drawdown": -31.57
             },
             {
                 "date": "2022-07-27",
                 "price": 104.08,
-                "drawdown": -30.9
+                "drawdown": -30.46
             },
             {
                 "date": "2022-07-28",
                 "price": 103.69,
-                "drawdown": -31.16
+                "drawdown": -30.73
             },
             {
                 "date": "2022-07-29",
                 "price": 104.18,
-                "drawdown": -30.84
+                "drawdown": -30.4
             },
             {
                 "date": "2022-08-01",
                 "price": 103.14,
-                "drawdown": -31.53
+                "drawdown": -31.09
             },
             {
                 "date": "2022-08-02",
                 "price": 101.54,
-                "drawdown": -32.59
+                "drawdown": -32.16
             },
             {
                 "date": "2022-08-03",
                 "price": 102.6,
-                "drawdown": -31.89
+                "drawdown": -31.45
             },
             {
                 "date": "2022-08-04",
                 "price": 101.47,
-                "drawdown": -32.64
+                "drawdown": -32.21
             },
             {
                 "date": "2022-08-05",
                 "price": 104.54,
-                "drawdown": -30.6
+                "drawdown": -30.16
             },
             {
                 "date": "2022-08-08",
                 "price": 103.27,
-                "drawdown": -31.44
+                "drawdown": -31.01
             },
             {
                 "date": "2022-08-09",
                 "price": 104.2,
-                "drawdown": -30.82
+                "drawdown": -30.38
             },
             {
                 "date": "2022-08-10",
                 "price": 106.92,
-                "drawdown": -29.02
+                "drawdown": -28.57
             },
             {
                 "date": "2022-08-11",
                 "price": 108.5,
-                "drawdown": -27.97
+                "drawdown": -27.51
             },
             {
                 "date": "2022-08-12",
                 "price": 110.3,
-                "drawdown": -26.77
+                "drawdown": -26.31
             },
             {
                 "date": "2022-08-15",
                 "price": 110.6,
-                "drawdown": -26.58
+                "drawdown": -26.11
             },
             {
                 "date": "2022-08-16",
                 "price": 111.65,
-                "drawdown": -25.88
+                "drawdown": -25.41
             },
             {
                 "date": "2022-08-17",
                 "price": 110.71,
-                "drawdown": -26.5
+                "drawdown": -26.04
             },
             {
                 "date": "2022-08-18",
                 "price": 109.86,
-                "drawdown": -27.07
+                "drawdown": -26.6
             },
             {
                 "date": "2022-08-19",
                 "price": 107.14,
-                "drawdown": -28.87
+                "drawdown": -28.42
             },
             {
                 "date": "2022-08-22",
                 "price": 105.37,
-                "drawdown": -30.05
+                "drawdown": -29.6
             },
             {
                 "date": "2022-08-23",
                 "price": 104.33,
-                "drawdown": -30.74
+                "drawdown": -30.3
             },
             {
                 "date": "2022-08-24",
                 "price": 104.58,
-                "drawdown": -30.57
+                "drawdown": -30.13
             },
             {
                 "date": "2022-08-25",
                 "price": 107.06,
-                "drawdown": -28.93
+                "drawdown": -28.47
             },
             {
                 "date": "2022-08-26",
                 "price": 103.56,
-                "drawdown": -31.25
+                "drawdown": -30.81
             },
             {
                 "date": "2022-08-29",
                 "price": 103.31,
-                "drawdown": -31.41
+                "drawdown": -30.98
             },
             {
                 "date": "2022-08-30",
                 "price": 103.33,
-                "drawdown": -31.4
+                "drawdown": -30.97
             },
             {
                 "date": "2022-08-31",
                 "price": 102.71,
-                "drawdown": -31.81
+                "drawdown": -31.38
             },
             {
                 "date": "2022-09-01",
                 "price": 103.42,
-                "drawdown": -31.34
+                "drawdown": -30.91
             },
             {
                 "date": "2022-09-02",
                 "price": 102.69,
-                "drawdown": -31.83
+                "drawdown": -31.39
             },
             {
                 "date": "2022-09-06",
                 "price": 102.72,
-                "drawdown": -31.81
+                "drawdown": -31.37
             },
             {
                 "date": "2022-09-07",
                 "price": 104.67,
-                "drawdown": -30.51
+                "drawdown": -30.07
             },
             {
                 "date": "2022-09-08",
                 "price": 107.11,
-                "drawdown": -28.89
+                "drawdown": -28.44
             },
             {
                 "date": "2022-09-09",
                 "price": 107.62,
-                "drawdown": -28.55
+                "drawdown": -28.1
             },
             {
                 "date": "2022-09-12",
                 "price": 108.9,
-                "drawdown": -27.7
+                "drawdown": -27.24
             },
             {
                 "date": "2022-09-13",
                 "price": 105.11,
-                "drawdown": -30.22
+                "drawdown": -29.78
             },
             {
                 "date": "2022-09-14",
                 "price": 104.87,
-                "drawdown": -30.38
+                "drawdown": -29.94
             },
             {
                 "date": "2022-09-15",
                 "price": 106.45,
-                "drawdown": -29.33
+                "drawdown": -28.88
             },
             {
                 "date": "2022-09-16",
                 "price": 105.74,
-                "drawdown": -29.8
+                "drawdown": -29.36
             },
             {
                 "date": "2022-09-19",
                 "price": 106.71,
-                "drawdown": -29.16
+                "drawdown": -28.71
             },
             {
                 "date": "2022-09-20",
                 "price": 104.61,
-                "drawdown": -30.55
+                "drawdown": -30.11
             },
             {
                 "date": "2022-09-21",
                 "price": 101.59,
-                "drawdown": -32.56
+                "drawdown": -32.13
             },
             {
                 "date": "2022-09-22",
                 "price": 100.44,
-                "drawdown": -33.32
+                "drawdown": -32.9
             },
             {
                 "date": "2022-09-23",
                 "price": 98.57,
-                "drawdown": -34.56
+                "drawdown": -34.15
             },
             {
                 "date": "2022-09-26",
                 "price": 96.44,
-                "drawdown": -35.98
+                "drawdown": -35.57
             },
             {
                 "date": "2022-09-27",
                 "price": 95.59,
-                "drawdown": -36.54
+                "drawdown": -36.14
             },
             {
                 "date": "2022-09-28",
                 "price": 97.53,
-                "drawdown": -35.25
+                "drawdown": -34.84
             },
             {
                 "date": "2022-09-29",
                 "price": 95.87,
-                "drawdown": -36.35
+                "drawdown": -35.95
             },
             {
                 "date": "2022-09-30",
                 "price": 94.38,
-                "drawdown": -37.34
+                "drawdown": -36.95
             },
             {
                 "date": "2022-10-03",
                 "price": 97.29,
-                "drawdown": -35.41
+                "drawdown": -35.0
             },
             {
                 "date": "2022-10-04",
                 "price": 101.84,
-                "drawdown": -32.39
+                "drawdown": -31.96
             },
             {
                 "date": "2022-10-05",
                 "price": 100.59,
-                "drawdown": -33.22
+                "drawdown": -32.8
             },
             {
                 "date": "2022-10-06",
                 "price": 98.54,
-                "drawdown": -34.58
+                "drawdown": -34.17
             },
             {
                 "date": "2022-10-07",
                 "price": 96.57,
-                "drawdown": -35.89
+                "drawdown": -35.48
             },
             {
                 "date": "2022-10-10",
                 "price": 95.67,
-                "drawdown": -36.49
+                "drawdown": -36.08
             },
             {
                 "date": "2022-10-11",
                 "price": 92.91,
-                "drawdown": -38.32
+                "drawdown": -37.93
             },
             {
                 "date": "2022-10-12",
                 "price": 94.41,
-                "drawdown": -37.32
+                "drawdown": -36.93
             },
             {
                 "date": "2022-10-13",
                 "price": 99.66,
-                "drawdown": -33.84
+                "drawdown": -33.42
             },
             {
                 "date": "2022-10-14",
                 "price": 101.32,
-                "drawdown": -32.74
+                "drawdown": -32.31
             },
             {
                 "date": "2022-10-17",
                 "price": 105.57,
-                "drawdown": -29.91
+                "drawdown": -29.47
             },
             {
                 "date": "2022-10-18",
                 "price": 108.29,
-                "drawdown": -28.11
+                "drawdown": -27.65
             },
             {
                 "date": "2022-10-19",
                 "price": 106.16,
-                "drawdown": -29.52
+                "drawdown": -29.08
             },
             {
                 "date": "2022-10-20",
                 "price": 105.82,
-                "drawdown": -29.75
+                "drawdown": -29.3
             },
             {
                 "date": "2022-10-21",
                 "price": 111.38,
-                "drawdown": -26.06
+                "drawdown": -25.59
             },
             {
                 "date": "2022-10-24",
                 "price": 111.51,
-                "drawdown": -25.97
+                "drawdown": -25.5
             },
             {
                 "date": "2022-10-25",
                 "price": 111.8,
-                "drawdown": -25.78
+                "drawdown": -25.31
             },
             {
                 "date": "2022-10-26",
                 "price": 113.09,
-                "drawdown": -24.92
+                "drawdown": -24.45
             },
             {
                 "date": "2022-10-27",
                 "price": 113.54,
-                "drawdown": -24.62
+                "drawdown": -24.14
             },
             {
                 "date": "2022-10-28",
                 "price": 114.88,
-                "drawdown": -23.73
+                "drawdown": -23.25
             },
             {
                 "date": "2022-10-31",
                 "price": 114.7,
-                "drawdown": -23.85
+                "drawdown": -23.37
             },
             {
                 "date": "2022-11-01",
                 "price": 116.77,
-                "drawdown": -22.48
+                "drawdown": -21.99
             },
             {
                 "date": "2022-11-02",
                 "price": 115.69,
-                "drawdown": -23.2
+                "drawdown": -22.71
             },
             {
                 "date": "2022-11-03",
                 "price": 115.9,
-                "drawdown": -23.06
+                "drawdown": -22.57
             },
             {
                 "date": "2022-11-04",
                 "price": 119.08,
-                "drawdown": -20.95
+                "drawdown": -20.44
             },
             {
                 "date": "2022-11-07",
                 "price": 119.7,
-                "drawdown": -20.53
+                "drawdown": -20.03
             },
             {
                 "date": "2022-11-08",
                 "price": 119.78,
-                "drawdown": -20.48
+                "drawdown": -19.98
             },
             {
                 "date": "2022-11-09",
                 "price": 118.22,
-                "drawdown": -21.52
+                "drawdown": -21.02
             },
             {
                 "date": "2022-11-10",
                 "price": 123.08,
-                "drawdown": -18.29
+                "drawdown": -17.77
             },
             {
                 "date": "2022-11-11",
                 "price": 123.28,
-                "drawdown": -18.16
+                "drawdown": -17.64
             },
             {
                 "date": "2022-11-14",
                 "price": 122.02,
-                "drawdown": -18.99
+                "drawdown": -18.48
             },
             {
                 "date": "2022-11-15",
                 "price": 121.13,
-                "drawdown": -19.58
+                "drawdown": -19.07
             },
             {
                 "date": "2022-11-16",
                 "price": 121.3,
-                "drawdown": -19.47
+                "drawdown": -18.96
             },
             {
                 "date": "2022-11-17",
                 "price": 120.77,
-                "drawdown": -19.82
+                "drawdown": -19.31
             },
             {
                 "date": "2022-11-18",
                 "price": 121.95,
-                "drawdown": -19.04
+                "drawdown": -18.53
             },
             {
                 "date": "2022-11-21",
                 "price": 121.23,
-                "drawdown": -19.52
+                "drawdown": -19.01
             },
             {
                 "date": "2022-11-22",
                 "price": 123.05,
-                "drawdown": -18.31
+                "drawdown": -17.79
             },
             {
                 "date": "2022-11-23",
                 "price": 124.36,
-                "drawdown": -17.44
+                "drawdown": -16.92
             },
             {
                 "date": "2022-11-25",
                 "price": 124.6,
-                "drawdown": -17.28
+                "drawdown": -16.76
             },
             {
                 "date": "2022-11-28",
                 "price": 122.42,
-                "drawdown": -18.73
+                "drawdown": -18.21
             },
             {
                 "date": "2022-11-29",
                 "price": 124.43,
-                "drawdown": -17.39
+                "drawdown": -16.87
             },
             {
                 "date": "2022-11-30",
                 "price": 125.91,
-                "drawdown": -16.41
+                "drawdown": -15.88
             },
             {
                 "date": "2022-12-01",
                 "price": 124.14,
-                "drawdown": -17.59
+                "drawdown": -17.06
             },
             {
                 "date": "2022-12-02",
                 "price": 123.16,
-                "drawdown": -18.24
+                "drawdown": -17.72
             },
             {
                 "date": "2022-12-05",
                 "price": 119.7,
-                "drawdown": -20.53
+                "drawdown": -20.03
             },
             {
                 "date": "2022-12-06",
                 "price": 119.9,
-                "drawdown": -20.4
+                "drawdown": -19.9
             },
             {
                 "date": "2022-12-07",
                 "price": 119.82,
-                "drawdown": -20.45
+                "drawdown": -19.95
             },
             {
                 "date": "2022-12-08",
                 "price": 121.08,
-                "drawdown": -19.62
+                "drawdown": -19.11
             },
             {
                 "date": "2022-12-09",
                 "price": 120.42,
-                "drawdown": -20.06
+                "drawdown": -19.55
             },
             {
                 "date": "2022-12-12",
                 "price": 122.29,
-                "drawdown": -18.81
+                "drawdown": -18.3
             },
             {
                 "date": "2022-12-13",
                 "price": 122.17,
-                "drawdown": -18.89
+                "drawdown": -18.38
             },
             {
                 "date": "2022-12-14",
                 "price": 121.56,
-                "drawdown": -19.3
+                "drawdown": -18.79
             },
             {
                 "date": "2022-12-15",
                 "price": 118.55,
-                "drawdown": -21.3
+                "drawdown": -20.8
             },
             {
                 "date": "2022-12-16",
                 "price": 117.81,
-                "drawdown": -21.79
+                "drawdown": -21.29
             },
             {
                 "date": "2022-12-19",
                 "price": 118.51,
-                "drawdown": -21.32
+                "drawdown": -20.82
             },
             {
                 "date": "2022-12-20",
                 "price": 119.08,
-                "drawdown": -20.95
+                "drawdown": -20.44
             },
             {
                 "date": "2022-12-21",
                 "price": 120.42,
-                "drawdown": -20.06
+                "drawdown": -19.55
             },
             {
                 "date": "2022-12-22",
                 "price": 119.06,
-                "drawdown": -20.96
+                "drawdown": -20.46
             },
             {
                 "date": "2022-12-23",
                 "price": 119.62,
-                "drawdown": -20.59
+                "drawdown": -20.08
             },
             {
                 "date": "2022-12-27",
                 "price": 120.04,
-                "drawdown": -20.31
+                "drawdown": -19.8
             },
             {
                 "date": "2022-12-28",
                 "price": 120.7,
-                "drawdown": -19.87
+                "drawdown": -19.36
             },
             {
                 "date": "2022-12-29",
                 "price": 121.39,
-                "drawdown": -19.41
+                "drawdown": -18.9
             },
             {
                 "date": "2022-12-30",
                 "price": 122.19,
-                "drawdown": -18.88
+                "drawdown": -18.37
             },
             {
                 "date": "2023-01-03",
                 "price": 123.12,
-                "drawdown": -18.26
+                "drawdown": -17.74
             },
             {
                 "date": "2023-01-04",
                 "price": 124.27,
-                "drawdown": -17.5
+                "drawdown": -16.98
             },
             {
                 "date": "2023-01-05",
                 "price": 124.24,
-                "drawdown": -17.52
+                "drawdown": -17.0
             },
             {
                 "date": "2023-01-06",
                 "price": 126.62,
-                "drawdown": -15.94
+                "drawdown": -15.41
             },
             {
                 "date": "2023-01-09",
                 "price": 126.1,
-                "drawdown": -16.28
+                "drawdown": -15.75
             },
             {
                 "date": "2023-01-10",
                 "price": 127.22,
-                "drawdown": -15.54
+                "drawdown": -15.01
             },
             {
                 "date": "2023-01-11",
                 "price": 128.17,
-                "drawdown": -14.91
+                "drawdown": -14.37
             },
             {
                 "date": "2023-01-12",
                 "price": 128.04,
-                "drawdown": -15.0
+                "drawdown": -14.46
             },
             {
                 "date": "2023-01-13",
                 "price": 131.27,
-                "drawdown": -12.85
+                "drawdown": -12.3
             },
             {
                 "date": "2023-01-17",
                 "price": 129.24,
-                "drawdown": -14.2
+                "drawdown": -13.66
             },
             {
                 "date": "2023-01-18",
                 "price": 125.36,
-                "drawdown": -16.78
+                "drawdown": -16.25
             },
             {
                 "date": "2023-01-19",
                 "price": 123.69,
-                "drawdown": -17.88
+                "drawdown": -17.36
             },
             {
                 "date": "2023-01-20",
                 "price": 123.99,
-                "drawdown": -17.69
+                "drawdown": -17.16
             },
             {
                 "date": "2023-01-23",
                 "price": 126.0,
-                "drawdown": -16.35
+                "drawdown": -15.82
             },
             {
                 "date": "2023-01-24",
                 "price": 127.09,
-                "drawdown": -15.63
+                "drawdown": -15.09
             },
             {
                 "date": "2023-01-25",
                 "price": 127.7,
-                "drawdown": -15.22
+                "drawdown": -14.68
             },
             {
                 "date": "2023-01-26",
                 "price": 128.49,
-                "drawdown": -14.7
+                "drawdown": -14.16
             },
             {
                 "date": "2023-01-27",
                 "price": 128.8,
-                "drawdown": -14.49
+                "drawdown": -13.95
             },
             {
                 "date": "2023-01-30",
                 "price": 127.71,
-                "drawdown": -15.22
+                "drawdown": -14.68
             },
             {
                 "date": "2023-01-31",
                 "price": 128.47,
-                "drawdown": -14.71
+                "drawdown": -14.17
             },
             {
                 "date": "2023-02-01",
                 "price": 128.13,
-                "drawdown": -14.94
+                "drawdown": -14.4
             },
             {
                 "date": "2023-02-02",
                 "price": 127.54,
-                "drawdown": -15.33
+                "drawdown": -14.79
             },
             {
                 "date": "2023-02-03",
                 "price": 129.51,
-                "drawdown": -14.02
+                "drawdown": -13.48
             },
             {
                 "date": "2023-02-06",
                 "price": 130.27,
-                "drawdown": -13.52
+                "drawdown": -12.97
             },
             {
                 "date": "2023-02-07",
                 "price": 131.86,
-                "drawdown": -12.46
+                "drawdown": -11.91
             },
             {
                 "date": "2023-02-08",
                 "price": 130.93,
-                "drawdown": -13.08
+                "drawdown": -12.53
             },
             {
                 "date": "2023-02-09",
                 "price": 128.9,
-                "drawdown": -14.43
+                "drawdown": -13.88
             },
             {
                 "date": "2023-02-10",
                 "price": 129.46,
-                "drawdown": -14.05
+                "drawdown": -13.51
             },
             {
                 "date": "2023-02-13",
                 "price": 130.87,
-                "drawdown": -13.12
+                "drawdown": -12.57
             },
             {
                 "date": "2023-02-14",
                 "price": 131.45,
-                "drawdown": -12.73
+                "drawdown": -12.18
             },
             {
                 "date": "2023-02-15",
                 "price": 132.0,
-                "drawdown": -12.37
+                "drawdown": -11.81
             },
             {
                 "date": "2023-02-16",
                 "price": 130.18,
-                "drawdown": -13.58
+                "drawdown": -13.03
             },
             {
                 "date": "2023-02-17",
                 "price": 130.57,
-                "drawdown": -13.32
+                "drawdown": -12.77
             },
             {
                 "date": "2023-02-21",
                 "price": 128.17,
-                "drawdown": -14.91
+                "drawdown": -14.37
             },
             {
                 "date": "2023-02-22",
                 "price": 127.19,
-                "drawdown": -15.56
+                "drawdown": -15.03
             },
             {
                 "date": "2023-02-23",
                 "price": 128.21,
-                "drawdown": -14.88
+                "drawdown": -14.34
             },
             {
                 "date": "2023-02-24",
                 "price": 129.36,
-                "drawdown": -14.12
+                "drawdown": -13.58
             },
             {
                 "date": "2023-02-27",
                 "price": 130.49,
-                "drawdown": -13.37
+                "drawdown": -12.82
             },
             {
                 "date": "2023-02-28",
                 "price": 131.58,
-                "drawdown": -12.65
+                "drawdown": -12.09
             },
             {
                 "date": "2023-03-01",
                 "price": 130.85,
-                "drawdown": -13.13
+                "drawdown": -12.58
             },
             {
                 "date": "2023-03-02",
                 "price": 129.49,
-                "drawdown": -14.03
+                "drawdown": -13.49
             },
             {
                 "date": "2023-03-03",
                 "price": 131.87,
-                "drawdown": -12.45
+                "drawdown": -11.9
             },
             {
                 "date": "2023-03-06",
                 "price": 131.1,
-                "drawdown": -12.97
+                "drawdown": -12.41
             },
             {
                 "date": "2023-03-07",
                 "price": 127.24,
-                "drawdown": -15.53
+                "drawdown": -14.99
             },
             {
                 "date": "2023-03-08",
                 "price": 126.49,
-                "drawdown": -16.03
+                "drawdown": -15.49
             },
             {
                 "date": "2023-03-09",
                 "price": 119.64,
-                "drawdown": -20.57
+                "drawdown": -20.07
             },
             {
                 "date": "2023-03-10",
                 "price": 122.68,
-                "drawdown": -18.56
+                "drawdown": -18.04
             },
             {
                 "date": "2023-03-13",
                 "price": 120.48,
-                "drawdown": -20.02
+                "drawdown": -19.51
             },
             {
                 "date": "2023-03-14",
                 "price": 123.57,
-                "drawdown": -17.96
+                "drawdown": -17.44
             },
             {
                 "date": "2023-03-15",
                 "price": 117.73,
-                "drawdown": -21.84
+                "drawdown": -21.35
             },
             {
                 "date": "2023-03-16",
                 "price": 120.02,
-                "drawdown": -20.32
+                "drawdown": -19.82
             },
             {
                 "date": "2023-03-17",
                 "price": 115.48,
-                "drawdown": -23.34
+                "drawdown": -22.85
             },
             {
                 "date": "2023-03-20",
                 "price": 116.71,
-                "drawdown": -22.52
+                "drawdown": -22.03
             },
             {
                 "date": "2023-03-21",
                 "price": 119.84,
-                "drawdown": -20.44
+                "drawdown": -19.94
             },
             {
                 "date": "2023-03-22",
                 "price": 116.74,
-                "drawdown": -22.5
+                "drawdown": -22.01
             },
             {
                 "date": "2023-03-23",
                 "price": 116.43,
-                "drawdown": -22.7
+                "drawdown": -22.21
             },
             {
                 "date": "2023-03-24",
                 "price": 114.66,
-                "drawdown": -23.88
+                "drawdown": -23.4
             },
             {
                 "date": "2023-03-27",
                 "price": 117.94,
-                "drawdown": -21.7
+                "drawdown": -21.21
             },
             {
                 "date": "2023-03-28",
                 "price": 118.3,
-                "drawdown": -21.46
+                "drawdown": -20.96
             },
             {
                 "date": "2023-03-29",
                 "price": 118.54,
-                "drawdown": -21.3
+                "drawdown": -20.8
             },
             {
                 "date": "2023-03-30",
                 "price": 118.18,
-                "drawdown": -21.54
+                "drawdown": -21.04
             },
             {
                 "date": "2023-03-31",
                 "price": 119.62,
-                "drawdown": -20.59
+                "drawdown": -20.08
             },
             {
                 "date": "2023-04-03",
                 "price": 119.48,
-                "drawdown": -20.68
+                "drawdown": -20.18
             },
             {
                 "date": "2023-04-04",
                 "price": 117.88,
-                "drawdown": -21.74
+                "drawdown": -21.25
             },
             {
                 "date": "2023-04-05",
                 "price": 118.06,
-                "drawdown": -21.62
+                "drawdown": -21.13
             },
             {
                 "date": "2023-04-06",
                 "price": 117.93,
-                "drawdown": -21.71
+                "drawdown": -21.21
             },
             {
                 "date": "2023-04-10",
                 "price": 118.32,
-                "drawdown": -21.45
+                "drawdown": -20.95
             },
             {
                 "date": "2023-04-11",
                 "price": 118.9,
-                "drawdown": -21.06
+                "drawdown": -20.56
             },
             {
                 "date": "2023-04-12",
                 "price": 118.88,
-                "drawdown": -21.08
+                "drawdown": -20.58
             },
             {
                 "date": "2023-04-13",
                 "price": 119.33,
-                "drawdown": -20.78
+                "drawdown": -20.28
             },
             {
                 "date": "2023-04-14",
                 "price": 128.34,
-                "drawdown": -14.8
+                "drawdown": -14.26
             },
             {
                 "date": "2023-04-17",
                 "price": 129.36,
-                "drawdown": -14.12
+                "drawdown": -13.58
             },
             {
                 "date": "2023-04-18",
                 "price": 130.81,
-                "drawdown": -13.16
+                "drawdown": -12.61
             },
             {
                 "date": "2023-04-19",
                 "price": 130.65,
-                "drawdown": -13.26
+                "drawdown": -12.71
             },
             {
                 "date": "2023-04-20",
                 "price": 130.27,
-                "drawdown": -13.52
+                "drawdown": -12.97
             },
             {
                 "date": "2023-04-21",
                 "price": 130.02,
-                "drawdown": -13.68
+                "drawdown": -13.13
             },
             {
                 "date": "2023-04-24",
                 "price": 130.19,
-                "drawdown": -13.57
+                "drawdown": -13.02
             },
             {
                 "date": "2023-04-25",
                 "price": 127.36,
-                "drawdown": -15.45
+                "drawdown": -14.91
             },
             {
                 "date": "2023-04-26",
                 "price": 125.11,
-                "drawdown": -16.94
+                "drawdown": -16.42
             },
             {
                 "date": "2023-04-27",
                 "price": 126.79,
-                "drawdown": -15.83
+                "drawdown": -15.29
             },
             {
                 "date": "2023-04-28",
                 "price": 127.89,
-                "drawdown": -15.1
+                "drawdown": -14.56
             },
             {
                 "date": "2023-05-01",
                 "price": 130.63,
-                "drawdown": -13.28
+                "drawdown": -12.73
             },
             {
                 "date": "2023-05-02",
                 "price": 128.52,
-                "drawdown": -14.68
+                "drawdown": -14.14
             },
             {
                 "date": "2023-05-03",
                 "price": 125.8,
-                "drawdown": -16.48
+                "drawdown": -15.95
             },
             {
                 "date": "2023-05-04",
                 "price": 124.08,
-                "drawdown": -17.63
+                "drawdown": -17.1
             },
             {
                 "date": "2023-05-05",
                 "price": 126.5,
-                "drawdown": -16.02
+                "drawdown": -15.49
             },
             {
                 "date": "2023-05-08",
                 "price": 126.81,
-                "drawdown": -15.81
+                "drawdown": -15.28
             },
             {
                 "date": "2023-05-09",
                 "price": 126.2,
-                "drawdown": -16.22
+                "drawdown": -15.69
             },
             {
                 "date": "2023-05-10",
                 "price": 126.26,
-                "drawdown": -16.18
+                "drawdown": -15.65
             },
             {
                 "date": "2023-05-11",
                 "price": 125.86,
-                "drawdown": -16.44
+                "drawdown": -15.91
             },
             {
                 "date": "2023-05-12",
                 "price": 124.06,
-                "drawdown": -17.64
+                "drawdown": -17.12
             },
             {
                 "date": "2023-05-15",
                 "price": 125.11,
-                "drawdown": -16.94
+                "drawdown": -16.42
             },
             {
                 "date": "2023-05-16",
                 "price": 124.26,
-                "drawdown": -17.51
+                "drawdown": -16.98
             },
             {
                 "date": "2023-05-17",
                 "price": 128.08,
-                "drawdown": -14.97
+                "drawdown": -14.43
             },
             {
                 "date": "2023-05-18",
                 "price": 129.06,
-                "drawdown": -14.32
+                "drawdown": -13.78
             },
             {
                 "date": "2023-05-19",
                 "price": 128.76,
-                "drawdown": -14.52
+                "drawdown": -13.98
             },
             {
                 "date": "2023-05-22",
                 "price": 127.7,
-                "drawdown": -15.22
+                "drawdown": -14.68
             },
             {
                 "date": "2023-05-23",
                 "price": 126.36,
-                "drawdown": -16.11
+                "drawdown": -15.58
             },
             {
                 "date": "2023-05-24",
                 "price": 125.21,
-                "drawdown": -16.88
+                "drawdown": -16.35
             },
             {
                 "date": "2023-05-25",
                 "price": 125.51,
-                "drawdown": -16.68
+                "drawdown": -16.15
             },
             {
                 "date": "2023-05-26",
                 "price": 126.69,
-                "drawdown": -15.89
+                "drawdown": -15.36
             },
             {
                 "date": "2023-05-30",
                 "price": 127.17,
-                "drawdown": -15.57
+                "drawdown": -15.04
             },
             {
                 "date": "2023-05-31",
                 "price": 125.55,
-                "drawdown": -16.65
+                "drawdown": -16.12
             },
             {
                 "date": "2023-06-01",
                 "price": 127.28,
-                "drawdown": -15.5
+                "drawdown": -14.97
             },
             {
                 "date": "2023-06-02",
                 "price": 129.95,
-                "drawdown": -13.73
+                "drawdown": -13.18
             },
             {
                 "date": "2023-06-05",
                 "price": 128.68,
-                "drawdown": -14.57
+                "drawdown": -14.03
             },
             {
                 "date": "2023-06-06",
                 "price": 128.91,
-                "drawdown": -14.42
+                "drawdown": -13.88
             },
             {
                 "date": "2023-06-07",
                 "price": 130.16,
-                "drawdown": -13.59
+                "drawdown": -13.04
             },
             {
                 "date": "2023-06-08",
                 "price": 130.19,
-                "drawdown": -13.57
+                "drawdown": -13.02
             },
             {
                 "date": "2023-06-09",
                 "price": 130.45,
-                "drawdown": -13.4
+                "drawdown": -12.85
             },
             {
                 "date": "2023-06-12",
                 "price": 130.44,
-                "drawdown": -13.4
+                "drawdown": -12.85
             },
             {
                 "date": "2023-06-13",
                 "price": 131.39,
-                "drawdown": -12.77
+                "drawdown": -12.22
             },
             {
                 "date": "2023-06-14",
                 "price": 130.9,
-                "drawdown": -13.1
+                "drawdown": -12.55
             },
             {
                 "date": "2023-06-15",
                 "price": 132.38,
-                "drawdown": -12.12
+                "drawdown": -11.56
             },
             {
                 "date": "2023-06-16",
                 "price": 132.53,
-                "drawdown": -12.02
+                "drawdown": -11.46
             },
             {
                 "date": "2023-06-20",
                 "price": 131.86,
-                "drawdown": -12.46
+                "drawdown": -11.91
             },
             {
                 "date": "2023-06-21",
                 "price": 131.66,
-                "drawdown": -12.59
+                "drawdown": -12.04
             },
             {
                 "date": "2023-06-22",
                 "price": 129.13,
-                "drawdown": -14.27
+                "drawdown": -13.73
             },
             {
                 "date": "2023-06-23",
                 "price": 128.45,
-                "drawdown": -14.72
+                "drawdown": -14.18
             },
             {
                 "date": "2023-06-26",
                 "price": 128.77,
-                "drawdown": -14.51
+                "drawdown": -13.97
             },
             {
                 "date": "2023-06-27",
                 "price": 128.78,
-                "drawdown": -14.51
+                "drawdown": -13.96
             },
             {
                 "date": "2023-06-28",
                 "price": 128.21,
-                "drawdown": -14.88
+                "drawdown": -14.34
             },
             {
                 "date": "2023-06-29",
                 "price": 132.69,
-                "drawdown": -11.91
+                "drawdown": -11.35
             },
             {
                 "date": "2023-06-30",
                 "price": 134.55,
-                "drawdown": -10.68
+                "drawdown": -10.11
             },
             {
                 "date": "2023-07-03",
                 "price": 135.63,
-                "drawdown": -9.96
+                "drawdown": -9.39
             },
             {
                 "date": "2023-07-05",
                 "price": 134.73,
-                "drawdown": -10.56
+                "drawdown": -9.99
             },
             {
                 "date": "2023-07-06",
                 "price": 133.4,
-                "drawdown": -11.44
+                "drawdown": -10.88
             },
             {
                 "date": "2023-07-07",
                 "price": 134.45,
-                "drawdown": -10.74
+                "drawdown": -10.18
             },
             {
                 "date": "2023-07-10",
                 "price": 135.21,
-                "drawdown": -10.24
+                "drawdown": -9.67
             },
             {
                 "date": "2023-07-11",
                 "price": 137.32,
-                "drawdown": -8.84
+                "drawdown": -8.26
             },
             {
                 "date": "2023-07-12",
                 "price": 138.0,
-                "drawdown": -8.38
+                "drawdown": -7.8
             },
             {
                 "date": "2023-07-13",
                 "price": 138.67,
-                "drawdown": -7.94
+                "drawdown": -7.36
             },
             {
                 "date": "2023-07-14",
                 "price": 139.51,
-                "drawdown": -7.38
+                "drawdown": -6.79
             },
             {
                 "date": "2023-07-17",
                 "price": 142.87,
-                "drawdown": -5.15
+                "drawdown": -4.55
             },
             {
                 "date": "2023-07-18",
                 "price": 143.13,
-                "drawdown": -4.98
+                "drawdown": -4.38
             },
             {
                 "date": "2023-07-19",
                 "price": 143.68,
-                "drawdown": -4.61
+                "drawdown": -4.01
             },
             {
                 "date": "2023-07-20",
                 "price": 145.45,
-                "drawdown": -3.44
+                "drawdown": -2.83
             },
             {
                 "date": "2023-07-21",
                 "price": 144.33,
-                "drawdown": -4.18
+                "drawdown": -3.57
             },
             {
                 "date": "2023-07-24",
                 "price": 147.17,
-                "drawdown": -2.3
+                "drawdown": -1.68
             },
             {
                 "date": "2023-07-25",
                 "price": 146.08,
-                "drawdown": -3.02
+                "drawdown": -2.41
             },
             {
                 "date": "2023-07-26",
                 "price": 146.95,
-                "drawdown": -2.44
+                "drawdown": -1.82
             },
             {
                 "date": "2023-07-27",
                 "price": 145.33,
-                "drawdown": -3.52
+                "drawdown": -2.91
             },
             {
                 "date": "2023-07-28",
                 "price": 146.16,
-                "drawdown": -2.97
+                "drawdown": -2.35
             },
             {
                 "date": "2023-07-31",
                 "price": 147.14,
-                "drawdown": -2.32
+                "drawdown": -1.7
             },
             {
                 "date": "2023-08-01",
                 "price": 146.41,
-                "drawdown": -2.8
+                "drawdown": -2.18
             },
             {
                 "date": "2023-08-02",
                 "price": 144.75,
-                "drawdown": -3.9
+                "drawdown": -3.29
             },
             {
                 "date": "2023-08-03",
                 "price": 145.64,
-                "drawdown": -3.31
+                "drawdown": -2.7
             },
             {
                 "date": "2023-08-04",
                 "price": 145.33,
-                "drawdown": -3.52
+                "drawdown": -2.91
             },
             {
                 "date": "2023-08-07",
                 "price": 146.02,
-                "drawdown": -3.06
+                "drawdown": -2.45
             },
             {
                 "date": "2023-08-08",
                 "price": 145.2,
-                "drawdown": -3.6
+                "drawdown": -2.99
             },
             {
                 "date": "2023-08-09",
                 "price": 143.25,
-                "drawdown": -4.9
+                "drawdown": -4.3
             },
             {
                 "date": "2023-08-10",
                 "price": 143.04,
-                "drawdown": -5.04
+                "drawdown": -4.44
             },
             {
                 "date": "2023-08-11",
                 "price": 143.87,
-                "drawdown": -4.49
+                "drawdown": -3.88
             },
             {
                 "date": "2023-08-14",
                 "price": 144.17,
-                "drawdown": -4.29
+                "drawdown": -3.68
             },
             {
                 "date": "2023-08-15",
                 "price": 140.5,
-                "drawdown": -6.73
+                "drawdown": -6.13
             },
             {
                 "date": "2023-08-16",
                 "price": 139.9,
-                "drawdown": -7.12
+                "drawdown": -6.53
             },
             {
                 "date": "2023-08-17",
                 "price": 138.45,
-                "drawdown": -8.09
+                "drawdown": -7.5
             },
             {
                 "date": "2023-08-18",
                 "price": 138.76,
-                "drawdown": -7.88
+                "drawdown": -7.3
             },
             {
                 "date": "2023-08-21",
                 "price": 139.24,
-                "drawdown": -7.56
+                "drawdown": -6.97
             },
             {
                 "date": "2023-08-22",
                 "price": 136.35,
-                "drawdown": -9.48
+                "drawdown": -8.91
             },
             {
                 "date": "2023-08-23",
                 "price": 137.27,
-                "drawdown": -8.87
+                "drawdown": -8.29
             },
             {
                 "date": "2023-08-24",
                 "price": 137.14,
-                "drawdown": -8.96
+                "drawdown": -8.38
             },
             {
                 "date": "2023-08-25",
                 "price": 136.97,
-                "drawdown": -9.07
+                "drawdown": -8.49
             },
             {
                 "date": "2023-08-28",
                 "price": 137.45,
-                "drawdown": -8.75
+                "drawdown": -8.17
             },
             {
                 "date": "2023-08-29",
                 "price": 138.57,
-                "drawdown": -8.01
+                "drawdown": -7.42
             },
             {
                 "date": "2023-08-30",
                 "price": 138.01,
-                "drawdown": -8.38
+                "drawdown": -7.8
             },
             {
                 "date": "2023-08-31",
                 "price": 136.3,
-                "drawdown": -9.51
+                "drawdown": -8.94
             },
             {
                 "date": "2023-09-01",
                 "price": 136.76,
-                "drawdown": -9.21
+                "drawdown": -8.63
             },
             {
                 "date": "2023-09-05",
                 "price": 135.25,
-                "drawdown": -10.21
+                "drawdown": -9.64
             },
             {
                 "date": "2023-09-06",
                 "price": 135.03,
-                "drawdown": -10.36
+                "drawdown": -9.79
             },
             {
                 "date": "2023-09-07",
                 "price": 133.87,
-                "drawdown": -11.13
+                "drawdown": -10.56
             },
             {
                 "date": "2023-09-08",
                 "price": 133.98,
-                "drawdown": -11.05
+                "drawdown": -10.49
             },
             {
                 "date": "2023-09-11",
                 "price": 134.56,
-                "drawdown": -10.67
+                "drawdown": -10.1
             },
             {
                 "date": "2023-09-12",
                 "price": 136.31,
-                "drawdown": -9.51
+                "drawdown": -8.93
             },
             {
                 "date": "2023-09-13",
                 "price": 136.38,
-                "drawdown": -9.46
+                "drawdown": -8.89
             },
             {
                 "date": "2023-09-14",
                 "price": 139.02,
-                "drawdown": -7.71
+                "drawdown": -7.12
             },
             {
                 "date": "2023-09-15",
                 "price": 138.61,
-                "drawdown": -7.98
+                "drawdown": -7.4
             },
             {
                 "date": "2023-09-18",
                 "price": 138.9,
-                "drawdown": -7.79
+                "drawdown": -7.2
             },
             {
                 "date": "2023-09-19",
                 "price": 138.73,
-                "drawdown": -7.9
+                "drawdown": -7.32
             },
             {
                 "date": "2023-09-20",
                 "price": 138.14,
-                "drawdown": -8.29
+                "drawdown": -7.71
             },
             {
                 "date": "2023-09-21",
                 "price": 137.06,
-                "drawdown": -9.01
+                "drawdown": -8.43
             },
             {
                 "date": "2023-09-22",
                 "price": 135.75,
-                "drawdown": -9.88
+                "drawdown": -9.31
             },
             {
                 "date": "2023-09-25",
                 "price": 136.42,
-                "drawdown": -9.43
+                "drawdown": -8.86
             },
             {
                 "date": "2023-09-26",
                 "price": 135.0,
-                "drawdown": -10.38
+                "drawdown": -9.81
             },
             {
                 "date": "2023-09-27",
                 "price": 135.79,
-                "drawdown": -9.85
+                "drawdown": -9.28
             },
             {
                 "date": "2023-09-28",
                 "price": 137.48,
-                "drawdown": -8.73
+                "drawdown": -8.15
             },
             {
                 "date": "2023-09-29",
                 "price": 135.08,
-                "drawdown": -10.32
+                "drawdown": -9.75
             },
             {
                 "date": "2023-10-02",
                 "price": 133.92,
-                "drawdown": -11.09
+                "drawdown": -10.53
             },
             {
                 "date": "2023-10-03",
                 "price": 132.93,
-                "drawdown": -11.75
+                "drawdown": -11.19
             },
             {
                 "date": "2023-10-04",
                 "price": 133.53,
-                "drawdown": -11.35
+                "drawdown": -10.79
             },
             {
                 "date": "2023-10-05",
                 "price": 134.09,
-                "drawdown": -10.98
+                "drawdown": -10.42
             },
             {
                 "date": "2023-10-06",
                 "price": 136.16,
-                "drawdown": -9.61
+                "drawdown": -9.03
             },
             {
                 "date": "2023-10-09",
                 "price": 135.85,
-                "drawdown": -9.81
+                "drawdown": -9.24
             },
             {
                 "date": "2023-10-10",
                 "price": 136.67,
-                "drawdown": -9.27
+                "drawdown": -8.69
             },
             {
                 "date": "2023-10-11",
                 "price": 137.14,
-                "drawdown": -8.96
+                "drawdown": -8.38
             },
             {
                 "date": "2023-10-12",
                 "price": 136.82,
-                "drawdown": -9.17
+                "drawdown": -8.59
             },
             {
                 "date": "2023-10-13",
                 "price": 138.88,
-                "drawdown": -7.8
+                "drawdown": -7.22
             },
             {
                 "date": "2023-10-16",
                 "price": 138.74,
-                "drawdown": -7.89
+                "drawdown": -7.31
             },
             {
                 "date": "2023-10-17",
                 "price": 138.44,
-                "drawdown": -8.09
+                "drawdown": -7.51
             },
             {
                 "date": "2023-10-18",
                 "price": 136.92,
-                "drawdown": -9.1
+                "drawdown": -8.52
             },
             {
                 "date": "2023-10-19",
                 "price": 136.33,
-                "drawdown": -9.49
+                "drawdown": -8.92
             },
             {
                 "date": "2023-10-20",
                 "price": 134.14,
-                "drawdown": -10.95
+                "drawdown": -10.38
             },
             {
                 "date": "2023-10-23",
                 "price": 132.31,
-                "drawdown": -12.16
+                "drawdown": -11.6
             },
             {
                 "date": "2023-10-24",
                 "price": 132.47,
-                "drawdown": -12.06
+                "drawdown": -11.5
             },
             {
                 "date": "2023-10-25",
                 "price": 131.75,
-                "drawdown": -12.53
+                "drawdown": -11.98
             },
             {
                 "date": "2023-10-26",
                 "price": 132.08,
-                "drawdown": -12.31
+                "drawdown": -11.76
             },
             {
                 "date": "2023-10-27",
                 "price": 127.33,
-                "drawdown": -15.47
+                "drawdown": -14.93
             },
             {
                 "date": "2023-10-30",
                 "price": 128.95,
-                "drawdown": -14.39
+                "drawdown": -13.85
             },
             {
                 "date": "2023-10-31",
                 "price": 130.49,
-                "drawdown": -13.37
+                "drawdown": -12.82
             },
             {
                 "date": "2023-11-01",
                 "price": 130.38,
-                "drawdown": -13.44
+                "drawdown": -12.89
             },
             {
                 "date": "2023-11-02",
                 "price": 132.7,
-                "drawdown": -11.9
+                "drawdown": -11.34
             },
             {
                 "date": "2023-11-03",
                 "price": 134.19,
-                "drawdown": -10.91
+                "drawdown": -10.35
             },
             {
                 "date": "2023-11-06",
                 "price": 135.2,
-                "drawdown": -10.24
+                "drawdown": -9.67
             },
             {
                 "date": "2023-11-07",
                 "price": 135.13,
-                "drawdown": -10.29
+                "drawdown": -9.72
             },
             {
                 "date": "2023-11-08",
                 "price": 135.8,
-                "drawdown": -9.85
+                "drawdown": -9.27
             },
             {
                 "date": "2023-11-09",
                 "price": 135.4,
-                "drawdown": -10.11
+                "drawdown": -9.54
             },
             {
                 "date": "2023-11-10",
                 "price": 137.4,
-                "drawdown": -8.78
+                "drawdown": -8.2
             },
             {
                 "date": "2023-11-13",
                 "price": 136.79,
-                "drawdown": -9.19
+                "drawdown": -8.61
             },
             {
                 "date": "2023-11-14",
                 "price": 139.29,
-                "drawdown": -7.53
+                "drawdown": -6.94
             },
             {
                 "date": "2023-11-15",
                 "price": 140.51,
-                "drawdown": -6.72
+                "drawdown": -6.13
             },
             {
                 "date": "2023-11-16",
                 "price": 142.11,
-                "drawdown": -5.66
+                "drawdown": -5.06
             },
             {
                 "date": "2023-11-17",
                 "price": 143.4,
-                "drawdown": -4.8
+                "drawdown": -4.2
             },
             {
                 "date": "2023-11-20",
                 "price": 143.84,
-                "drawdown": -4.51
+                "drawdown": -3.9
             },
             {
                 "date": "2023-11-21",
                 "price": 143.54,
-                "drawdown": -4.71
+                "drawdown": -4.1
             },
             {
                 "date": "2023-11-22",
                 "price": 143.88,
-                "drawdown": -4.48
+                "drawdown": -3.87
             },
             {
                 "date": "2023-11-24",
                 "price": 144.08,
-                "drawdown": -4.35
+                "drawdown": -3.74
             },
             {
                 "date": "2023-11-27",
                 "price": 143.75,
-                "drawdown": -4.57
+                "drawdown": -3.96
             },
             {
                 "date": "2023-11-28",
                 "price": 144.08,
-                "drawdown": -4.35
+                "drawdown": -3.74
             },
             {
                 "date": "2023-11-29",
                 "price": 144.81,
-                "drawdown": -3.86
+                "drawdown": -3.25
             },
             {
                 "date": "2023-11-30",
                 "price": 146.46,
-                "drawdown": -2.77
+                "drawdown": -2.15
             },
             {
                 "date": "2023-12-01",
                 "price": 147.17,
-                "drawdown": -2.3
+                "drawdown": -1.68
             },
             {
                 "date": "2023-12-04",
                 "price": 148.25,
-                "drawdown": -1.58
+                "drawdown": -0.96
             },
             {
                 "date": "2023-12-05",
                 "price": 148.23,
-                "drawdown": -1.59
+                "drawdown": -0.97
             },
             {
                 "date": "2023-12-06",
                 "price": 146.67,
-                "drawdown": -2.63
+                "drawdown": -2.01
             },
             {
                 "date": "2023-12-07",
                 "price": 147.13,
-                "drawdown": -2.32
+                "drawdown": -1.7
             },
             {
                 "date": "2023-12-08",
                 "price": 148.75,
-                "drawdown": -1.25
+                "drawdown": -0.62
             },
             {
                 "date": "2023-12-11",
                 "price": 149.29,
-                "drawdown": -0.89
+                "drawdown": -0.26
             },
             {
                 "date": "2023-12-12",
@@ -56732,6 +56727,11 @@
                 "date": "2026-11-02",
                 "price": 340.58,
                 "drawdown": -6.27
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -56747,10 +56747,10 @@
     {
         "symbol": "BAC",
         "name": "Bank of America Corporation",
-        "price": 49.57,
-        "change": -0.47,
-        "change_percent": -0.94,
-        "market_cap": 342043358321.6433,
+        "price": 49.66,
+        "change": 0.1,
+        "change_percent": 0.2,
+        "market_cap": 342664379237.95996,
         "description": "Bank of America Corporation provides a diverse range of banking and financial products and services. It serves individual consumers, small and middle-market businesses, and large corporations with a full suite of banking, investing, asset management, and other financial and risk management products and services.",
         "ceo": "Mr. Brian Thomas Moynihan",
         "hq": "Charlotte, NC, United States",
@@ -56760,238 +56760,233 @@
         "industry": "Banks - Diversified",
         "profit_margin": 28.06,
         "roe": 10.73,
-        "target_price": 62.61364,
+        "target_price": 62.47727,
         "high_52": 65.23,
         "low_52": 46.12,
         "beta": 1.19,
-        "sharpe_ratio": 0.09,
-        "sortino_ratio": 0.14,
+        "sharpe_ratio": 0.11,
+        "sortino_ratio": 0.16,
         "max_drawdown_pct": -46.65,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 42.8,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 41.88,
-                "drawdown": -2.15
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 41.56,
-                "drawdown": -2.9
+                "drawdown": -0.76
             },
             {
                 "date": "2021-11-08",
                 "price": 41.89,
-                "drawdown": -2.13
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-09",
                 "price": 41.48,
-                "drawdown": -3.08
+                "drawdown": -0.98
             },
             {
                 "date": "2021-11-10",
                 "price": 41.79,
-                "drawdown": -2.36
+                "drawdown": -0.24
             },
             {
                 "date": "2021-11-11",
                 "price": 42.02,
-                "drawdown": -1.82
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-12",
                 "price": 41.51,
-                "drawdown": -3.01
+                "drawdown": -1.21
             },
             {
                 "date": "2021-11-15",
                 "price": 41.63,
-                "drawdown": -2.73
+                "drawdown": -0.93
             },
             {
                 "date": "2021-11-16",
                 "price": 41.66,
-                "drawdown": -2.66
+                "drawdown": -0.86
             },
             {
                 "date": "2021-11-17",
                 "price": 41.15,
-                "drawdown": -3.86
+                "drawdown": -2.07
             },
             {
                 "date": "2021-11-18",
                 "price": 40.98,
-                "drawdown": -4.25
+                "drawdown": -2.48
             },
             {
                 "date": "2021-11-19",
                 "price": 40.17,
-                "drawdown": -6.14
+                "drawdown": -4.4
             },
             {
                 "date": "2021-11-22",
                 "price": 40.95,
-                "drawdown": -4.32
+                "drawdown": -2.55
             },
             {
                 "date": "2021-11-23",
                 "price": 42.03,
-                "drawdown": -1.8
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-24",
                 "price": 42.14,
-                "drawdown": -1.54
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-26",
                 "price": 40.49,
-                "drawdown": -5.4
+                "drawdown": -3.92
             },
             {
                 "date": "2021-11-29",
                 "price": 40.34,
-                "drawdown": -5.75
+                "drawdown": -4.27
             },
             {
                 "date": "2021-11-30",
                 "price": 39.35,
-                "drawdown": -8.06
+                "drawdown": -6.62
             },
             {
                 "date": "2021-12-01",
                 "price": 38.79,
-                "drawdown": -9.37
+                "drawdown": -7.95
             },
             {
                 "date": "2021-12-02",
                 "price": 39.91,
-                "drawdown": -6.75
+                "drawdown": -5.29
             },
             {
                 "date": "2021-12-03",
                 "price": 39.0,
-                "drawdown": -8.88
+                "drawdown": -7.45
             },
             {
                 "date": "2021-12-06",
                 "price": 39.25,
-                "drawdown": -8.29
+                "drawdown": -6.86
             },
             {
                 "date": "2021-12-07",
                 "price": 39.75,
-                "drawdown": -7.13
+                "drawdown": -5.67
             },
             {
                 "date": "2021-12-08",
                 "price": 39.26,
-                "drawdown": -8.27
+                "drawdown": -6.83
             },
             {
                 "date": "2021-12-09",
                 "price": 39.55,
-                "drawdown": -7.59
+                "drawdown": -6.15
             },
             {
                 "date": "2021-12-10",
                 "price": 39.58,
-                "drawdown": -7.52
+                "drawdown": -6.07
             },
             {
                 "date": "2021-12-13",
                 "price": 38.74,
-                "drawdown": -9.49
+                "drawdown": -8.07
             },
             {
                 "date": "2021-12-14",
                 "price": 39.23,
-                "drawdown": -8.34
+                "drawdown": -6.91
             },
             {
                 "date": "2021-12-15",
                 "price": 39.06,
-                "drawdown": -8.74
+                "drawdown": -7.31
             },
             {
                 "date": "2021-12-16",
                 "price": 40.01,
-                "drawdown": -6.52
+                "drawdown": -5.05
             },
             {
                 "date": "2021-12-17",
                 "price": 39.01,
-                "drawdown": -8.86
+                "drawdown": -7.43
             },
             {
                 "date": "2021-12-20",
                 "price": 38.37,
-                "drawdown": -10.35
+                "drawdown": -8.95
             },
             {
                 "date": "2021-12-21",
                 "price": 39.29,
-                "drawdown": -8.2
+                "drawdown": -6.76
             },
             {
                 "date": "2021-12-22",
                 "price": 39.37,
-                "drawdown": -8.01
+                "drawdown": -6.57
             },
             {
                 "date": "2021-12-23",
                 "price": 39.49,
-                "drawdown": -7.73
+                "drawdown": -6.29
             },
             {
                 "date": "2021-12-27",
                 "price": 39.69,
-                "drawdown": -7.27
+                "drawdown": -5.81
             },
             {
                 "date": "2021-12-28",
                 "price": 39.74,
-                "drawdown": -7.15
+                "drawdown": -5.7
             },
             {
                 "date": "2021-12-29",
                 "price": 39.68,
-                "drawdown": -7.29
+                "drawdown": -5.84
             },
             {
                 "date": "2021-12-30",
                 "price": 39.59,
-                "drawdown": -7.5
+                "drawdown": -6.05
             },
             {
                 "date": "2021-12-31",
                 "price": 39.55,
-                "drawdown": -7.59
+                "drawdown": -6.15
             },
             {
                 "date": "2022-01-03",
                 "price": 41.06,
-                "drawdown": -4.07
+                "drawdown": -2.56
             },
             {
                 "date": "2022-01-04",
                 "price": 42.67,
-                "drawdown": -0.3
+                "drawdown": 0.0
             },
             {
                 "date": "2022-01-05",
                 "price": 41.94,
-                "drawdown": -2.01
+                "drawdown": -1.71
             },
             {
                 "date": "2022-01-06",
                 "price": 42.79,
-                "drawdown": -0.02
+                "drawdown": 0.0
             },
             {
                 "date": "2022-01-07",
@@ -63037,6 +63032,11 @@
                 "date": "2026-11-02",
                 "price": 49.57,
                 "drawdown": -23.12
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -63052,10 +63052,10 @@
     {
         "symbol": "V",
         "name": "Visa Inc.",
-        "price": 425.51,
-        "change": 12.11,
-        "change_percent": 2.93,
-        "market_cap": 795280743015.0813,
+        "price": 420.42,
+        "change": -5.09,
+        "change_percent": -1.2,
+        "market_cap": 785767484441.9401,
         "description": "Visa Inc. operates the world's largest retail electronic payments network. The company facilitates digital payments across more than 200 countries and territories among consumers, merchants, financial institutions, and government entities. Visa does not issue cards or extend credit but processes transactions through its secure global network.",
         "ceo": "Mr. Ryan M. McInerney",
         "hq": "San Francisco, CA, United States",
@@ -63066,18 +63066,13 @@
         "profit_margin": 51.2,
         "roe": 63.51,
         "target_price": 443.4427,
-        "high_52": 417.0,
+        "high_52": 426.78,
         "low_52": 293.89,
         "beta": 0.79,
         "sharpe_ratio": 0.6,
         "sortino_ratio": 0.88,
         "max_drawdown_pct": -24.14,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 200.36,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 201.02,
@@ -65435,8 +65430,8 @@
             },
             {
                 "date": "2023-09-21",
-                "price": 231.27,
-                "drawdown": -4.64
+                "price": 231.28,
+                "drawdown": -4.63
             },
             {
                 "date": "2023-09-22",
@@ -69342,6 +69337,11 @@
                 "date": "2026-11-02",
                 "price": 425.51,
                 "drawdown": 0.0
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -69357,10 +69357,10 @@
     {
         "symbol": "MA",
         "name": "Mastercard Incorporated",
-        "price": 658.1,
-        "change": 20.08,
-        "change_percent": 3.15,
-        "market_cap": 573320979354.4519,
+        "price": 647.18,
+        "change": -11.82,
+        "change_percent": -1.79,
+        "market_cap": 563807757458.5199,
         "description": "Mastercard Incorporated is a technology company in the global payments industry. It connects consumers, financial institutions, merchants, governments, and businesses worldwide, enabling them to use electronic forms of payment. The company generates revenue by charging fees for processing transactions on its network.",
         "ceo": "Mr. Michael  Miebach",
         "hq": "Purchase, NY, United States",
@@ -69371,18 +69371,13 @@
         "profit_margin": 46.73,
         "roe": 231.37,
         "target_price": 706.0381,
-        "high_52": 644.24,
+        "high_52": 661.34,
         "low_52": 464.52,
         "beta": 0.77,
-        "sharpe_ratio": 0.56,
-        "sortino_ratio": 0.79,
+        "sharpe_ratio": 0.55,
+        "sortino_ratio": 0.77,
         "max_drawdown_pct": -28.25,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 319.75,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 325.57,
@@ -70860,7 +70855,7 @@
             },
             {
                 "date": "2023-01-09",
-                "price": 362.77,
+                "price": 362.76,
                 "drawdown": -5.92
             },
             {
@@ -71320,7 +71315,7 @@
             },
             {
                 "date": "2023-05-22",
-                "price": 376.61,
+                "price": 376.62,
                 "drawdown": -2.33
             },
             {
@@ -71500,7 +71495,7 @@
             },
             {
                 "date": "2023-07-14",
-                "price": 394.79,
+                "price": 394.8,
                 "drawdown": 0.0
             },
             {
@@ -71521,7 +71516,7 @@
             {
                 "date": "2023-07-20",
                 "price": 390.43,
-                "drawdown": -1.1
+                "drawdown": -1.11
             },
             {
                 "date": "2023-07-21",
@@ -75647,6 +75642,11 @@
                 "date": "2026-11-02",
                 "price": 658.1,
                 "drawdown": 0.0
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -75662,10 +75662,10 @@
     {
         "symbol": "JNJ",
         "name": "Johnson & Johnson",
-        "price": 270.56,
-        "change": -2.92,
-        "change_percent": -1.07,
-        "market_cap": 651321859691.7377,
+        "price": 266.17,
+        "change": -4.66,
+        "change_percent": -1.72,
+        "market_cap": 640753773501.2201,
         "description": "Johnson & Johnson is a diversified healthcare giant that researches, develops, manufactures, and sells a broad range of products in the healthcare field. Its business is divided into Innovative Medicine (pharmaceuticals) and MedTech (medical devices), focusing on areas like immunology, oncology, neuroscience, and surgery.",
         "ceo": "Mr. Joaquin  Duato",
         "hq": "New Brunswick, NJ, United States",
@@ -75684,124 +75684,119 @@
         "max_drawdown_pct": -18.41,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 143.55,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 143.15,
-                "drawdown": -0.28
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 142.13,
-                "drawdown": -0.99
+                "drawdown": -0.71
             },
             {
                 "date": "2021-11-08",
                 "price": 141.64,
-                "drawdown": -1.33
+                "drawdown": -1.05
             },
             {
                 "date": "2021-11-09",
                 "price": 141.33,
-                "drawdown": -1.55
+                "drawdown": -1.27
             },
             {
                 "date": "2021-11-10",
                 "price": 142.86,
-                "drawdown": -0.48
+                "drawdown": -0.2
             },
             {
                 "date": "2021-11-11",
                 "price": 141.81,
-                "drawdown": -1.21
+                "drawdown": -0.94
             },
             {
                 "date": "2021-11-12",
                 "price": 143.51,
-                "drawdown": -0.03
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-15",
                 "price": 142.21,
-                "drawdown": -0.93
+                "drawdown": -0.91
             },
             {
                 "date": "2021-11-16",
                 "price": 141.47,
-                "drawdown": -1.45
+                "drawdown": -1.42
             },
             {
                 "date": "2021-11-17",
                 "price": 142.0,
-                "drawdown": -1.08
+                "drawdown": -1.05
             },
             {
                 "date": "2021-11-18",
                 "price": 141.24,
-                "drawdown": -1.61
+                "drawdown": -1.58
             },
             {
                 "date": "2021-11-19",
                 "price": 141.66,
-                "drawdown": -1.32
+                "drawdown": -1.29
             },
             {
                 "date": "2021-11-22",
                 "price": 139.8,
-                "drawdown": -2.61
+                "drawdown": -2.59
             },
             {
                 "date": "2021-11-23",
                 "price": 140.66,
-                "drawdown": -2.01
+                "drawdown": -1.99
             },
             {
                 "date": "2021-11-24",
                 "price": 140.27,
-                "drawdown": -2.28
+                "drawdown": -2.26
             },
             {
                 "date": "2021-11-26",
                 "price": 139.36,
-                "drawdown": -2.92
+                "drawdown": -2.89
             },
             {
                 "date": "2021-11-29",
                 "price": 139.84,
-                "drawdown": -2.58
+                "drawdown": -2.56
             },
             {
                 "date": "2021-11-30",
                 "price": 136.5,
-                "drawdown": -4.91
+                "drawdown": -4.88
             },
             {
                 "date": "2021-12-01",
                 "price": 138.38,
-                "drawdown": -3.6
+                "drawdown": -3.57
             },
             {
                 "date": "2021-12-02",
                 "price": 137.51,
-                "drawdown": -4.21
+                "drawdown": -4.18
             },
             {
                 "date": "2021-12-03",
                 "price": 139.52,
-                "drawdown": -2.81
+                "drawdown": -2.78
             },
             {
                 "date": "2021-12-06",
                 "price": 142.63,
-                "drawdown": -0.64
+                "drawdown": -0.61
             },
             {
                 "date": "2021-12-07",
                 "price": 143.0,
-                "drawdown": -0.38
+                "drawdown": -0.36
             },
             {
                 "date": "2021-12-08",
@@ -76080,8 +76075,8 @@
             },
             {
                 "date": "2022-02-28",
-                "price": 144.99,
-                "drawdown": -4.78
+                "price": 144.98,
+                "drawdown": -4.79
             },
             {
                 "date": "2022-03-01",
@@ -80700,7 +80695,7 @@
             },
             {
                 "date": "2025-11-03",
-                "price": 182.16,
+                "price": 182.15,
                 "drawdown": -3.85
             },
             {
@@ -81952,6 +81947,11 @@
                 "date": "2026-11-02",
                 "price": 270.56,
                 "drawdown": -2.83
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -81967,10 +81967,10 @@
     {
         "symbol": "PFE",
         "name": "Pfizer, Inc.",
-        "price": 30.67,
-        "change": 0.22,
-        "change_percent": 0.72,
-        "market_cap": 174808989409.4806,
+        "price": 30.0,
+        "change": -1.02,
+        "change_percent": -3.29,
+        "market_cap": 170990207670.0,
         "description": "Pfizer Inc. discovers, develops, manufactures, markets, distributes, and sells biopharmaceutical products in the United States and internationally. The company offers medicines and vaccines in various therapeutic areas, including cardiovascular and migraine under the Eliquis, Nurtec ODT/Vydura, Zavzpret, and the Premarin family brands; infectious diseases with unmet medical needs under the Prevnar family, Abrysvo, Nimenrix, FSME/IMMUN-TicoVac, and Trumenba brands; and COVID-19 prevention and treatment, and potential future mRNA and antiviral products under the Comirnaty and Paxlovid brands. It also provides medicines and vaccines in various therapeutic areas, such as biosimilars for chronic immune and inflammatory diseases under the Xeljanz, Enbrel, Inflectra, Litfulo, Velsipity, and Cibinqo brands; amyloidosis, hemophilia, endocrine diseases, and sickle cell disease under the Vyndaqel family, Oxbryta, BeneFIX, Somavert, Ngenla, and Genotropin brands; sterile injectable and anti-infective medicines under the Sulperazon, Medrol, Zavicefta, Zithromax, Octagam, and Panzyga brands; and biologics, small molecules, immunotherapies, and biosimilars under the Ibrance, Xtandi, Padcev, Adcetris, Inlyta, Lorbrena, Bosulif, Tukysa, Braftovi, Mektovi, Orgovyx, Elrexfio, Tivdak, and Talzenna brands. In addition, the company involved in the contract manufacturing business. It serves wholesalers, retailers, hospitals, clinics, government agencies, pharmacies, individual provider offices, retail pharmacies, and integrated delivery systems. The company has collaboration agreements with Bristol-Myers Squibb Company; Astellas Pharma US, Inc.; Merck KGaA; and BioNTech SE. Pfizer Inc. was founded in 1849 and is headquartered in New York, New York.",
         "ceo": "Dr. Albert  Bourla D.V.M., Ph.D.",
         "hq": "New York, NY, United States",
@@ -81981,22 +81981,17 @@
         "profit_margin": 6.8,
         "roe": 5.01,
         "target_price": 29.25962,
-        "high_52": 30.67,
+        "high_52": 31.04,
         "low_52": 23.62,
         "beta": 0.3,
-        "sharpe_ratio": -0.12,
-        "sortino_ratio": -0.2,
+        "sharpe_ratio": -0.11,
+        "sortino_ratio": -0.18,
         "max_drawdown_pct": -58.96,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 34.4,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 33.95,
-                "drawdown": -1.31
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
@@ -84015,8 +84010,8 @@
             },
             {
                 "date": "2023-06-15",
-                "price": 32.41,
-                "drawdown": -31.65
+                "price": 32.42,
+                "drawdown": -31.63
             },
             {
                 "date": "2023-06-16",
@@ -88257,6 +88252,11 @@
                 "date": "2026-11-02",
                 "price": 30.67,
                 "drawdown": -35.32
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -88272,10 +88272,10 @@
     {
         "symbol": "UNH",
         "name": "UnitedHealth Group Incorporated",
-        "price": 400.44,
-        "change": -5.38,
-        "change_percent": -1.33,
-        "market_cap": 359432882724.07367,
+        "price": 404.44,
+        "change": 5.19,
+        "change_percent": 1.3,
+        "market_cap": 363023259920.68,
         "description": "UnitedHealth Group Incorporated is a diversified health care company. It operates through two distinct platforms: UnitedHealthcare, which provides health care coverage and benefits services, and Optum, which provides information and technology-enabled health services. It is the largest healthcare company in the world by revenue.",
         "ceo": "Mr. Stephen J. Hemsley",
         "hq": "Eden Prairie, MN, United States",
@@ -88294,19 +88294,14 @@
         "max_drawdown_pct": -61.39,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 417.81,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 417.29,
-                "drawdown": -0.12
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 416.43,
-                "drawdown": -0.33
+                "drawdown": -0.21
             },
             {
                 "date": "2021-11-08",
@@ -89435,7 +89430,7 @@
             },
             {
                 "date": "2022-09-30",
-                "price": 467.4,
+                "price": 467.39,
                 "drawdown": -7.6
             },
             {
@@ -90315,7 +90310,7 @@
             },
             {
                 "date": "2023-06-14",
-                "price": 428.42,
+                "price": 428.41,
                 "drawdown": -16.61
             },
             {
@@ -92090,7 +92085,7 @@
             },
             {
                 "date": "2024-11-11",
-                "price": 596.1,
+                "price": 596.11,
                 "drawdown": 0.0
             },
             {
@@ -92116,7 +92111,7 @@
             {
                 "date": "2024-11-18",
                 "price": 562.16,
-                "drawdown": -5.69
+                "drawdown": -5.7
             },
             {
                 "date": "2024-11-19",
@@ -92211,7 +92206,7 @@
             {
                 "date": "2024-12-16",
                 "price": 477.09,
-                "drawdown": -19.96
+                "drawdown": -19.97
             },
             {
                 "date": "2024-12-17",
@@ -92246,7 +92241,7 @@
             {
                 "date": "2024-12-26",
                 "price": 489.19,
-                "drawdown": -17.93
+                "drawdown": -17.94
             },
             {
                 "date": "2024-12-27",
@@ -92261,7 +92256,7 @@
             {
                 "date": "2024-12-31",
                 "price": 484.13,
-                "drawdown": -18.78
+                "drawdown": -18.79
             },
             {
                 "date": "2025-01-02",
@@ -92311,7 +92306,7 @@
             {
                 "date": "2025-01-16",
                 "price": 488.66,
-                "drawdown": -18.02
+                "drawdown": -18.03
             },
             {
                 "date": "2025-01-17",
@@ -92336,7 +92331,7 @@
             {
                 "date": "2025-01-24",
                 "price": 509.64,
-                "drawdown": -14.5
+                "drawdown": -14.51
             },
             {
                 "date": "2025-01-27",
@@ -92346,7 +92341,7 @@
             {
                 "date": "2025-01-28",
                 "price": 519.18,
-                "drawdown": -12.9
+                "drawdown": -12.91
             },
             {
                 "date": "2025-01-29",
@@ -92456,12 +92451,12 @@
             {
                 "date": "2025-02-28",
                 "price": 454.56,
-                "drawdown": -23.74
+                "drawdown": -23.75
             },
             {
                 "date": "2025-03-03",
                 "price": 446.99,
-                "drawdown": -25.01
+                "drawdown": -25.02
             },
             {
                 "date": "2025-03-04",
@@ -92500,7 +92495,7 @@
             },
             {
                 "date": "2025-03-13",
-                "price": 462.8,
+                "price": 462.81,
                 "drawdown": -22.36
             },
             {
@@ -92531,7 +92526,7 @@
             {
                 "date": "2025-03-21",
                 "price": 496.76,
-                "drawdown": -16.66
+                "drawdown": -16.67
             },
             {
                 "date": "2025-03-24",
@@ -92591,12 +92586,12 @@
             {
                 "date": "2025-04-08",
                 "price": 531.58,
-                "drawdown": -10.82
+                "drawdown": -10.83
             },
             {
                 "date": "2025-04-09",
                 "price": 556.02,
-                "drawdown": -6.72
+                "drawdown": -6.73
             },
             {
                 "date": "2025-04-10",
@@ -92606,12 +92601,12 @@
             {
                 "date": "2025-04-11",
                 "price": 576.17,
-                "drawdown": -3.34
+                "drawdown": -3.35
             },
             {
                 "date": "2025-04-14",
                 "price": 564.24,
-                "drawdown": -5.34
+                "drawdown": -5.35
             },
             {
                 "date": "2025-04-15",
@@ -92696,7 +92691,7 @@
             {
                 "date": "2025-05-08",
                 "price": 370.57,
-                "drawdown": -37.83
+                "drawdown": -37.84
             },
             {
                 "date": "2025-05-09",
@@ -92761,7 +92756,7 @@
             {
                 "date": "2025-05-28",
                 "price": 286.52,
-                "drawdown": -51.93
+                "drawdown": -51.94
             },
             {
                 "date": "2025-05-29",
@@ -92846,7 +92841,7 @@
             {
                 "date": "2025-06-23",
                 "price": 291.05,
-                "drawdown": -51.17
+                "drawdown": -51.18
             },
             {
                 "date": "2025-06-24",
@@ -92926,7 +92921,7 @@
             {
                 "date": "2025-07-16",
                 "price": 283.12,
-                "drawdown": -52.5
+                "drawdown": -52.51
             },
             {
                 "date": "2025-07-17",
@@ -92956,7 +92951,7 @@
             {
                 "date": "2025-07-24",
                 "price": 269.65,
-                "drawdown": -54.76
+                "drawdown": -54.77
             },
             {
                 "date": "2025-07-25",
@@ -93081,7 +93076,7 @@
             {
                 "date": "2025-08-28",
                 "price": 292.6,
-                "drawdown": -50.91
+                "drawdown": -50.92
             },
             {
                 "date": "2025-08-29",
@@ -93116,7 +93111,7 @@
             {
                 "date": "2025-09-09",
                 "price": 336.77,
-                "drawdown": -43.5
+                "drawdown": -43.51
             },
             {
                 "date": "2025-09-10",
@@ -93181,7 +93176,7 @@
             {
                 "date": "2025-09-26",
                 "price": 335.16,
-                "drawdown": -43.77
+                "drawdown": -43.78
             },
             {
                 "date": "2025-09-29",
@@ -93281,7 +93276,7 @@
             {
                 "date": "2025-10-24",
                 "price": 353.1,
-                "drawdown": -40.76
+                "drawdown": -40.77
             },
             {
                 "date": "2025-10-27",
@@ -93346,7 +93341,7 @@
             {
                 "date": "2025-11-12",
                 "price": 330.27,
-                "drawdown": -44.59
+                "drawdown": -44.6
             },
             {
                 "date": "2025-11-13",
@@ -93361,7 +93356,7 @@
             {
                 "date": "2025-11-17",
                 "price": 312.21,
-                "drawdown": -47.62
+                "drawdown": -47.63
             },
             {
                 "date": "2025-11-18",
@@ -93546,7 +93541,7 @@
             {
                 "date": "2026-01-12",
                 "price": 333.91,
-                "drawdown": -43.98
+                "drawdown": -43.99
             },
             {
                 "date": "2026-01-13",
@@ -93586,7 +93581,7 @@
             {
                 "date": "2026-01-23",
                 "price": 349.35,
-                "drawdown": -41.39
+                "drawdown": -41.4
             },
             {
                 "date": "2026-01-26",
@@ -93596,7 +93591,7 @@
             {
                 "date": "2026-01-27",
                 "price": 277.22,
-                "drawdown": -53.49
+                "drawdown": -53.5
             },
             {
                 "date": "2026-01-28",
@@ -93646,7 +93641,7 @@
             {
                 "date": "2026-02-10",
                 "price": 267.92,
-                "drawdown": -55.05
+                "drawdown": -55.06
             },
             {
                 "date": "2026-02-11",
@@ -93676,7 +93671,7 @@
             {
                 "date": "2026-02-19",
                 "price": 284.31,
-                "drawdown": -52.3
+                "drawdown": -52.31
             },
             {
                 "date": "2026-02-20",
@@ -93756,7 +93751,7 @@
             {
                 "date": "2026-03-13",
                 "price": 278.77,
-                "drawdown": -53.23
+                "drawdown": -53.24
             },
             {
                 "date": "2026-03-16",
@@ -93786,7 +93781,7 @@
             {
                 "date": "2026-03-23",
                 "price": 266.37,
-                "drawdown": -55.31
+                "drawdown": -55.32
             },
             {
                 "date": "2026-03-24",
@@ -93826,7 +93821,7 @@
             {
                 "date": "2026-04-02",
                 "price": 274.0,
-                "drawdown": -54.03
+                "drawdown": -54.04
             },
             {
                 "date": "2026-04-06",
@@ -93866,7 +93861,7 @@
             {
                 "date": "2026-04-15",
                 "price": 310.36,
-                "drawdown": -47.93
+                "drawdown": -47.94
             },
             {
                 "date": "2026-04-16",
@@ -93911,7 +93906,7 @@
             {
                 "date": "2026-04-28",
                 "price": 362.46,
-                "drawdown": -39.19
+                "drawdown": -39.2
             },
             {
                 "date": "2026-04-29",
@@ -93961,12 +93956,12 @@
             {
                 "date": "2026-05-12",
                 "price": 391.73,
-                "drawdown": -34.28
+                "drawdown": -34.29
             },
             {
                 "date": "2026-05-13",
                 "price": 396.44,
-                "drawdown": -33.49
+                "drawdown": -33.5
             },
             {
                 "date": "2026-05-14",
@@ -94046,7 +94041,7 @@
             {
                 "date": "2026-06-05",
                 "price": 394.77,
-                "drawdown": -33.77
+                "drawdown": -33.78
             },
             {
                 "date": "2026-06-08",
@@ -94071,7 +94066,7 @@
             {
                 "date": "2026-06-12",
                 "price": 403.71,
-                "drawdown": -32.27
+                "drawdown": -32.28
             },
             {
                 "date": "2026-06-15",
@@ -94096,12 +94091,12 @@
             {
                 "date": "2026-06-22",
                 "price": 404.19,
-                "drawdown": -32.19
+                "drawdown": -32.2
             },
             {
                 "date": "2026-06-23",
                 "price": 406.75,
-                "drawdown": -31.76
+                "drawdown": -31.77
             },
             {
                 "date": "2026-06-24",
@@ -94191,7 +94186,7 @@
             {
                 "date": "2026-07-20",
                 "price": 418.97,
-                "drawdown": -29.71
+                "drawdown": -29.72
             },
             {
                 "date": "2026-07-21",
@@ -94281,7 +94276,7 @@
             {
                 "date": "2026-08-13",
                 "price": 396.62,
-                "drawdown": -33.46
+                "drawdown": -33.47
             },
             {
                 "date": "2026-08-14",
@@ -94306,7 +94301,7 @@
             {
                 "date": "2026-08-20",
                 "price": 382.49,
-                "drawdown": -35.83
+                "drawdown": -35.84
             },
             {
                 "date": "2026-08-21",
@@ -94316,7 +94311,7 @@
             {
                 "date": "2026-08-24",
                 "price": 396.32,
-                "drawdown": -33.51
+                "drawdown": -33.52
             },
             {
                 "date": "2026-08-25",
@@ -94361,7 +94356,7 @@
             {
                 "date": "2026-09-04",
                 "price": 394.71,
-                "drawdown": -33.78
+                "drawdown": -33.79
             },
             {
                 "date": "2026-09-08",
@@ -94381,7 +94376,7 @@
             {
                 "date": "2026-09-11",
                 "price": 376.77,
-                "drawdown": -36.79
+                "drawdown": -36.8
             },
             {
                 "date": "2026-09-14",
@@ -94416,7 +94411,7 @@
             {
                 "date": "2026-09-22",
                 "price": 372.95,
-                "drawdown": -37.43
+                "drawdown": -37.44
             },
             {
                 "date": "2026-09-23",
@@ -94431,7 +94426,7 @@
             {
                 "date": "2026-09-25",
                 "price": 376.59,
-                "drawdown": -36.82
+                "drawdown": -36.83
             },
             {
                 "date": "2026-09-28",
@@ -94541,7 +94536,7 @@
             {
                 "date": "2026-10-27",
                 "price": 410.39,
-                "drawdown": -31.15
+                "drawdown": -31.16
             },
             {
                 "date": "2026-10-28",
@@ -94562,6 +94557,11 @@
                 "date": "2026-11-02",
                 "price": 400.44,
                 "drawdown": -32.82
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -94577,10 +94577,10 @@
     {
         "symbol": "LLY",
         "name": "Eli Lilly and Company",
-        "price": 1410.99,
-        "change": -7.01,
-        "change_percent": -0.49,
-        "market_cap": 1256832322592.008,
+        "price": 1409.38,
+        "change": -2.46,
+        "change_percent": -0.17,
+        "market_cap": 1255398231790.78,
         "description": "Eli Lilly and Company discovers, develops, and markets human pharmaceuticals worldwide. The company focuses on endocrinology, oncology, neuroscience, and immunology. It has seen significant growth driven by its portfolio of diabetes and obesity treatments, including Mounjaro and Zepbound.",
         "ceo": "Mr. David A. Ricks",
         "hq": "Indianapolis, IN, United States",
@@ -94590,19 +94590,14 @@
         "industry": "Drug Manufacturers - General",
         "profit_margin": 31.9,
         "roe": 86.02,
-        "target_price": 1426.9186,
+        "target_price": 1442.0911,
         "high_52": 1449.68,
         "low_52": 850.51,
         "beta": 0.39,
-        "sharpe_ratio": 1.09,
-        "sortino_ratio": 1.64,
+        "sharpe_ratio": 1.08,
+        "sortino_ratio": 1.62,
         "max_drawdown_pct": -34.47,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 254.45,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 258.97,
@@ -96715,7 +96710,7 @@
             },
             {
                 "date": "2023-07-13",
-                "price": 424.93,
+                "price": 424.92,
                 "drawdown": -7.31
             },
             {
@@ -97385,7 +97380,7 @@
             },
             {
                 "date": "2024-01-24",
-                "price": 621.92,
+                "price": 621.93,
                 "drawdown": -1.43
             },
             {
@@ -97400,7 +97395,7 @@
             },
             {
                 "date": "2024-01-29",
-                "price": 633.02,
+                "price": 633.01,
                 "drawdown": 0.0
             },
             {
@@ -97930,7 +97925,7 @@
             },
             {
                 "date": "2024-07-01",
-                "price": 900.48,
+                "price": 900.49,
                 "drawdown": 0.0
             },
             {
@@ -98255,7 +98250,7 @@
             },
             {
                 "date": "2024-10-02",
-                "price": 878.77,
+                "price": 878.76,
                 "drawdown": -7.18
             },
             {
@@ -98995,7 +98990,7 @@
             },
             {
                 "date": "2025-05-07",
-                "price": 768.59,
+                "price": 768.58,
                 "drawdown": -18.82
             },
             {
@@ -99165,7 +99160,7 @@
             },
             {
                 "date": "2025-06-26",
-                "price": 788.4,
+                "price": 788.41,
                 "drawdown": -16.73
             },
             {
@@ -100867,6 +100862,11 @@
                 "date": "2026-11-02",
                 "price": 1410.99,
                 "drawdown": -0.46
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -100882,10 +100882,10 @@
     {
         "symbol": "XOM",
         "name": "Exxon Mobil Corporation",
-        "price": 179.67,
-        "change": -7.35,
-        "change_percent": -3.93,
-        "market_cap": 732873922531.1279,
+        "price": 177.46,
+        "change": -2.54,
+        "change_percent": -1.41,
+        "market_cap": 723859340000.0,
         "description": "Exxon Mobil Corporation is one of the world's largest publicly traded international oil and gas companies. It explores for and produces crude oil and natural gas, manufactures petroleum products, and transports and sells crude oil, natural gas, and petroleum products. It is also a major manufacturer of commodity petrochemicals.",
         "ceo": "Mr. Darren W. Woods",
         "hq": "Spring, TX, United States",
@@ -100895,19 +100895,14 @@
         "industry": "Oil & Gas Integrated",
         "profit_margin": 10.46,
         "roe": 15.53,
-        "target_price": 182.04762,
+        "target_price": 182.7143,
         "high_52": 188.5,
         "low_52": 112.51,
         "beta": 0.14,
-        "sharpe_ratio": 0.9,
-        "sortino_ratio": 1.3,
+        "sharpe_ratio": 0.89,
+        "sortino_ratio": 1.29,
         "max_drawdown_pct": -20.5,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 53.65,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 54.05,
@@ -102345,8 +102340,8 @@
             },
             {
                 "date": "2022-12-27",
-                "price": 97.44,
-                "drawdown": -3.49
+                "price": 97.43,
+                "drawdown": -3.5
             },
             {
                 "date": "2022-12-28",
@@ -107172,6 +107167,11 @@
                 "date": "2026-11-02",
                 "price": 179.67,
                 "drawdown": -4.05
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -107187,10 +107187,10 @@
     {
         "symbol": "CVX",
         "name": "Chevron Corporation",
-        "price": 227.77,
-        "change": -8.12,
-        "change_percent": -3.44,
-        "market_cap": 444379278335.5713,
+        "price": 225.27,
+        "change": -3.23,
+        "change_percent": -1.41,
+        "market_cap": 439501770000.0,
         "description": "Chevron Corporation is an integrated energy company with operations worldwide. It is involved in every facet of the energy industry, including exploration, production, and transportation of crude oil and natural gas, as well as refining, marketing, and distributing fuels and petrochemicals.",
         "ceo": "Mr. Michael K. Wirth",
         "hq": "Houston, TX, United States",
@@ -107204,15 +107204,10 @@
         "high_52": 236.48,
         "low_52": 146.49,
         "beta": 0.45,
-        "sharpe_ratio": 0.69,
+        "sharpe_ratio": 0.68,
         "sortino_ratio": 0.93,
         "max_drawdown_pct": -24.95,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 92.48,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 92.89,
@@ -108715,8 +108710,8 @@
             },
             {
                 "date": "2023-01-17",
-                "price": 154.8,
-                "drawdown": -3.27
+                "price": 154.79,
+                "drawdown": -3.28
             },
             {
                 "date": "2023-01-18",
@@ -109875,8 +109870,8 @@
             },
             {
                 "date": "2023-12-18",
-                "price": 133.41,
-                "drawdown": -17.17
+                "price": 133.42,
+                "drawdown": -17.16
             },
             {
                 "date": "2023-12-19",
@@ -113477,6 +113472,11 @@
                 "date": "2026-11-02",
                 "price": 227.77,
                 "drawdown": -3.29
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -113492,10 +113492,10 @@
     {
         "symbol": "KO",
         "name": "Coca-Cola Company (The)",
-        "price": 95.83,
-        "change": 1.61,
-        "change_percent": 1.71,
-        "market_cap": 412251308640.0684,
+        "price": 94.8,
+        "change": -1.03,
+        "change_percent": -1.07,
+        "market_cap": 407820341358.0,
         "description": "The Coca-Cola Company is a total beverage company, offering over 500 brands in more than 200 countries and territories. Its portfolio includes sparkling soft drinks, water, juice, dairy, and plant-based beverages. The company operates a massive global distribution system and owns five of the world's top six non-alcoholic sparkling soft drink brands.",
         "ceo": "Mr. James Robert B. Quincey",
         "hq": "Atlanta, GA, United States",
@@ -113506,18 +113506,13 @@
         "profit_margin": 28.65,
         "roe": 40.59,
         "target_price": 97.75,
-        "high_52": 95.37,
+        "high_52": 96.26,
         "low_52": 67.27,
         "beta": 0.27,
-        "sharpe_ratio": 0.66,
-        "sortino_ratio": 0.99,
+        "sharpe_ratio": 0.65,
+        "sortino_ratio": 0.98,
         "max_drawdown_pct": -17.27,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 48.63,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 48.89,
@@ -119782,6 +119777,11 @@
                 "date": "2026-11-02",
                 "price": 95.83,
                 "drawdown": 0.0
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -119797,10 +119797,10 @@
     {
         "symbol": "PEP",
         "name": "Pepsico, Inc.",
-        "price": 140.42,
-        "change": 3.19,
-        "change_percent": 2.33,
-        "market_cap": 191356101643.38654,
+        "price": 137.27,
+        "change": -3.27,
+        "change_percent": -2.33,
+        "market_cap": 187063469698.84003,
         "description": "PepsiCo, Inc. is a leading global food and beverage company. Its portfolio includes Frito-Lay, Gatorade, Pepsi-Cola, Quaker, and Tropicana. The company distinguishes itself with a balanced revenue mix between convenient foods (snacks) and beverages, giving it resilience across different market cycles.",
         "ceo": "Mr. Ramon Luis Laguarta",
         "hq": "Purchase, NY, United States",
@@ -119818,11 +119818,6 @@
         "sortino_ratio": -0.16,
         "max_drawdown_pct": -30.32,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 139.71,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 139.72,
@@ -126087,6 +126082,11 @@
                 "date": "2026-11-02",
                 "price": 140.42,
                 "drawdown": -19.09
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -126102,10 +126102,10 @@
     {
         "symbol": "MCD",
         "name": "McDonald's Corporation",
-        "price": 265.64,
-        "change": 7.5,
-        "change_percent": 2.91,
-        "market_cap": 187977906660.68274,
+        "price": 263.04,
+        "change": -2.6,
+        "change_percent": -0.98,
+        "market_cap": 186138028314.24002,
         "description": "McDonald's Corporation operates and franchises the world's largest restaurant chain by revenue. With over 40,000 locations in over 100 countries, it serves millions of customers daily. The company primarily generates revenue through rent, royalties, and fees paid by franchisees, as well as sales in company-operated restaurants.",
         "ceo": "Mr. Christopher J. Kempczinski",
         "hq": "Chicago, IL, United States",
@@ -126119,15 +126119,10 @@
         "high_52": 341.75,
         "low_52": 229.2,
         "beta": 0.43,
-        "sharpe_ratio": 0.06,
-        "sortino_ratio": 0.09,
+        "sharpe_ratio": 0.05,
+        "sortino_ratio": 0.07,
         "max_drawdown_pct": -30.98,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 222.87,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 225.59,
@@ -126240,13 +126235,13 @@
             },
             {
                 "date": "2021-12-07",
-                "price": 232.62,
+                "price": 232.61,
                 "drawdown": 0.0
             },
             {
                 "date": "2021-12-08",
                 "price": 232.32,
-                "drawdown": -0.13
+                "drawdown": -0.12
             },
             {
                 "date": "2021-12-09",
@@ -129590,7 +129585,7 @@
             },
             {
                 "date": "2024-08-08",
-                "price": 256.86,
+                "price": 256.87,
                 "drawdown": -8.66
             },
             {
@@ -132392,6 +132387,11 @@
                 "date": "2026-11-02",
                 "price": 265.64,
                 "drawdown": -20.59
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -132407,10 +132407,10 @@
     {
         "symbol": "WMT",
         "name": "Walmart Inc.",
-        "price": 127.69,
-        "change": 4.1,
-        "change_percent": 3.32,
-        "market_cap": 1013060076882.7876,
+        "price": 124.86,
+        "change": -2.99,
+        "change_percent": -2.34,
+        "market_cap": 990607555651.26,
         "description": "Walmart Inc. engages in the operation of retail, wholesale, and other units worldwide. It is the world's largest retailer and private employer, operating a vast network of hypermarkets, discount department stores, and grocery stores. The company focuses on everyday low prices and has a rapidly growing e-commerce business.",
         "ceo": "Mr. C. Douglas McMillon",
         "hq": "Bentonville, AR, United States",
@@ -132425,14 +132425,9 @@
         "low_52": 98.88,
         "beta": 0.53,
         "sharpe_ratio": 0.82,
-        "sortino_ratio": 1.04,
+        "sortino_ratio": 1.03,
         "max_drawdown_pct": -25.74,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 47.03,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 47.37,
@@ -138697,6 +138692,11 @@
                 "date": "2026-11-02",
                 "price": 127.69,
                 "drawdown": -4.62
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -138712,10 +138712,10 @@
     {
         "symbol": "COST",
         "name": "Costco Wholesale Corporation",
-        "price": 1040.55,
-        "change": 29.35,
-        "change_percent": 2.9,
-        "market_cap": 461098265739.12524,
+        "price": 1019.26,
+        "change": -21.24,
+        "change_percent": -2.04,
+        "market_cap": 451664020261.74,
         "description": "Costco Wholesale Corporation operates an international chain of membership warehouses. The company carries quality brand-name merchandise at substantially lower prices than are typically found at conventional wholesale or retail sources. Its business model relies heavily on membership fees, which drive the majority of its operating income.",
         "ceo": "Mr. Ron M. Vachris",
         "hq": "Issaquah, WA, United States",
@@ -138729,15 +138729,10 @@
         "high_52": 1096.5,
         "low_52": 844.06,
         "beta": 0.85,
-        "sharpe_ratio": 0.63,
-        "sortino_ratio": 0.83,
+        "sharpe_ratio": 0.6,
+        "sortino_ratio": 0.8,
         "max_drawdown_pct": -31.4,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 476.11,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 488.71,
@@ -139160,7 +139155,7 @@
             },
             {
                 "date": "2022-03-08",
-                "price": 496.8,
+                "price": 496.79,
                 "drawdown": -7.68
             },
             {
@@ -141770,7 +141765,7 @@
             },
             {
                 "date": "2024-04-05",
-                "price": 702.79,
+                "price": 702.78,
                 "drawdown": -9.15
             },
             {
@@ -143415,7 +143410,7 @@
             },
             {
                 "date": "2025-07-30",
-                "price": 919.49,
+                "price": 919.5,
                 "drawdown": -13.76
             },
             {
@@ -145002,6 +144997,11 @@
                 "date": "2026-11-02",
                 "price": 1040.55,
                 "drawdown": -4.62
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -145017,10 +145017,10 @@
     {
         "symbol": "BA",
         "name": "Boeing Company (The)",
-        "price": 175.4,
-        "change": 3.96,
-        "change_percent": 2.31,
-        "market_cap": 138995714639.2694,
+        "price": 173.31,
+        "change": -2.2,
+        "change_percent": -1.25,
+        "market_cap": 137339499101.40001,
         "description": "The Boeing Company designs, manufactures, and sells airplanes, rotorcraft, rockets, satellites, and telecommunications equipment worldwide. It is one of the largest global aircraft manufacturers and a top defense contractor, operating through Commercial Airplanes, Defense, Space & Security, and Global Services segments.",
         "ceo": "Mr. Robert K. Ortberg",
         "hq": "Arlington, VA, United States",
@@ -145030,7 +145030,7 @@
         "industry": "Aerospace & Defense",
         "profit_margin": 8.07,
         "roe": 0,
-        "target_price": 235.65385,
+        "target_price": 233.34615,
         "high_52": 254.35,
         "low_52": 165.01,
         "beta": 1.33,
@@ -145039,14 +145039,9 @@
         "max_drawdown_pct": -50.29,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 213.38,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 213.03,
-                "drawdown": -0.16
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
@@ -151307,6 +151302,11 @@
                 "date": "2026-11-02",
                 "price": 175.4,
                 "drawdown": -33.63
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -151322,10 +151322,10 @@
     {
         "symbol": "CAT",
         "name": "Caterpillar, Inc.",
-        "price": 613.62,
-        "change": -10.68,
-        "change_percent": -1.71,
-        "market_cap": 282065703143.6737,
+        "price": 623.94,
+        "change": 9.53,
+        "change_percent": 1.55,
+        "market_cap": 286809550242.66003,
         "description": "Caterpillar Inc. is the world's leading manufacturer of construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives. The company serves the construction, resource, and energy & transportation industries through a global dealer network.",
         "ceo": "Mr. Joseph E. Creed CPA",
         "hq": "Irving, TX, United States",
@@ -151335,7 +151335,7 @@
         "industry": "Farm & Heavy Construction Machinery",
         "profit_margin": 15.21,
         "roe": 56.14,
-        "target_price": 838.37537,
+        "target_price": 823.87537,
         "high_52": 1073.46,
         "low_52": 537.08,
         "beta": 1.64,
@@ -151343,11 +151343,6 @@
         "sortino_ratio": 1.14,
         "max_drawdown_pct": -42.13,
         "full_history": [
-            {
-                "date": "2021-11-03",
-                "price": 187.36,
-                "drawdown": 0.0
-            },
             {
                 "date": "2021-11-04",
                 "price": 187.4,
@@ -153290,8 +153285,8 @@
             },
             {
                 "date": "2023-05-23",
-                "price": 202.45,
-                "drawdown": -19.15
+                "price": 202.44,
+                "drawdown": -19.16
             },
             {
                 "date": "2023-05-24",
@@ -154785,7 +154780,7 @@
             },
             {
                 "date": "2024-08-01",
-                "price": 322.67,
+                "price": 322.68,
                 "drawdown": -11.92
             },
             {
@@ -155055,7 +155050,7 @@
             },
             {
                 "date": "2024-10-17",
-                "price": 383.97,
+                "price": 383.96,
                 "drawdown": -1.87
             },
             {
@@ -156045,8 +156040,8 @@
             },
             {
                 "date": "2025-08-05",
-                "price": 429.33,
-                "drawdown": -0.87
+                "price": 429.34,
+                "drawdown": -0.86
             },
             {
                 "date": "2025-08-06",
@@ -156570,7 +156565,7 @@
             },
             {
                 "date": "2026-01-05",
-                "price": 610.9,
+                "price": 610.91,
                 "drawdown": -1.52
             },
             {
@@ -157612,6 +157607,11 @@
                 "date": "2026-11-02",
                 "price": 613.62,
                 "drawdown": -42.13
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
@@ -157627,10 +157627,10 @@
     {
         "symbol": "MMM",
         "name": "3M Company",
-        "price": 178.36,
-        "change": 4.02,
-        "change_percent": 2.31,
-        "market_cap": 91984250610.89198,
+        "price": 177.05,
+        "change": -1.31,
+        "change_percent": -0.73,
+        "market_cap": 91308653929.85,
         "description": "3M Company is a diversified technology company with a global presence. It operates through segments including Safety and Industrial, Transportation and Electronics, and Consumer. Known for innovation, 3M produces over 60,000 products, ranging from adhesives and abrasives to medical products and electronic materials.",
         "ceo": "Mr. William M. Brown",
         "hq": "Saint Paul, MN, United States",
@@ -157644,34 +157644,29 @@
         "high_52": 184.9,
         "low_52": 139.34,
         "beta": 1.06,
-        "sharpe_ratio": 0.23,
-        "sortino_ratio": 0.37,
+        "sharpe_ratio": 0.24,
+        "sortino_ratio": 0.38,
         "max_drawdown_pct": -48.86,
         "full_history": [
             {
-                "date": "2021-11-03",
-                "price": 127.89,
-                "drawdown": 0.0
-            },
-            {
                 "date": "2021-11-04",
                 "price": 126.75,
-                "drawdown": -0.89
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-05",
                 "price": 127.59,
-                "drawdown": -0.23
+                "drawdown": 0.0
             },
             {
                 "date": "2021-11-08",
                 "price": 127.41,
-                "drawdown": -0.38
+                "drawdown": -0.14
             },
             {
                 "date": "2021-11-09",
                 "price": 127.26,
-                "drawdown": -0.49
+                "drawdown": -0.26
             },
             {
                 "date": "2021-11-10",
@@ -158080,8 +158075,8 @@
             },
             {
                 "date": "2022-03-09",
-                "price": 104.72,
-                "drawdown": -18.75
+                "price": 104.73,
+                "drawdown": -18.74
             },
             {
                 "date": "2022-03-10",
@@ -160755,8 +160750,8 @@
             },
             {
                 "date": "2024-04-25",
-                "price": 86.93,
-                "drawdown": -32.55
+                "price": 86.92,
+                "drawdown": -32.56
             },
             {
                 "date": "2024-04-26",
@@ -162450,7 +162445,7 @@
             },
             {
                 "date": "2025-09-03",
-                "price": 149.25,
+                "price": 149.24,
                 "drawdown": -4.68
             },
             {
@@ -163917,6 +163912,11 @@
                 "date": "2026-11-02",
                 "price": 178.36,
                 "drawdown": -2.52
+            },
+            {
+                "date": "2026-11-03",
+                "price": null,
+                "drawdown": null
             }
         ],
         "financials": {
